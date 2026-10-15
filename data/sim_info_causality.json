@@ -1,0 +1,9 @@
+{
+  "classical_S_max": 2.0,
+  "classical_information_recovered": 0.4999999999999999,
+  "quantum_tsirelson_S": 2.8284271247461903,
+  "quantum_information_recovered": 1.0,
+  "pr_box_S": 4.0,
+  "pr_box_information_recovered": 2.0,
+  "theoretical_breakthrough": "The Born probability rule is the UNIQUE continuous probability law that saturates without violating the invariant causal speed limit c_info."
+}

@@ -1,0 +1,7 @@
+{
+  "t_scramble": 4.0,
+  "k_qubits": 10,
+  "old_black_hole_decoding_time": 4.0,
+  "young_black_hole_decoding_time": 11.5,
+  "speed_of_information_implication": "Information release rate is dictated by the butterfly velocity v_B <= c_info across the entanglement wedge."
+}

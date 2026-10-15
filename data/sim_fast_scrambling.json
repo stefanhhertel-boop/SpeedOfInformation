@@ -1,0 +1,18 @@
+{
+  "x_0.0": {
+    "distance": 0.0,
+    "scrambling_time": 6.907755278982137
+  },
+  "x_2.0": {
+    "distance": 2.0,
+    "scrambling_time": 8.907755278982137
+  },
+  "x_4.0": {
+    "distance": 4.0,
+    "scrambling_time": 10.907755278982137
+  },
+  "x_6.0": {
+    "distance": 6.0,
+    "scrambling_time": 12.907755278982137
+  }
+}

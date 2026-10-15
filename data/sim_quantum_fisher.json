@@ -1,0 +1,27 @@
+{
+  "dt_0.0": {
+    "dt": 0.0,
+    "min_fidelity": 0.01,
+    "max_fidelity": 1.0
+  },
+  "dt_0.5": {
+    "dt": 0.5,
+    "min_fidelity": 0.010519090143408728,
+    "max_fidelity": 1.0
+  },
+  "dt_1.0": {
+    "dt": 1.0,
+    "min_fidelity": 0.012344077901624024,
+    "max_fidelity": 1.0
+  },
+  "dt_1.5": {
+    "dt": 1.5,
+    "min_fidelity": 0.01664287948443688,
+    "max_fidelity": 1.0
+  },
+  "dt_2.0": {
+    "dt": 2.0,
+    "min_fidelity": 0.027746173152421345,
+    "max_fidelity": 1.0
+  }
+}

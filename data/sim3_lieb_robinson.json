@@ -1,0 +1,27 @@
+{
+  "distance_1": {
+    "r": 1,
+    "arrival_time_threshold_0.05": 0.1016949152542373,
+    "effective_velocity": 9.833333333333332
+  },
+  "distance_2": {
+    "r": 2,
+    "arrival_time_threshold_0.05": 0.4067796610169492,
+    "effective_velocity": 4.916666666666666
+  },
+  "distance_4": {
+    "r": 4,
+    "arrival_time_threshold_0.05": 1.11864406779661,
+    "effective_velocity": 3.575757575757576
+  },
+  "distance_6": {
+    "r": 6,
+    "arrival_time_threshold_0.05": 2.0338983050847457,
+    "effective_velocity": 2.95
+  },
+  "distance_8": {
+    "r": 8,
+    "arrival_time_threshold_0.05": 2.9491525423728815,
+    "effective_velocity": 2.7126436781609193
+  }
+}

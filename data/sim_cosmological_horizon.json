@@ -1,0 +1,7 @@
+{
+  "c_info": 1.0,
+  "H": 1.0,
+  "R_dS": 1.0,
+  "gibbons_hawking_entropy": "S_dS = pi * c_info^3 * R_dS^2 / (G * hbar)",
+  "conclusion": "The cosmological event horizon is an inside-out channel capacity boundary: superluminal expansion preserves local c_info while restricting total universe information."
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 520" width="840" height="520" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<text x="420.0" y="40.5" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Bekenstein Bound Saturation: Information Packing Ratio S / S_max vs Radial Distance</text>
+<rect x="90" y="65" width="710" height="385" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
+<line x1="90.0" y1="65" x2="90.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
+<text x="90.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">1.00</text>
+<line x1="90" y1="450.0" x2="800" y2="450.0" stroke="#e2e8f0" stroke-width="1" />
+<text x="78" y="454.0" text-anchor="end" font-size="12" fill="#64748b">-7.92e-03</text>
+<line x1="232.0" y1="65" x2="232.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
+<text x="232.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">1.80</text>
+<line x1="90" y1="373.0" x2="800" y2="373.0" stroke="#e2e8f0" stroke-width="1" />
+<text x="78" y="377.0" text-anchor="end" font-size="12" fill="#64748b">0.20</text>
+<line x1="374.00000000000006" y1="65" x2="374.00000000000006" y2="450" stroke="#e2e8f0" stroke-width="1" />
+<text x="374.00000000000006" y="470" text-anchor="middle" font-size="12" fill="#64748b">2.60</text>
+<line x1="90" y1="296.0" x2="800" y2="296.0" stroke="#e2e8f0" stroke-width="1" />
+<text x="78" y="300.0" text-anchor="end" font-size="12" fill="#64748b">0.41</text>
+<line x1="516.0" y1="65" x2="516.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
+<text x="516.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">3.40</text>
+<line x1="90" y1="218.99999999999997" x2="800" y2="218.99999999999997" stroke="#e2e8f0" stroke-width="1" />
+<text x="78" y="222.99999999999997" text-anchor="end" font-size="12" fill="#64748b">0.62</text>
+<line x1="658.0" y1="65" x2="658.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
+<text x="658.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">4.20</text>
+<line x1="90" y1="141.99999999999994" x2="800" y2="141.99999999999994" stroke="#e2e8f0" stroke-width="1" />
+<text x="78" y="145.99999999999994" text-anchor="end" font-size="12" fill="#64748b">0.84</text>
+<line x1="800.0" y1="65" x2="800.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
+<text x="800.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">5.00</text>
+<line x1="90" y1="65.0" x2="800" y2="65.0" stroke="#e2e8f0" stroke-width="1" />
+<text x="78" y="69.0" text-anchor="end" font-size="12" fill="#64748b">1.05</text>
+<text x="445.0" y="502" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">Radial Distance r / r_s (Schwarzschild Horizon at r = 1.0)</text>
+<text x="25" y="257.5" text-anchor="middle" font-size="14" font-weight="600" fill="#334155" transform="rotate(-90 25 257.5)">Information Packing Ratio S / S_Bekenstein</text>
+<polyline points="90.00,82.50 97.17,110.24 104.34,134.94 111.52,157.01 118.69,176.82 125.86,194.67 133.03,210.81 140.20,225.45 147.37,238.77 154.55,250.93 161.72,262.05 168.89,272.25 176.06,281.63 183.23,290.27 190.40,298.26 197.58,305.65 204.75,312.50 211.92,318.87 219.09,324.80 226.26,330.32 233.43,335.48 240.61,340.30 247.78,344.82 254.95,349.06 262.12,353.04 269.29,356.78 276.46,360.30 283.64,363.62 290.81,366.76 297.98,369.72 305.15,372.52 312.32,375.17 319.49,377.68 326.67,380.06 333.84,382.32 341.01,384.47 348.18,386.52 355.35,388.46 362.53,390.32 369.70,392.08 376.87,393.77 384.04,395.38 391.21,396.92 398.38,398.39 405.56,399.79 412.73,401.14 419.90,402.43 427.07,403.67 434.24,404.85 441.41,405.99 448.59,407.08 455.76,408.13 462.93,409.14 470.10,410.11 477.27,411.04 484.44,411.94 491.62,412.81 498.79,413.64 505.96,414.45 513.13,415.22 520.30,415.97 527.47,416.69 534.65,417.39 541.82,418.06 548.99,418.71 556.16,419.34 563.33,419.95 570.51,420.54 577.68,421.11 584.85,421.66 592.02,422.19 599.19,422.71 606.36,423.21 613.54,423.70 620.71,424.17 627.88,424.63 635.05,425.07 642.22,425.50 649.39,425.92 656.57,426.33 663.74,426.72 670.91,427.11 678.08,427.48 685.25,427.84 692.42,428.19 699.60,428.54 706.77,428.87 713.94,429.20 721.11,429.51 728.28,429.82 735.45,430.12 742.63,430.41 749.80,430.70 756.97,430.97 764.14,431.24 771.31,431.51 778.48,431.77 785.66,432.02 792.83,432.26 800.00,432.50" fill="none" stroke="#2563eb" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round" />
+<line x1="90" y1="81.7704201016183" x2="800" y2="81.7704201016183" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="4 4" />
+<text x="100" y="75.7704201016183" text-anchor="start" font-size="11" font-weight="bold" fill="#dc2626">Bekenstein Holographic Bound (1 bit / 4 ell_P^2)</text>
+<text x="125.32250000000002" y="136.57100389160723" text-anchor="start" font-size="11" fill="#15803d" font-weight="bold">Horizon Saturation Point (r = r_s):
+Maximum Information Storage Density
+Possible in Spacetime!</text>
+<text x="409.32250000000005" y="319.23961652490334" text-anchor="start" font-size="11" fill="#475569" font-weight="bold">Astrophysical Regime (r >> r_s):
+Ordinary Matter is Sparsely Encoded
+(S << S_Bekenstein)</text>
+<rect x="490" y="80" width="300" height="32" fill="rgba(255,255,255,0.92)" stroke="#cbd5e1" rx="4" ry="4" />
+<line x1="502" y1="94" x2="526" y2="94" stroke="#2563eb" stroke-width="2.8" />
+<text x="534" y="98" font-size="11" fill="#334155">Physical Matter Information Packing (S_matter / S_max)</text>
+</svg>

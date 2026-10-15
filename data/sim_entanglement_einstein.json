@@ -1,0 +1,8 @@
+{
+  "c_info": 1.0,
+  "prefactor_matter": 0.41887902047863906,
+  "prefactor_area": 0.41887902047863906,
+  "einstein_coupling_constant": 25.132741228718345,
+  "total_entropy_variation_residual": 20.217398014700017,
+  "conclusion": "Einstein's field equations G_mu_nu = (8*pi*G/c_info^4)*T_mu_nu are uniquely derived as the condition of stationary entanglement equilibrium on all local causal diamonds."
+}

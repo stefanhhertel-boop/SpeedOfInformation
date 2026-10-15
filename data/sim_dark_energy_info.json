@@ -1,0 +1,6 @@
+{
+  "observed_log_entropy": 122.0,
+  "observed_log_lambda": -121.0,
+  "formula": "Lambda = 3 * pi * c_info^3 / (G * hbar * S_dS)",
+  "resolution": "Dark energy is the thermodynamic pressure of the cosmological information horizon."
+}

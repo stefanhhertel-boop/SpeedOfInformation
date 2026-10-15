@@ -1,0 +1,6 @@
+{
+  "lloyd_rate": 0.6366197723675814,
+  "saturation_of_lloyd_bound": true,
+  "conjecture": "Complexity = Action (Brown et al. 2016)",
+  "meaning_of_c_info": "c_info sets the clock speed for gate operations dC/dt = 2 E / pi hbar."
+}

@@ -1,0 +1,22 @@
+{
+  "flux_0.0": {
+    "flux": 0.0,
+    "final_area_ratio": 1.0,
+    "area_deficit": 0.0
+  },
+  "flux_0.2": {
+    "flux": 0.2,
+    "final_area_ratio": 0.8659587134468355,
+    "area_deficit": 0.1340412865531645
+  },
+  "flux_0.5": {
+    "flux": 0.5,
+    "final_area_ratio": 0.6648967836170887,
+    "area_deficit": 0.3351032163829113
+  },
+  "flux_1.0": {
+    "flux": 1.0,
+    "final_area_ratio": 0.3297935672341775,
+    "area_deficit": 0.6702064327658225
+  }
+}

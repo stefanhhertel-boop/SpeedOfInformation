@@ -1,0 +1,11 @@
+{
+  "c_info": 1.0,
+  "propagation_distance_L": 5.0,
+  "causal_arrival_time": 5.0,
+  "vacuum_peak_time": 8.0,
+  "dispersive_peak_time": 6.125,
+  "apparent_superluminal_ratio": 1.6,
+  "front_velocity_observed": 1.0,
+  "microcausality_violation": false,
+  "conclusion": "Peak reshaping yields v_group > c_info, but new information arrives strictly at v_front = c_info."
+}

@@ -1,0 +1,7 @@
+{
+  "epoch_1": "Scrambling Time t_* ~ (beta / 2pi) * ln(S)",
+  "epoch_2": "Linear Growth dC/dt = 2 M c_info^2 / (pi * hbar) lasting until t ~ exp(S)",
+  "epoch_3": "Maximum Complexity Saturation C_max ~ exp(S)",
+  "epoch_4": "Quantum Recurrence at t ~ exp(exp(S))",
+  "conclusion": "The Speed of Information c_info governs both the spatial metric light cone and the temporal computational clock speed of quantum spacetime."
+}

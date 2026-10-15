@@ -1,0 +1,8 @@
+{
+  "D_meters": 1e+26,
+  "E_Planck_eV": 1.22e+28,
+  "delay_100GeV_linear_seconds": 2.734131927853706,
+  "delay_100GeV_quadratic_seconds": 2.241091744142382e-17,
+  "grb090510_limit": "E_QG1 > 1.2 * E_Planck (Fermi LAT)",
+  "physical_interpretation": "Decoupling speed of light from speed of information converts LIV tests into probes of matter-geometry couplings."
+}

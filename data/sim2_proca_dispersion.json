@@ -1,0 +1,26 @@
+{
+  "mass_0.0": {
+    "m_eV": 0.0,
+    "min_velocity_ratio": 1.0,
+    "max_velocity_ratio": 1.0,
+    "radio_delay_100MHz_seconds": 0.0
+  },
+  "mass_1e-15": {
+    "m_eV": 1e-15,
+    "min_velocity_ratio": 0.9999999999999996,
+    "max_velocity_ratio": 1.0,
+    "radio_delay_100MHz_seconds": 1.5
+  },
+  "mass_5e-15": {
+    "m_eV": 5e-15,
+    "min_velocity_ratio": 0.9999999999999927,
+    "max_velocity_ratio": 1.0,
+    "radio_delay_100MHz_seconds": 24.5
+  },
+  "mass_1e-14": {
+    "m_eV": 1e-14,
+    "min_velocity_ratio": 0.9999999999999708,
+    "max_velocity_ratio": 1.0,
+    "radio_delay_100MHz_seconds": 97.5
+  }
+}
