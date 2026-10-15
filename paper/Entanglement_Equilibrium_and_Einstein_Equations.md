@@ -1,7 +1,7 @@
 # Deriving Einstein's Field Equations from Entanglement Equilibrium: An Informational Action Principle
 
 **Author:** Stefan Hertel  
-**Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
+**Affiliation:** Independent Researcher  
 **Date:** October 15, 2026  
 **Document:** Advanced Mathematical Derivation & Action Principle  
 **Primary References:** Jacobson (*Phys. Rev. Lett.* 1995, 2016), Casini-Huerta-Myers (*JHEP* 2011), Faulkner-Guica-Hartman-Myers-Van Raamsdonk (*JHEP* 2014)

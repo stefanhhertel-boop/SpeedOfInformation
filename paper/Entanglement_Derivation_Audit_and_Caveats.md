@@ -22,7 +22,7 @@ The idea that the Einstein field equations are not fundamental, but emerge as an
 > **HOWEVER: Can you derive General Relativity out of "pure abstract information" with ZERO geometric or gravitational inputs?**  
 > **NO.** Any claim that one can generate Einstein's equations from pure mathematics without any physical assumptions is false.
 
-A rigorous doctoral-level audit must distinguish between what is **genuinely derived** and what is **taken as a physical input**. Below is the exhaustive mathematical and conceptual breakdown.
+A rigorous foundational audit must distinguish between what is **genuinely derived** and what is **taken as a physical input**. Below is the exhaustive mathematical and conceptual breakdown.
 
 ---
 
@@ -142,7 +142,7 @@ In the entanglement derivation, $c_{\mathcal{I}}$ is the **conversion factor bet
 
 ---
 
-## 6. Doctoral Verdict & Recommendation
+## 6. Synthesis & Recommendation
 
 | Question | Assessment | Scientific Status |
 | :--- | :---: | :--- |

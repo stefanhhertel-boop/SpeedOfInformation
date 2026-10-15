@@ -1,14 +1,14 @@
 # Scientific Study: Speed of Light vs. Speed of Information in Theoretical Physics
 
 **Author:** Stefan Hertel  
-**Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
+**Affiliation:** Independent Researcher  
 **Date:** October 15, 2026
 
 ---
 
 ## Executive Summary & Research Question
 
-> **Central Hypothesis:** Does replacing the concept of the "speed of light" ($c$) with the "speed of information" ($c_{\mathcal{I}}$) constitute a major step forward in theoretical physics? Furthermore, how does this new perspective combine Relativity with Quantum Probabilities?
+> **Central Hypothesis:** Does replacing the concept of the "speed of light" ($c$) with the "speed of information" ($c_{\mathcal{I}}$) help us better understand the fundamental architecture of spacetime, quantum causality, and gravitational dynamics? Furthermore, how does this new perspective combine Relativity with Quantum Probabilities?
 
 This repository contains the complete scientific study, numerical simulations, formal academic paper, and advanced theoretical treatise addressing this question across:
 1. **Axiomatic Spacetime Foundations:** Group-theoretic derivation of Lorentz transformations without electromagnetism (Ignatowsky-Lévy-Leblond formalism) and decoupling of metric invariants from photon mass (Proca electrodynamics).

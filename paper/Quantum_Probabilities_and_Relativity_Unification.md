@@ -1,7 +1,7 @@
 # Unifying Relativity and Quantum Probabilities: The Informational Synthesis
 
 **Author:** Stefan Hertel  
-**Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
+**Affiliation:** Independent Researcher  
 **Date:** October 15, 2026  
 **Document:** Advanced Theoretical Treatise & Research Investigation  
 **Primary References:** Pawłowski et al. (*Nature* 2009), Chiribella-D'Ariano-Perinotti (*Phys. Rev. A* 2011), Rovelli (*Int. J. Theor. Phys.* 1996), Almheiri-Engelhardt-Marolf-Maxfield (*JHEP* 2019)

@@ -2,9 +2,9 @@
 
 **Document Title:** From Luminal Kinematics to Informational Spacetime: A Comprehensive Scientific Investigation into Replacing the Speed of Light with the Speed of Information  
 **Author:** Stefan Hertel  
-**Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
+**Affiliation:** Independent Researcher  
 **Date:** October 15, 2026  
-**Document Type:** Executive Scientific White Paper & Doctoral Synthesis  
+**Document Type:** Executive Scientific White Paper & Theoretical Synthesis  
 
 ---
 
@@ -12,8 +12,8 @@
 
 ```
                      THE CENTRAL SCIENTIFIC QUESTION
-       "Do we make a major step forward in theoretical physics if we
-        replace the concept of 'speed of light' with 'speed of information'?"
+       "Does replacing the concept of 'speed of light' with 'speed of information'
+        help us better understand the fundamental architecture of physics?"
 ```
 
 ### The Definitive Verdict:
@@ -113,9 +113,9 @@ Our research uncovers that $c_{\mathcal{I}}$ is the master operational constant 
 
 | Evaluated Dimension | Scientific Impact | Summary Rationale |
 | :--- | :---: | :--- |
-| **1. Pedagogical & Conceptual Resolution** | **Massive Step Forward** | Eradicates 120 years of fallacious paradoxes: explains why media (water, BECs) slow light without modifying spacetime; removes pseudo-superluminal claims ($v_p, v_g > c$); clarifies why quantum entanglement cannot signal. |
-| **2. Axiomatic Kinematic Foundations** | **Major Step Forward** | Decouples spacetime geometry from electromagnetic field contingencies. Proves via group theory that Special Relativity depends on information causality, not photon masslessness ($m_\gamma = 0$). |
-| **3. Quantum Foundations & Measurement** | **Major Step Forward** | Derives the Born rule ($P = \|\psi\|^2$) from Information Causality. Eliminates the foliation problem of wave-function collapse via Relational Causal Diamonds. |
+| **1. Pedagogical & Conceptual Resolution** | **Clarifies Core Intuitions** | Eradicates 120 years of fallacious paradoxes: explains why media (water, BECs) slow light without modifying spacetime; removes pseudo-superluminal claims ($v_p, v_g > c$); clarifies why quantum entanglement cannot signal. |
+| **2. Axiomatic Kinematic Foundations** | **Structural Deepening** | Decouples spacetime geometry from electromagnetic field contingencies. Proves via group theory that Special Relativity depends on information causality, not photon masslessness ($m_\gamma = 0$). |
+| **3. Quantum Foundations & Measurement** | **Structural Deepening** | Derives the Born rule ($P = \|\psi\|^2$) from Information Causality. Eliminates the foliation problem of wave-function collapse via Relational Causal Diamonds. |
 | **4. Emergent Gravitational Dynamics** | **Revolutionary Paradigm Shift** | Derives Einstein's field equations and Einstein-Hilbert action as an equation of state of quantum entanglement. Demystifies why quantizing the metric fails. |
 | **5. Black Hole & Horizon Information** | **Revolutionary Paradigm Shift** | Re-defines horizons as informational boundaries. Proves that ER=EPR traversable wormholes are quantum teleportation channels protected by $c_{\mathcal{I}}$. |
 | **6. Cosmology & Quantum Complexity** | **Revolutionary Paradigm Shift** | Re-frames dark energy as inverse cosmological horizon capacity ($10^{-122}$). Proves black hole interiors saturate Lloyd's computational bound ($2Mc_{\mathcal{I}}^2/\pi\hbar$). |

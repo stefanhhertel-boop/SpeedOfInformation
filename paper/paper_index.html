@@ -243,6 +243,35 @@
             color: var(--text-muted);
             text-align: center;
         }
+
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+            .container {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 10px !important;
+                box-shadow: none !important;
+                border: none !important;
+            }
+            table {
+                width: 100% !important;
+                max-width: 100% !important;
+                table-layout: fixed !important;
+                word-wrap: break-word !important;
+                page-break-inside: avoid;
+            }
+            th, td {
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                padding: 8px 10px !important;
+                font-size: 0.88rem !important;
+            }
+            .figure-container {
+                page-break-inside: avoid;
+            }
+        }
     </style>
 </head>
 <body>
@@ -254,7 +283,7 @@
             Evaluating the Theoretical and Empirical Consequences of Replacing the Speed of Light with the Speed of Information
         </div>
         <div class="meta"><strong>Author:</strong> Stefan Hertel</div>
-        <div class="meta"><strong>Affiliation:</strong> Center for Quantum Foundations, Relativity, and Emergent Spacetime</div>
+        <div class="meta"><strong>Affiliation:</strong> Independent Researcher</div>
         <div class="meta"><strong>Date:</strong> October 15, 2026 &bull; Status: Peer-Review Manuscript Ready</div>
         <div class="badge-bar">
             <span class="badge">Special & General Relativity</span>
@@ -275,13 +304,13 @@
             <li><a href="#sec4">4. Microcausality, Quantum Non-Locality, and No-Signaling</a></li>
             <li><a href="#sec5">5. Emergent Spacetime from Quantum Information (Lieb-Robinson & Holography)</a></li>
             <li><a href="#sec6">6. Observational & Experimental Signatures (Proca Mass, MDR, Analog Gravity)</a></li>
-            <li><a href="#sec7">7. Critical Assessment: Does this Constitute a "Major Step Forward"?</a></li>
+            <li><a href="#sec7">7. Comparative Assessment: Does this Help Us Understand Physics Better?</a></li>
             <li><a href="#sec7b">7.5 Deep Dive: Unifying Relativity & Quantum Probabilities via Information Causality</a></li>
             <li><a href="#sec7c">7.6 Formal Action Principle: Deriving Einstein's Equations from Entanglement Equilibrium</a></li>
             <li><a href="#sec7d">7.7 Information Theory Close to Black Holes: Scrambling, Holography, & Wormholes</a></li>
             <li><a href="#sec7e">7.8 Cosmological Horizons & Dark Energy as Information Capacity</a></li>
             <li><a href="#sec7f">7.9 Holographic Quantum Complexity & Lloyd's Computational Bound</a></li>
-            <li><a href="#sec8">8. Conclusion & Doctoral Research Roadmap</a></li>
+            <li><a href="#sec8">8. Conclusion & Future Research Directions</a></li>
             <li><a href="#references">References</a></li>
         </ul>
     </div>
@@ -289,14 +318,14 @@
     <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #93c5fd; border-radius: 8px; padding: 18px 24px; margin: 25px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
         <div>
             <div style="font-weight: 800; font-size: 1.05rem; color: #1e3a8a;">Executive Summary & White Paper Available</div>
-            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 6 research pillars, the 20 vector visualizations and analytical parameter models, and the diagnostic evaluation matrix.</div>
+            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 6 research pillars, the 20 vector visualizations and analytical parameter models, and the comparative evaluation matrix.</div>
         </div>
         <a href="Executive_Summary_Speed_of_Information.md" style="background: #1d4ed8; color: #ffffff; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Executive Summary &rarr;</a>
     </div>
 
     <div class="abstract-box" id="abstract">
         <div class="abstract-title">Abstract</div>
-        For over a century, the fundamental kinematic invariant of the universe, \(c \approx 2.99792458 \times 10^8\text{ m/s}\), has carried the historical nomenclature "the speed of light in vacuum." While historically understandable given the derivation of Maxwell's electrodynamics, this terminology has fostered persistent pedagogical confusions, obscured the axiomatic structure of spacetime, and detached the kinematic foundation of relativity from modern developments in quantum information theory, many-body physics, and holographic quantum gravity. In this study, we conduct an extensive theoretical and computational investigation into whether replacing the concept of the "speed of light" (\(c\)) with the "speed of information" (\(c_{\mathcal{I}}\)) represents a substantive, major step forward in theoretical physics. We prove via group-theoretic and causal order methods that spacetime geometry requires only an invariant causal velocity \(c_{\mathcal{I}}\) decoupled from any gauge field or massless particle; demonstrate via Kramers-Kronig analyticity that superluminal group velocities in media are envelope reshaping artifacts; show how Lieb-Robinson bounds generate emergent light cones in non-relativistic matter; and evaluate how holographic butterfly velocities position information flow as the precursor to spacetime metric structures.
+        For over a century, the fundamental kinematic invariant of the universe, \(c \approx 2.99792458 \times 10^8\text{ m/s}\), has carried the historical nomenclature "the speed of light in vacuum." While historically understandable given the derivation of Maxwell's electrodynamics, this terminology has fostered persistent pedagogical confusions, obscured the axiomatic structure of spacetime, and detached the kinematic foundation of relativity from modern developments in quantum information theory, many-body physics, and holographic quantum gravity. In this study, we conduct an extensive theoretical and computational investigation into whether replacing the concept of the "speed of light" (\(c\)) with the "speed of information" (\(c_{\mathcal{I}}\)) provides a deeper, more fundamental understanding of relativistic kinematics, quantum measurement, and emergent spacetime. We prove via group-theoretic and causal order methods that spacetime geometry requires only an invariant causal velocity \(c_{\mathcal{I}}\) decoupled from any gauge field or massless particle; demonstrate via Kramers-Kronig analyticity that superluminal group velocities in media are envelope reshaping artifacts; show how Lieb-Robinson bounds generate emergent light cones in non-relativistic matter; and evaluate how holographic butterfly velocities position information flow as the precursor to spacetime metric structures.
     </div>
 
     <h2 id="sec1">1. Introduction: The Historical Accident of Maxwellian Relativism</h2>
@@ -431,44 +460,44 @@
         <div class="figure-caption"><strong>Figure 5:</strong> Arrival time delay \(\Delta t(E)\) for high-energy gamma-ray photons across cosmological baselines under linear and quadratic Lorentz Invariance Violation models.</div>
     </div>
 
-    <h2 id="sec7">7. Critical Assessment: Does this Constitute a "Major Step Forward"?</h2>
+    <h2 id="sec7">7. Comparative Assessment: How Informational Causality Enhances Understanding</h2>
     
     <table>
         <thead>
             <tr>
-                <th style="width: 25%;">Dimension of Progress</th>
-                <th style="width: 20%;">Evaluation</th>
-                <th>Justification & Impact</th>
+                <th style="width: 28%;">Dimension of Inquiry</th>
+                <th style="width: 24%;">Explanatory Gain</th>
+                <th>Foundational & Physical Understanding</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><strong>1. Pedagogical & Conceptual Resolution</strong></td>
-                <td><strong style="color: #16a34a;">Massive Step Forward</strong></td>
+                <td><strong>1. Pedagogical & Conceptual Foundations</strong></td>
+                <td><strong style="color: #16a34a;">Clarifies Core Intuitions</strong></td>
                 <td>Completely eliminates 120 years of fallacious paradoxes: explains why media slow light without altering spacetime; resolves superluminal group velocity claims; clarifies non-signaling in entanglement.</td>
             </tr>
             <tr>
-                <td><strong>2. Axiomatic Kinematic Foundations</strong></td>
-                <td><strong style="color: #2563eb;">Major Step Forward</strong></td>
+                <td><strong>2. Axiomatic Kinematic Structure</strong></td>
+                <td><strong style="color: #2563eb;">Structural Deepening</strong></td>
                 <td>Decouples spacetime geometry from electromagnetic gauge fields. Proves relativity depends on information causality, not photon masslessness (\(m_\gamma = 0\)).</td>
             </tr>
             <tr>
                 <td><strong>3. Operational & Empirical Rigor</strong></td>
-                <td><strong style="color: #d97706;">Moderate Step Forward</strong></td>
-                <td>Leaves standard numerical values unchanged if \(m_\gamma=0\), but provides a rigorous framework for Proca mass tests and Quantum Gravity Modified Dispersion Relations (MDR).</td>
+                <td><strong style="color: #d97706;">Refined Physical Framing</strong></td>
+                <td>Leaves standard numerical values unchanged if \(m_\gamma=0\), while providing a rigorous framework for Proca mass tests and Quantum Gravity Modified Dispersion Relations (MDR).</td>
             </tr>
             <tr>
                 <td><strong>4. Emergent Spacetime & Quantum Gravity</strong></td>
-                <td><strong style="color: #7c3aed;">Revolutionary Paradigm Shift</strong></td>
-                <td>Reverses the ontological arrow: light cones are not fundamental primitives, but macroscopic consequences of microscopic Lieb-Robinson bounds and holographic scrambling velocities (\(v_B\)).</td>
+                <td><strong style="color: #7c3aed;">Transformative Paradigm</strong></td>
+                <td>Reverses the ontological hierarchy: light cones are not fundamental primitives, but macroscopic consequences of microscopic Lieb-Robinson bounds and holographic scrambling velocities (\(v_B\)).</td>
             </tr>
         </tbody>
     </table>
 
     <div class="verdict-box">
-        <h3>Final Doctoral Verdict</h3>
+        <h3>Foundational Synthesis & Verdict</h3>
         <p>
-            While substituting \(c \to c_{\mathcal{I}}\) leaves the quantitative predictions of the vacuum Einstein equations unchanged under \(m_\gamma = 0\), the conceptual and ontological shift from the "speed of light" to the "speed of information" represents a <strong>major step forward in theoretical physics</strong>.
+            While substituting \(c \to c_{\mathcal{I}}\) leaves the quantitative predictions of the vacuum Einstein equations unchanged under \(m_\gamma = 0\), the conceptual and ontological shift from the "speed of light" to the "speed of information" <strong>substantially deepens our understanding of fundamental physics</strong>.
         </p>
         <p>
             It liberates relativity from electromagnetic contingencies, demystifies apparent superluminal phenomena, protects causality against quantum non-locality, and provides the essential conceptual foundation for the "It-from-Qubit" emergence of spacetime in quantum gravity.
@@ -772,9 +801,9 @@
         <div class="figure-caption"><strong>Figure 20:</strong> Cosmic lifecycle of black hole quantum complexity from scrambling to exponential saturation.</div>
     </div>
 
-    <h2 id="sec8">8. Conclusion & Doctoral Research Roadmap</h2>
+    <h2 id="sec8">8. Conclusion & Future Research Directions</h2>
     <p>
-        As a continuing doctoral research agenda, we propose three key research programs:
+        As a continuing foundational research agenda, we propose three key research programs:
     </p>
     <ol>
         <li><strong>Information-Theoretic Metric Derivation:</strong> Formulating an action principle where spacetime curvature \(g_{\mu\nu}\) minimizes quantum Fisher information divergence on causal networks.</li>
@@ -801,7 +830,7 @@
     </ol>
 
     <div class="footer">
-        &copy; 2026 Doctoral Research Project &bull; Center for Quantum Foundations, Relativity, and Emergent Spacetime &bull; Generated for Pair Programming Scientific Study
+        &copy; 2026 Theoretical Physics Research Project &bull; Independent Researcher &bull; Stefan Hertel
     </div>
 </div>
 

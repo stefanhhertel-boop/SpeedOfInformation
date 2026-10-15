@@ -1,7 +1,7 @@
 # Information Theory Close to Black Holes: How the "Speed of Information" Framework Resolves Fundamental Gravitational Paradoxes
 
 **Author:** Stefan Hertel  
-**Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
+**Affiliation:** Independent Researcher  
 **Date:** October 15, 2026  
 **Document:** Advanced Research Paper & Black Hole Information Analysis  
 **Key Literature Analyzed:**

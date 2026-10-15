@@ -4,6 +4,8 @@
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
 \usepackage{hyperref}
 \usepackage{cite}
 \usepackage{microtype}
@@ -14,7 +16,7 @@
 \title{\textbf{From Luminal Kinematics to Informational Causality: Evaluating the Theoretical and Empirical Consequences of Replacing the Speed of Light with the Speed of Information}}
 
 \author[1]{Stefan Hertel}
-\affil[1]{Center for Quantum Foundations, Relativity, and Emergent Spacetime}
+\affil[1]{Independent Researcher}
 \date{October 15, 2026}
 
 \begin{document}
@@ -22,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-For over a century, the fundamental kinematic invariant of the universe, $c \approx 2.99792458 \times 10^8\text{ m/s}$, has carried the historical nomenclature ``the speed of light in vacuum.'' While historically understandable given the derivation of Maxwell's electrodynamics, this terminology has fostered persistent pedagogical confusions, obscured the axiomatic structure of spacetime, and detached the kinematic foundation of relativity from modern developments in quantum information theory, many-body physics, and holographic quantum gravity. In this study, we conduct an extensive theoretical and computational investigation into whether replacing the concept of the ``speed of light'' ($c$) with the ``speed of information'' ($c_{\mathcal{I}}$) represents a substantive, major step forward in theoretical physics. We formalize this transition across four distinct tiers: (i)~\textbf{Axiomatic Spacetime Foundations}, where we prove via group-theoretic and causal order methods that spacetime geometry requires only an invariant causal velocity $c_{\mathcal{I}}$ decoupled from any specific gauge field or massless particle; (ii)~\textbf{Wave Dynamics \& Dispersion Analysis}, demonstrating via Kramers-Kronig analyticity and numerical simulations that while phase and group velocities can exceed $c$ or become negative in dispersive media, the informational front velocity is strictly and universally bounded by $c_{\mathcal{I}}$; (iii)~\textbf{Microcausality and Quantum Information}, illustrating how the no-signaling theorem and Lieb-Robinson bounds in non-relativistic many-body Hamiltonians naturally generate emergent causal information cones ($v_{\text{LR}} \le c_{\mathcal{I}}$); and (iv)~\textbf{Holographic Gravity \& Planck-Scale Physics}, where butterfly velocities $v_B$, out-of-time-ordered correlators (OTOCs), and modified dispersion relations (MDRs) position information flow as the ontological precursor to macroscopic spacetime metric structures. We conclude that while a purely nominal substitution ($c \to c_{\mathcal{I}}$) leaves the quantitative predictions of the standard Einstein-Maxwell action invariant under the condition $m_\gamma = 0$, the conceptual and structural shift to $c_{\mathcal{I}}$ constitutes a \textbf{paradigm shift of the first order}: it resolves long-standing interpretive paradoxes, correctly decouples geometry from gauge-field contingencies (such as non-zero photon mass in Proca theories), and provides the foundational vocabulary required for the ``It-from-Qubit'' emergence of spacetime in quantum gravity.
+For over a century, the fundamental kinematic invariant of the universe, $c \approx 2.99792458 \times 10^8\text{ m/s}$, has carried the historical nomenclature ``the speed of light in vacuum.'' While historically understandable given the derivation of Maxwell's electrodynamics, this terminology has fostered persistent pedagogical confusions, obscured the axiomatic structure of spacetime, and detached the kinematic foundation of relativity from modern developments in quantum information theory, many-body physics, and holographic quantum gravity. In this study, we conduct an extensive theoretical and computational investigation into whether replacing the concept of the ``speed of light'' ($c$) with the ``speed of information'' ($c_{\mathcal{I}}$) provides a deeper, more fundamental understanding of relativistic kinematics, quantum measurement, and emergent spacetime. We formalize this transition across four distinct tiers: (i)~\textbf{Axiomatic Spacetime Foundations}, where we prove via group-theoretic and causal order methods that spacetime geometry requires only an invariant causal velocity $c_{\mathcal{I}}$ decoupled from any specific gauge field or massless particle; (ii)~\textbf{Wave Dynamics \& Dispersion Analysis}, demonstrating via Kramers-Kronig analyticity and numerical simulations that while phase and group velocities can exceed $c$ or become negative in dispersive media, the informational front velocity is strictly and universally bounded by $c_{\mathcal{I}}$; (iii)~\textbf{Microcausality and Quantum Information}, illustrating how the no-signaling theorem and Lieb-Robinson bounds in non-relativistic many-body Hamiltonians naturally generate emergent causal information cones ($v_{\text{LR}} \le c_{\mathcal{I}}$); and (iv)~\textbf{Holographic Gravity \& Planck-Scale Physics}, where butterfly velocities $v_B$, out-of-time-ordered correlators (OTOCs), and modified dispersion relations (MDRs) position information flow as the ontological precursor to macroscopic spacetime metric structures. We conclude that while a purely nominal substitution ($c \to c_{\mathcal{I}}$) leaves the quantitative predictions of the standard Einstein-Maxwell action invariant under the condition $m_\gamma = 0$, the conceptual and structural shift to $c_{\mathcal{I}}$ clarifies fundamental physics: it resolves long-standing interpretive paradoxes, correctly decouples geometry from gauge-field contingencies (such as non-zero photon mass in Proca theories), and provides the foundational vocabulary required for the ``It-from-Qubit'' emergence of spacetime in quantum gravity.
 \end{abstract}
 
 \noindent\textbf{Keywords:} Foundations of Relativity, Quantum Information, Microcausality, Lieb-Robinson Bounds, Holography, Modified Dispersion Relations.
@@ -48,7 +50,7 @@ However, designating $c$ as ``the speed of light'' embedded an incidental materi
     \item \textbf{Disconnection from Modern Quantum Gravity:} In modern holographic dualities (AdS/CFT), tensor network geometries (MERA), and quantum information approaches to spacetime, geometry is recognized as an \emph{emergent} phenomenon arising from quantum entanglement and information processing.
 \end{enumerate}
 
-The central question of this study is: \textbf{Does replacing the concept of the ``speed of light'' with the ``speed of information'' ($c_{\mathcal{I}}$) constitute a major step forward in theoretical physics?}
+The central question of this study is: \textbf{Does replacing the concept of the ``speed of light'' with the ``speed of information'' ($c_{\mathcal{I}}$) help us better understand the fundamental architecture of spacetime, quantum causality, and gravitational dynamics?}
 
 \section{Axiomatic Spacetime Foundations: Spacetime Kinematics without Electromagnetism}
 
@@ -237,12 +239,12 @@ Imposing the \textbf{Entanglement Equilibrium Hypothesis} ($\delta S_{\text{tota
 -\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}} + \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}} = 0 \implies \boxed{G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{\mu\nu}}.
 \end{equation}
 
-To uphold doctoral-level scientific rigor, we explicitly establish the \textbf{Critical Audit Balance Sheet} separating derived structures from assumed inputs:
+To maintain foundational clarity and methodological rigor, we explicitly establish the \textbf{Critical Audit Balance Sheet} separating derived structures from assumed empirical inputs:
 
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{p{4.2cm}cp{8.5cm}}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.8cm} >{\centering\arraybackslash}p{2.6cm} X}
 \toprule
 \textbf{Component} & \textbf{Status} & \textbf{Methodological Role} \\
 \midrule
@@ -260,7 +262,7 @@ To uphold doctoral-level scientific rigor, we explicitly establish the \textbf{C
 \addlinespace
 \textbf{Entanglement Equilibrium} & \textbf{INPUT (Assumed)} & Variational stationarity $\delta S_{\text{total}} = 0$ is an operational postulate analogous to the Second Law. \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \caption{Critical Audit Balance Sheet for the thermodynamic derivation of Einstein's equations.}
 \label{tab:audit_balance}
 \end{table}
@@ -273,25 +275,25 @@ S_{\text{dS}} = \frac{3\pi c_{\mathcal{I}}^5}{G \hbar \Lambda} \implies \Lambda 
 \end{equation}
 While cancelling zero-point loop divergences in bulk QFT remains an open ultraviolet field-theoretic problem, the information-theoretic framework translates the 122-order-of-magnitude volume fine-tuning into an infrared boundary information capacity constraint ($S_{\text{dS}} \approx 10^{122}\text{ bits}$), illustrating how a bounded speed of information $c_{\mathcal{I}}$ sets an upper bound on cosmological curvature.
 
-\section{Diagnostic Evaluation Matrix}
+\section{Comparative Assessment: How Informational Causality Enhances Understanding}
 
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{p{4.2cm}cp{8.5cm}}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.8cm} >{\raggedright\arraybackslash}p{2.8cm} X}
 \toprule
-\textbf{Dimension of Progress} & \textbf{Evaluation} & \textbf{Justification \& Impact} \\
+\textbf{Dimension of Inquiry} & \textbf{Explanatory Gain} & \textbf{Foundational \& Physical Understanding} \\
 \midrule
-\textbf{1. Pedagogical \& Conceptual Resolution} & \textbf{Massive Step Forward} & Eradicates 120 years of fallacious paradoxes: explains media slowing light without modifying spacetime; resolves superluminal group velocity claims; clarifies non-signaling in entanglement. \\
+\textbf{1. Pedagogical \& Conceptual Foundations} & \textbf{Clarifies Core Intuitions} & Eradicates 120 years of fallacious paradoxes: explains why media slowing light does not alter spacetime; resolves pseudo-superluminal group velocity claims; clarifies non-signaling in quantum entanglement. \\
 \addlinespace
-\textbf{2. Axiomatic Kinematic Foundations} & \textbf{Major Step Forward} & Decouples spacetime geometry from electromagnetic gauge fields. Proves relativity depends on information causality, not photon masslessness ($m_\gamma = 0$). \\
+\textbf{2. Axiomatic Kinematic Structure} & \textbf{Structural Deepening} & Decouples spacetime geometry from electromagnetic gauge fields. Proves relativity depends on information causality, not photon masslessness ($m_\gamma = 0$). \\
 \addlinespace
-\textbf{3. Operational \& Empirical Rigor} & \textbf{Moderate Step Forward} & Leaves standard numerical values unchanged if $m_\gamma=0$, but provides precise operational framework for Proca dispersion tests and Quantum Gravity Modified Dispersion Relations (MDR). \\
+\textbf{3. Operational \& Empirical Rigor} & \textbf{Refined Physical Framing} & Leaves standard numerical values unchanged if $m_\gamma=0$, while providing a precise operational framework for Proca dispersion tests and Quantum Gravity Modified Dispersion Relations (MDR). \\
 \addlinespace
-\textbf{4. Emergent Spacetime \& Quantum Gravity} & \textbf{Revolutionary Paradigm Shift} & Reverses the ontological arrow: light cones are not fundamental primitives, but macroscopic consequences of microscopic Lieb-Robinson bounds and holographic scrambling velocities ($v_B$). \\
+\textbf{4. Emergent Spacetime \& Quantum Gravity} & \textbf{Transformative Paradigm} & Reverses the ontological hierarchy: light cones are not fundamental primitives, but macroscopic consequences of microscopic Lieb-Robinson bounds and holographic scrambling velocities ($v_B$). \\
 \bottomrule
-\end{tabular}
-\caption{Diagnostic Evaluation Matrix on the impact of replacing the speed of light with the speed of information.}
+\end{tabularx}
+\caption{Evaluation of how replacing the speed of light with the speed of information deepens theoretical understanding.}
 \label{tab:evaluation}
 \end{table}
 
@@ -308,7 +310,7 @@ The theoretical insights presented herein are supported by five numerical modeli
 
 \section{Conclusion}
 
-The conceptual transition from the ``speed of light'' ($c$) to the ``speed of information'' ($c_{\mathcal{I}}$) represents a major step forward in theoretical physics. It clarifies relativistic kinematics, resolves century-old optical paradoxes, shields quantum causality against superluminal signaling, and correctly aligns the geometric structure of spacetime with the modern ``It-from-Qubit'' paradigm of emergent quantum gravity.
+The conceptual transition from the ``speed of light'' ($c$) to the ``speed of information'' ($c_{\mathcal{I}}$) provides a substantially clearer and more coherent understanding of fundamental physics. It clarifies relativistic kinematics, resolves century-old optical paradoxes, shields quantum causality against superluminal signaling, and correctly aligns the geometric structure of spacetime with the modern ``It-from-Qubit'' paradigm of emergent quantum gravity.
 
 \begin{thebibliography}{99}
 \bibitem{einstein1905} A. Einstein, \emph{Ann. Phys.} \textbf{17}, 891 (1905).
