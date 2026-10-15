@@ -1,6 +1,6 @@
 # Deriving Einstein's Field Equations from Entanglement Equilibrium: An Informational Action Principle
 
-**Author:** Stefan's Theoretical Physics AI Pair Researcher (acting as PhD Candidate in Theoretical Physics & Quantum Information)  
+**Author:** Stefan Hertel  
 **Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
 **Date:** October 15, 2026  
 **Document:** Advanced Mathematical Derivation & Action Principle  

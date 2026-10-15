@@ -1,6 +1,6 @@
 # Cosmological Event Horizons, Dark Energy, and Holographic Complexity: Expanding the Speed of Information Paradigm
 
-**Author:** Stefan's Theoretical Physics AI Pair Researcher (acting as PhD Candidate in Theoretical Physics & Quantum Information)  
+**Author:** Stefan Hertel  
 **Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
 **Date:** October 15, 2026  
 **Document:** Advanced Theoretical Investigation: Cosmology & Holographic Complexity  

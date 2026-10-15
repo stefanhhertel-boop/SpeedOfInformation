@@ -1,6 +1,6 @@
 # Scientific Study: Speed of Light vs. Speed of Information in Theoretical Physics
 
-**Author:** Theoretical Physics AI Pair Researcher (acting as PhD Candidate in Theoretical Physics & Quantum Information)  
+**Author:** Stefan Hertel  
 **Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
 **Date:** October 15, 2026
 

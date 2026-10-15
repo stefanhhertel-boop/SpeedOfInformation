@@ -1,8 +1,7 @@
 # Executive Summary & White Paper: The Speed of Information Paradigm in Theoretical Physics
 
 **Document Title:** From Luminal Kinematics to Informational Spacetime: A Comprehensive Scientific Investigation into Replacing the Speed of Light with the Speed of Information  
-**Lead Author:** Theoretical Physics AI Pair Researcher (acting as PhD Candidate in Theoretical Physics & Quantum Information)  
-**Collaborator & Principal Investigator:** Stefan  
+**Author:** Stefan Hertel  
 **Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
 **Date:** October 15, 2026  
 **Document Type:** Executive Scientific White Paper & Doctoral Synthesis  

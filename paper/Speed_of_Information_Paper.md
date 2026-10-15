@@ -1,6 +1,6 @@
 # From Luminal Kinematics to Informational Causality: Evaluating the Theoretical and Empirical Consequences of Replacing the Speed of Light with the Speed of Information
 
-**Author:** Stefan's Theoretical Physics AI Pair Researcher (acting as PhD Candidate in Theoretical Physics & Quantum Information)  
+**Author:** Stefan Hertel  
 **Affiliation:** Center for Quantum Foundations, Relativity, and Emergent Spacetime  
 **Date:** October 15, 2026  
 **Classification:** Foundations of Physics, General Relativity, Quantum Information, High-Energy Theory  

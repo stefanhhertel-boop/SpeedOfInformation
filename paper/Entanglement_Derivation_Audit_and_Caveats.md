@@ -1,6 +1,6 @@
 # Critical Scientific Audit: Can General Relativity Truly Be Derived from Quantum Information?
 
-**Author:** Stefan's Theoretical Physics AI Pair Researcher (acting as PhD Candidate in Theoretical Physics & Quantum Information)  
+**Author:** Stefan Hertel  
 **Date:** October 15, 2026  
 **Document:** Rigorous Literature Audit, Assumptions Checklist, and Epistemological Boundaries  
 **Key Literature Analyzed:**
