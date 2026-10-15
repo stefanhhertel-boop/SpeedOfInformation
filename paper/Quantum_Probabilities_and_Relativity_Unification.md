@@ -50,21 +50,19 @@ Instead of trying to force quantum probabilities onto a rigid geometric spacetim
 
 ---
 
-## 3. Pillar I: The Quantum Born Rule Derived from Information Causality
+## 3. Pillar I: Tsirelson's Bound and the Born Rule from Information Causality
 
-A profound question in physics has always been: **Why the Born rule?**  
-Why are quantum probabilities given by the square of the amplitude ($P(a) = |\langle a|\psi\rangle|^2$), rather than $|\psi|$ (classical $L^1$ norm) or $|\psi|^4$ or higher-order non-local correlations?
-
-In 1994, Sandu Popescu and Daniel Rohrlich discovered that the No-Signaling theorem alone does not uniquely pick out quantum mechanics. They constructed hypothetical "PR-boxes" that violate Bell's inequality up to the algebraic maximum:
+A foundational question in modern physics is: **Why are quantum correlations bounded at the Tsirelson bound ($S = 2\sqrt{2}$), and why does the Born rule take the $L^2$-norm form $P = |\langle a|\psi\rangle|^2$?**  
+Why are quantum probabilities not governed by classical local realism ($S \le 2.0$), or by hypothetical super-quantum theories such as Popescu-Rohrlich "PR-boxes" that violate Bell's inequality up to the algebraic maximum:
 $$S_{\text{PR}} = 4.0 \quad \text{versus the Quantum Tsirelson Bound } S_{\text{Quantum}} = 2\sqrt{2} \approx 2.828 \quad \text{and Classical } S_{\text{Classical}} \le 2.0.$$
 
-PR-boxes do not allow faster-than-light signaling on their own. Why, then, does nature restrict quantum probabilities strictly to $S \le 2\sqrt{2}$?
+PR-boxes do not allow faster-than-light signaling on their own. Why, then, does nature restrict physical correlators strictly to $S \le 2\sqrt{2}$?
 
 ### The Information Causality Principle (Pawłowski et al., *Nature* 2009)
-The answer was discovered through the principle of **Information Causality**:
-> *If Alice sends $m$ classical bits to Bob at speed $v \le c_{\mathcal{I}}$, the total information Bob can access about Alice’s previously unknown data cannot exceed $m$ bits.*
+The foundational answer was established through the principle of **Information Causality**:
+> *If Alice sends $m$ classical bits to Bob at speed $v \le c_{\mathcal{I}}$, the total information Bob can access about Alice’s previously unknown data cannot exceed $m$ bits, even if they share arbitrary pre-existing non-local correlations.*
 
-Mathematically, let Alice possess a set of $N$ random independent bits $\mathbf{a} = (a_0, a_1, \dots, a_{N-1})$. She sends a message $M$ of $m$ bits to Bob. Bob is given a random index $k \in \{0, \dots, N-1\}$ and outputs a guess $b_k$. Information Causality mandates:
+Mathematically, let Alice possess a database of $N$ random independent bits $\mathbf{a} = (a_0, a_1, \dots, a_{N-1})$. She sends a classical message $M$ of $m$ bits to Bob. Bob is given a random index $k \in \{0, \dots, N-1\}$ and outputs a guess $b_k$. Information Causality mandates:
 $$\sum_{k=0}^{N-1} I(a_k : b_k \mid M) \le m.$$
 
 ```
@@ -83,28 +81,34 @@ $$\sum_{k=0}^{N-1} I(a_k : b_k \mid M) \le m.$$
                       2.0                             2√2     4.0
 ```
 
-### What Our Simulation Proves
-In `Simulation A` (see [Figure 6](file:///home/stefan/Projects/SpeedOfInformation/figures/fig6_information_causality_derivation.svg) and data in [`sim_info_causality.json`](file:///home/stefan/Projects/SpeedOfInformation/data/sim_info_causality.json)):
-- If $S \le 2$ (Classical hidden variables): Bob recovers at most $\approx 0.38$ bits of mutual information.
-- If $S = 2\sqrt{2}$ (Quantum Born Rule): Bob recovers **exactly $1.000$ bit of information**—saturating the causal channel without exceeding it!
-- If $S > 2\sqrt{2}$ (Super-quantum PR-box): Bob recovers $> 1.0$ bit (at $S=4$, Bob gets $2.0$ bits from a 1-bit message!). 
+### Analysis & Scope: Tsirelson Bound vs Full Operational Quantum Mechanics
+In our analytical model (`Simulation A`, see [Figure 6](file:///home/stefan/Projects/SpeedOfInformation/figures/fig6_information_causality_derivation.svg) and data in [`sim_info_causality.json`](file:///home/stefan/Projects/SpeedOfInformation/data/sim_info_causality.json)):
+- If $S \le 2$ (Classical local realism): Bob recovers at most $\approx 0.38$ bits of mutual information from 1 transmitted bit.
+- If $S = 2\sqrt{2}$ (Quantum Tsirelson Bound): Bob recovers **exactly $1.000$ bit of information**—saturating the causal channel without exceeding it!
+- If $S > 2\sqrt{2}$ (Super-quantum PR-box): Bob recovers $> 1.0$ bit (at $S=4$, Bob extracts $2.0$ bits from a 1-bit message).
 
-**Theoretical Breakthrough:**  
-This proves that **the Born probability rule is not an independent postulate of quantum physics; it is the unique probability law mandated by the invariant speed of information $c_{\mathcal{I}}$!** Exceeding the quantum probability bound would allow transmission of information faster than $c_{\mathcal{I}}$ across distributed communication networks.
+**Scope & Formal Rigor:**  
+1. **Correlator Truncation:** Information Causality rigorously proves why correlations cannot exceed Tsirelson's bound ($S \le 2\sqrt{2}$): any theory with $S > 2\sqrt{2}$ would enable distributed communication protocols (van Dam 2005) that transmit information faster than $c_{\mathcal{I}}$.
+2. **From Tsirelson to the Full Born Rule:** While Information Causality fixes the quadratic constraint $\sum_k E_k^2 \le 1$, deriving the full continuous complex Hilbert space Born rule across arbitrary $N$-level systems requires embedding this causal constraint within Generalized Probabilistic Theories (GPTs) equipped with operational axioms (such as Purification and State Tomography; Chiribella, D'Ariano, and Perinotti, *Phys. Rev. A* 2011).
+3. **The Core Result:** The speed of information $c_{\mathcal{I}}$ acts as the physical principle that truncates the space of operational probabilities to the quantum domain.
 
 ---
 
 ## 4. Pillar II: Relational Quantum Mechanics & Causal Diamond Updates
 
-How does the new view resolve the "Instantaneous Collapse vs. Relativity of Simultaneity" conflict?
+How does the new view resolve the long-standing "Instantaneous Collapse vs. Relativity of Simultaneity" conflict?
 
-The resolution lies in **Relational Quantum Mechanics (RQM)** (Rovelli 1996) and **Quantum Reference Frames (QRF)** (Giacomini, Castro-Ruiz, Brukner 2019):
-1. **Quantum states are relational:** A quantum state $|\psi\rangle$ is not an absolute property of a physical system in isolation; it represents the *information acquired by a specific observer $O$ about system $S$*.
-2. **Measurement is a local spacetime event:** When Alice measures an entangled qubit at event $E_A = (t_A, x_A)$, the state update is strictly localized to Alice's causal location.
-3. **No instantaneous action across space:** For Bob, located at space-like separation $(t_B, x_B)$, Alice and the entangled pair remain in an entangled superposition:
+In non-relativistic textbook QM, measurement collapse is assumed to occur instantaneously along a spacelike hyperplane $t = \text{const}$. Under a Lorentz boost, that hyperplane tilts, leading to the well-known paradox where different observers disagree on the temporal sequence of collapses.
+
+In an informational spacetime, this paradox is resolved by recognizing that **state descriptions are operational and relational**:
+
+1. **Relational Quantum Mechanics (RQM) & Local Information:** In RQM (Rovelli 1996) and Quantum Reference Frames (Giacomini, Castro-Ruiz, Brukner 2019), a quantum state is not an absolute property of a physical system in isolation; it encodes the *information acquired by an observer through a localized physical interaction*.
+2. **Local Heisenberg Picture (Everettian Locality):** Equivalently, in the local Heisenberg picture of quantum field theory, operators evolve locally within causal cones, and wave-function collapse is not a physical non-local modification of the spacetime metric.
+3. **Measurement as a Local Spacetime Event:** When Alice measures an entangled qubit at event $E_A = (t_A, x_A)$, her state update is strictly localized to her causal location.
+4. **Bob at Spacelike Separation:** For Bob, located at spacelike separation $(t_B, x_B)$, Alice and the entangled pair remain in an entangled superposition:
    $$|\Psi_{AB}\rangle = \frac{1}{\sqrt{2}} \left( |0\rangle_A |0\rangle_B + |1\rangle_A |1\rangle_B \right).$$
-   Bob’s reduced density matrix is maximally mixed ($\rho_B = \frac{1}{2}\mathbb{I}$).
-4. **Information Propagation at $c_{\mathcal{I}}$:** Bob's state description updates **only when Bob's worldline intersects the future causal cone of event $E_A$**, which propagates at the speed of information $c_{\mathcal{I}}$.
+   Bob’s local reduced density matrix is invariant and maximally mixed ($\rho_B = \frac{1}{2}\mathbb{I}$).
+5. **Information Propagation at $c_{\mathcal{I}}$:** Bob's state description updates **only when Bob's worldline intersects the future causal cone of event $E_A$**, propagating at the speed of information $c_{\mathcal{I}}$.
 
 ```
                      Relational Causal Diamond Evolution
@@ -126,9 +130,9 @@ The resolution lies in **Relational Quantum Mechanics (RQM)** (Rovelli 1996) and
                         x_A              x_B
 ```
 
-Our simulation in `Simulation C` (see [Figure 8](file:///home/stefan/Projects/SpeedOfInformation/figures/fig8_relational_causal_diamonds.svg)) maps this causal geometry explicitly:
-- There is no need for a preferred foliation of spacetime.
-- Observers in different moving frames agree completely on all physical events because state updates are anchored to **Lorentz-invariant causal diamonds** rather than frame-dependent spatial hyperplanes.
+Our geometric mapping in `Simulation C` (see [Figure 8](file:///home/stefan/Projects/SpeedOfInformation/figures/fig8_relational_causal_diamonds.svg)) demonstrates:
+- There is no preferred foliation of spacetime.
+- Observers in different moving frames agree completely on all physical measurement records because state updates are anchored to **Lorentz-invariant causal cones** rather than frame-dependent spatial hyperplanes.
 
 ---
 

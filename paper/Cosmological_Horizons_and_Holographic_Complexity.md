@@ -74,17 +74,17 @@ $$S_{\text{dS}} = \frac{k_B c_{\mathcal{I}}^3 A_{\text{dS}}}{4 G \hbar} = \frac{
 
 ---
 
-## 2. Re-Framing the Cosmological Constant Problem via Information Capacity
+## 2. An Information-Theoretic Horizon Perspective on Dark Energy
 
-The "Cosmological Constant Problem" is widely cited as the worst theoretical failure in physics:
+The "Cosmological Constant Problem" is widely cited as the most severe fine-tuning challenge in theoretical physics:
 - Quantum Field Theory calculates vacuum energy density by summing zero-point modes up to the Planck cutoff:
   $$\rho_{\text{QFT}} \sim \frac{c_{\mathcal{I}}}{\hbar^3} \int_0^{k_{\text{Pl}}} \hbar \omega k^2 dk \sim \frac{c_{\mathcal{I}}^7}{G^2 \hbar} \approx 10^{114}\text{ J/m}^3 \sim M_{\text{Planck}}^4.$$
 - Observational cosmology (Type Ia supernovae and Cosmic Microwave Background) measures:
   $$\rho_{\Lambda}^{\text{obs}} = \frac{\Lambda c_{\mathcal{I}}^4}{8\pi G} \approx 10^{-9}\text{ J/m}^3 \approx 10^{-122} M_{\text{Planck}}^4.$$
-- The discrepancy is **122 orders of magnitude** ($10^{122}$).
+- The naive discrepancy spans **122 orders of magnitude** ($10^{122}$).
 
-### 2.1 The Holographic Information Solution
-In our information-theoretic framework, the equation relating $\Lambda$ to horizon entropy is:
+### 2.1 The Holographic Horizon Capacity Formulation
+In our information-theoretic framework, the Gibbons-Hawking horizon entropy relates $\Lambda$ to the total bit capacity of the causal boundary:
 $$S_{\text{dS}} = \frac{3\pi}{\ell_{\text{Pl}}^2 \Lambda} \implies \boxed{\Lambda = \frac{3\pi}{\ell_{\text{Pl}}^2 S_{\text{dS}}} = \frac{3\pi c_{\mathcal{I}}^3}{G \hbar S_{\text{dS}}}.}$$
 
 ```
@@ -105,12 +105,16 @@ $$S_{\text{dS}} = \frac{3\pi}{\ell_{\text{Pl}}^2 \Lambda} \implies \boxed{\Lambd
        0          122
 ```
 
-In our numerical simulation (`Simulation 2`, see [Figure 18](file:///home/stefan/Projects/SpeedOfInformation/figures/fig18_dark_energy_information_scaling.svg)), we plot $\log_{10}(\Lambda)$ against $\log_{10}(S_{\text{dS}})$:
-- In the Planckian era ($R_{\text{dS}} \sim \ell_{\text{Pl}}$), the universe can store only $S \sim 1\text{ bit}$, yielding $\Lambda \sim M_{\text{Pl}}^4$.
-- In our current universe, the observable cosmological horizon has an area $A \approx 10^{53}\text{ m}^2$, storing:
+In our analytical model (`Simulation 2`, see [Figure 18](file:///home/stefan/Projects/SpeedOfInformation/figures/fig18_dark_energy_information_scaling.svg)), we trace $\log_{10}(\Lambda)$ as a function of $\log_{10}(S_{\text{dS}})$:
+- In the Planckian era ($R_{\text{dS}} \sim \ell_{\text{Pl}}$), the causal horizon can store only $S \sim O(1)\text{ bit}$, yielding $\Lambda \sim M_{\text{Pl}}^4$.
+- In our current universe, the cosmological event horizon has an area $A \approx 10^{53}\text{ m}^2$, storing:
   $$S_{\text{dS}} \approx \frac{A}{4 \ell_{\text{Pl}}^2} \approx 10^{122}\text{ bits}.$$
-- **The Mystery Disappears:** The cosmological constant $\Lambda$ is small **because our universe has an enormous information capacity ($10^{122}\text{ bits}$)**! 
-- Dark energy is not an arbitrary fine-tuned vacuum density; it is the **holographic thermodynamic pressure of the cosmological information horizon**.
+
+### 2.2 Theoretical Assessment & Caveats
+It is essential to state clearly what this holographic perspective accomplishes and what remains open:
+1. **Reframing the Problem:** This relation does *not* dynamically calculate the microscopic cancellation of QFT zero-point vacuum loops (the radiative stability problem in 4D bulk QFT remains an open challenge).
+2. **Boundary Infrared Constraint:** Instead, it reveals that in a holographic theory of spacetime, **bulk vacuum energy is constrained by boundary information capacity**. Rather than fine-tuning 122 decimal places in 4D volume integrals, dark energy emerges as the **holographic thermodynamic pressure of the cosmological boundary horizon**, scaling inversely with total horizon entropy: $\Lambda \propto 1/S_{\text{dS}}$.
+3. **The Cosmological Bit Question:** The foundational question is thereby recast from *"Why is vacuum energy 122 orders of magnitude smaller than Planckian?"* to *"Why has our universe expanded to encompass an informational capacity of $10^{122}\text{ bits}$?"*
 
 ---
 

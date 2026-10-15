@@ -289,7 +289,7 @@
     <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #93c5fd; border-radius: 8px; padding: 18px 24px; margin: 25px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
         <div>
             <div style="font-weight: 800; font-size: 1.05rem; color: #1e3a8a;">Executive Summary & White Paper Available</div>
-            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 6 research pillars, the 20 vector simulations, and the diagnostic evaluation matrix.</div>
+            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 6 research pillars, the 20 vector visualizations and analytical parameter models, and the diagnostic evaluation matrix.</div>
         </div>
         <a href="Executive_Summary_Speed_of_Information.md" style="background: #1d4ed8; color: #ffffff; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Executive Summary &rarr;</a>
     </div>
@@ -391,7 +391,7 @@
 
     <div class="figure-container">
         <img src="../figures/fig4_spacetime_causal_cone.svg" alt="Spacetime Information Cone Emergence">
-        <div class="figure-caption"><strong>Figure 3:</strong> Numerical simulation of operator spreading in a quantum lattice. The bright region represents the emergence of the Lieb-Robinson causal light cone (\(v_{\text{info}} \le v_{\text{LR}}\)).</div>
+        <div class="figure-caption"><strong>Figure 3:</strong> Numerical visualization of the Lieb-Robinson bound for operator spreading in a quantum lattice. The bright region represents the emergence of the Lieb-Robinson causal light cone (\(v_{\text{info}} \le v_{\text{LR}}\)).</div>
     </div>
 
     <div class="figure-container">
@@ -483,14 +483,14 @@
         Under the <strong>Speed of Information (\(c_{\mathcal{I}}\))</strong> framework, both theories unite as two sides of a single information-theoretic foundation:
     </p>
 
-    <h3>1. The Quantum Born Rule is Derived from Information Causality</h3>
+    <h3>1. Information Causality, the Tsirelson Bound, and Quantum Probabilities</h3>
     <p>
-        Why does nature follow the Born probability rule (\(P = |\psi|^2\)) and Tsirelson's bound (\(S \le 2\sqrt{2}\)) rather than stronger non-local correlations like Popescu-Rohrlich (PR) boxes (\(S \le 4.0\))?
+        Why does nature respect the Tsirelson bound (\(S \le 2\sqrt{2}\)) rather than stronger non-local correlations like Popescu-Rohrlich (PR) boxes (\(S \le 4.0\))?
         The principle of <strong>Information Causality</strong> (Pawłowski et al., <em>Nature</em> 2009) proves that if Bob receives \(m\) bits of classical information from Alice (propagated at \(v \le c_{\mathcal{I}}\)), the total mutual information he can gain about Alice's database cannot exceed \(m\) bits:
         \[
         \sum_{k=0}^{N-1} I(a_k : b_k) \le m.
         \]
-        Our simulation proves that the Born rule is the <strong>unique continuous probability law that exactly saturates the causal information boundary without violating it</strong>!
+        Information Causality provides the exact physical boundary separating standard quantum mechanics from super-quantum non-signaling theories: it establishes that any correlation with \(S > 2\sqrt{2}\) allows Bob to extract more information than transmitted. Deriving the full complex Hilbert space Born rule (\(P_i = |\langle \psi_i \mid \psi \rangle|^2\)) requires combining Information Causality with Generalized Probabilistic Theory (GPT) operational axioms (continuous reversibility, state tomography, and purification; Chiribella et al. 2011).
     </p>
     <div class="figure-container">
         <img src="../figures/fig6_information_causality_derivation.svg" alt="Derivation of the Born Rule and Tsirelson Bound from Information Causality">
@@ -515,7 +515,7 @@
         In textbook Copenhagen QM, wave-function collapse is assumed to occur instantaneously along a spatial hyperplane (\(t = \text{const}\)). However, Lorentz boosts tilt this hyperplane (\(t' = \gamma(t - vx/c_{\mathcal{I}}^2)\)), reversing the apparent temporal sequence of collapses and requiring an unphysical preferred frame.
     </p>
     <p>
-        In <strong>Relational Quantum Mechanics</strong>, measurement is a local physical interaction at event \(E_A\). Bob's state description updates <strong>strictly when Bob's worldline enters the future causal cone of \(E_A\)</strong>, propagating at \(v = c_{\mathcal{I}}\). This eliminates the foliation problem and preserves Lorentz invariance.
+        This apparent paradox dissolves when viewed through either <strong>Relational Quantum Mechanics (RQM)</strong> or local unitary evolution (Everettian / Heisenberg picture). In RQM, measurement is a local physical interaction at event \(E_A\). Bob's state description updates <strong>strictly when Bob's worldline intersects the future causal cone of \(E_A\)</strong>, propagating at \(v = c_{\mathcal{I}}\). Similarly, in the Heisenberg picture, local operator algebras commute at spacelike separations (\([\hat{A}(x), \hat{B}(y)] = 0\)), ensuring that information propagation is manifestly local and causal.
     </p>
     <div class="figure-container">
         <img src="../figures/fig8_relational_causal_diamonds.svg" alt="Relational Causal Diamond Updates">
@@ -540,9 +540,9 @@
     <p>
         Around any event \(p\), consider a small geodesic 3-ball of radius \(R\). Its domain of dependence is the causal diamond \(\mathcal{D}(p, R)\), bounded by null horizons. Inside the diamond, the vacuum density matrix is thermal:
         \[
-        \rho_0 = \frac{e^{-\hat{K}}}{\mathcal{Z}}, \quad \hat{K} = \frac{2\pi}{\hbar c_{\mathcal{I}}} \int_{\Sigma_0} \xi^\mu \hat{T}_{\mu\nu} d\Sigma^\nu,
+        \rho_0 = \frac{e^{-\hat{K}}}{\mathcal{Z}}, \quad \hat{K} = \frac{2\pi}{\hbar} \int_{\Sigma_0} \xi^t(r) \hat{T}_{00} d^3x,
         \]
-        where \(\xi^\mu\) is the conformal Killing vector field generating modular flow.
+        where \(\xi^t(r) = \frac{R^2 - r^2}{2 R c_{\mathcal{I}}}\) is the conformal Killing vector field generating modular flow, possessing physical dimensions of time \([\text{s}]\), which renders \(\hat{K}\) strictly dimensionless.
     </p>
     <div class="figure-container">
         <img src="../figures/fig10_causal_diamond_modular_flow.svg" alt="Causal Diamond and Modular Flow">
@@ -551,9 +551,9 @@
 
     <h3>2. The First Law of Entanglement Entropy</h3>
     <p>
-        Under any physical perturbation of the quantum matter state by stress-energy \(T_{\mu\nu}\), the First Law of Entanglement Entropy dictates:
+        Under any physical perturbation of the quantum matter state by stress-energy \(T_{\mu\nu}^{\text{phys}}\), the First Law of Entanglement Entropy dictates:
         \[
-        \delta S_{\text{matter}} = \delta \langle \hat{K} \rangle = \frac{2\pi}{\hbar c_{\mathcal{I}}} \int_{\Sigma_0} \left[ \frac{\pi}{R c_{\mathcal{I}}} (R^2 - r^2) \right] T_{00} d^3x = \frac{16\pi^3 R^4}{15 \hbar c_{\mathcal{I}}^2} T_{00}(p).
+        \delta S_{\text{matter}} = \delta \langle \hat{K} \rangle = \frac{2\pi}{\hbar} \int_0^R 4\pi r^2 \left( \frac{R^2 - r^2}{2 R c_{\mathcal{I}}} \right) T_{00}^{\text{phys}} dr = \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}}.
         \]
     </p>
 
@@ -561,11 +561,11 @@
     <p>
         On the null horizon boundary, Raychaudhuri's equation governs the convergence of null generators:
         \[
-        \frac{d\theta}{d\lambda} = -\frac{1}{2}\theta^2 - \sigma^2 - \frac{1}{c_{\mathcal{I}}^2} R_{\mu\nu} k^\mu k^\nu.
+        \frac{d\theta}{d\lambda} = -\frac{1}{2}\theta^2 - \sigma^2 - R_{\mu\nu} k^\mu k^\nu.
         \]
-        Curvature induces an area deficit \(\delta A = -\frac{4\pi R^4}{15 c_{\mathcal{I}}^2} G_{00}\), reducing the UV boundary entanglement entropy:
+        Curvature induces an area deficit \(\delta A = -\frac{4\pi R^4}{15} G_{00}^{\text{geom}}\) (where \(G_{00}^{\text{geom}}\) has units of \(\text{m}^{-2}\)), reducing the UV boundary entanglement entropy:
         \[
-        \delta S_{\text{UV}} = \frac{c_{\mathcal{I}}^3}{4 G \hbar} \delta A = -\frac{\pi c_{\mathcal{I}} R^4}{15 G \hbar} G_{00}(p).
+        \delta S_{\text{UV}} = \frac{c_{\mathcal{I}}^3}{4 G \hbar} \delta A = -\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}}.
         \]
     </p>
     <div class="figure-container">
@@ -577,9 +577,9 @@
     <p>
         Imposing the <strong>Maximal Entanglement Equilibrium Hypothesis</strong> (\(\delta S_{\text{total}} = \delta S_{\text{UV}} + \delta S_{\text{matter}} = 0\)):
         \[
-        -\frac{\pi c_{\mathcal{I}} R^4}{15 G \hbar} G_{00}(p) + \frac{16\pi^3 R^4}{15 \hbar c_{\mathcal{I}}^2} T_{00}(p) = 0 \implies \boxed{G_{00}(p) = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{00}(p)}.
+        -\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}} + \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}} = 0 \implies \boxed{G_{00}^{\text{geom}} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{00}^{\text{phys}}}.
         \]
-        Demanding this holds for all observer 4-velocities \(u^\mu\) yields the full covariant tensor equation:
+        All geometric factors of \(\pi\), \(R^4\), \(15\), and \(\hbar\) cancel identically without arbitrary adjustments. Demanding this holds for all observer 4-velocities \(u^\mu\) yields the full covariant tensor equation:
         \[
         \boxed{G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{\mu\nu}}.
         \]
@@ -589,7 +589,58 @@
         <div class="figure-caption"><strong>Figure 12:</strong> Exact cancellation between bulk matter entanglement (\(\delta S_{\text{matter}} > 0\)) and boundary area deficit (\(\delta S_{\text{UV}} < 0\)), producing the stationary equilibrium point \(\delta S_{\text{total}} = 0\).</div>
     </div>
 
-    <h3>5. The Einstein-Hilbert Action as Quantum Free Energy</h3>
+    <h3>5. Critical Audit Balance Sheet: Derived vs. Assumed Inputs</h3>
+    <p>
+        To preserve scientific transparency and address peer review requirements, we explicitly catalog what is derived by the thermodynamic equilibrium argument versus what is taken as an empirical input:
+    </p>
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95rem;">
+        <thead>
+            <tr style="background-color: #f1f5f9; border-bottom: 2px solid #cbd5e1;">
+                <th style="padding: 10px 14px; text-align: left;">Component</th>
+                <th style="padding: 10px 14px; text-align: center;">Status</th>
+                <th style="padding: 10px 14px; text-align: left;">Methodological Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px 14px; font-weight: 600;">Einstein Tensor (\(G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu}\))</td>
+                <td style="padding: 10px 14px; text-align: center; color: #16a34a; font-weight: bold;">Derived</td>
+                <td style="padding: 10px 14px;">Arises uniquely from multilinear contraction across all timelike observer 4-velocities \(u^\mu\).</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px 14px; font-weight: 600;">Linear Stress-Energy Coupling (\(T_{\mu\nu}\))</td>
+                <td style="padding: 10px 14px; text-align: center; color: #16a34a; font-weight: bold;">Derived</td>
+                <td style="padding: 10px 14px;">Dictated by modular Hamiltonian flow generating local boost thermalization.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px 14px; font-weight: 600;">Exact Coupling Scaling (\(\kappa = 8\pi G / c_{\mathcal{I}}^4\))</td>
+                <td style="padding: 10px 14px; text-align: center; color: #16a34a; font-weight: bold;">Derived</td>
+                <td style="padding: 10px 14px;">Derived directly from thermodynamic bit-to-energy conversion factors.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px 14px; font-weight: 600;">Stress-Energy Conservation (\(\nabla^\mu T_{\mu\nu} = 0\))</td>
+                <td style="padding: 10px 14px; text-align: center; color: #16a34a; font-weight: bold;">Derived</td>
+                <td style="padding: 10px 14px;">Follows automatically from the contracted Bianchi identity \(\nabla^\mu G_{\mu\nu} \equiv 0\).</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px 14px; font-weight: 600;">Newton's Constant \(G\)</td>
+                <td style="padding: 10px 14px; text-align: center; color: #dc2626; font-weight: bold;">INPUT (Assumed)</td>
+                <td style="padding: 10px 14px;">\(G\) is <em>not</em> computed from pure information; it enters via the Bekenstein-Hawking coefficient \(\eta = c_{\mathcal{I}}^3 / 4G\hbar\).</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #e2e8f0;">
+                <td style="padding: 10px 14px; font-weight: 600;">Smooth Lorentzian Manifold \((M, g_{\mu\nu})\)</td>
+                <td style="padding: 10px 14px; text-align: center; color: #dc2626; font-weight: bold;">INPUT (Assumed)</td>
+                <td style="padding: 10px 14px;">Assumes a pre-existing 4D smooth continuum with Riemann normal coordinates.</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 14px; font-weight: 600;">Entanglement Equilibrium Axiom</td>
+                <td style="padding: 10px 14px; text-align: center; color: #dc2626; font-weight: bold;">INPUT (Assumed)</td>
+                <td style="padding: 10px 14px;">The stationarity \(\delta S_{\text{total}} = 0\) is a variational postulate analogous to the Second Law of Thermodynamics.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>6. The Einstein-Hilbert Action as Quantum Free Energy</h3>
     <p>
         Integrating this equation of state over spacetime yields the macroscopic thermodynamic action:
         \[
@@ -676,13 +727,16 @@
         <div class="figure-caption"><strong>Figure 17:</strong> Recessional velocity \(v_{\text{rec}} / c_{\mathcal{I}}\) vs causal information reachability. The cosmological horizon is a one-way channel capacity boundary.</div>
     </div>
 
-    <h3>2. The Cosmological Constant Problem Re-framed</h3>
+    <h3>2. An Information-Theoretic Horizon Perspective on Dark Energy</h3>
     <p>
-        The 122-order-of-magnitude discrepancy of the cosmological constant is resolved by recognizing that \(\Lambda\) is inversely proportional to the total information capacity of the universe:
+        The 122-order-of-magnitude cosmological constant problem has two distinct facets: (i) why quantum field theory zero-point fluctuations do not generate an enormous Planck-scale vacuum energy, and (ii) why the observed value \(\Lambda_{\text{obs}}\) is positive, tiny, and comparable to the current critical density. While the cancellation of UV loop divergences in bulk QFT remains an open field-theoretic problem, the <strong>Speed of Information (\(c_{\mathcal{I}}\))</strong> framework translates the volume fine-tuning into an infrared boundary information capacity constraint.
+    </p>
+    <p>
+        In de Sitter space bounded by an invariant causal horizon \(R_{\text{dS}} = c_{\mathcal{I}} / H\), the Gibbons-Hawking boundary entropy sets the maximal holographic bit capacity:
         \[
-        S_{\text{dS}} = \frac{3\pi c_{\mathcal{I}}^5}{G \hbar \Lambda} \implies \boxed{\Lambda = \frac{3\pi}{\ell_{\text{Pl}}^2 S_{\text{dS}}}}.
+        S_{\text{dS}} = \frac{\pi R_{\text{dS}}^2}{\ell_{\text{Pl}}^2} = \frac{3\pi c_{\mathcal{I}}^5}{G \hbar \Lambda} \implies \boxed{\Lambda = \frac{3\pi}{\ell_{\text{Pl}}^2 S_{\text{dS}}}}.
         \]
-        Dark energy is tiny (\(\Lambda \sim 10^{-122} M_{\text{Pl}}^4\)) precisely because our observable universe has an enormous horizon capacity (\(S_{\text{dS}} \approx 10^{122}\text{ bits}\)).
+        Rather than fine-tuning 122 decimal places in bulk energy densities, the cosmological constant is inversely proportional to the total information capacity of the universe. Dark energy is tiny (\(\Lambda \sim 10^{-122} M_{\text{Pl}}^4\)) precisely because our observable universe has an enormous boundary horizon capacity (\(S_{\text{dS}} \approx 10^{122}\text{ bits}\)).
     </p>
     <div class="figure-container">
         <img src="../figures/fig18_dark_energy_information_scaling.svg" alt="Dark Energy Information Scaling">

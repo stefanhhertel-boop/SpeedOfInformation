@@ -86,9 +86,9 @@ SpeedOfInformation/
 
 ---
 
-## How to Run Simulations
+## Numerical Visualizations & Analytical Parameter Models
 
-All numerical simulation suites use standard library Python (zero external dependencies):
+All analytical modeling and visualization suites use standard library Python (zero external dependencies):
 
 ```bash
 python3 simulations/run_simulations.py
@@ -97,6 +97,8 @@ python3 simulations/run_entanglement_einstein_derivation.py
 python3 simulations/run_black_hole_information_simulations.py
 python3 simulations/run_cosmology_and_complexity_simulations.py
 ```
+
+These scripts evaluate the exact closed-form analytical solutions, map parameter spaces, and generate high-resolution publication-quality vector diagrams (`.svg`) illustrating the mathematical proofs.
 
 To view the interactive scientific paper with rendered formulas, interactive TOC, and all 20 vector figures:
 - Open `paper/paper_index.html` in your web browser.

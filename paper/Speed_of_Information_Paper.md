@@ -334,6 +334,26 @@ In this framework:
 $$\boxed{\text{Spacetime geometry is an emergent manifestation of quantum information flow.}}$$
 Calling the causal parameter $c$ the "speed of light" is an anachronistic reversal of the causal hierarchy: **light must respect $c$ because light is a quantum field running on a geometry woven by quantum information.**
 
+### 5.3 Deriving Einstein's Equations from Entanglement Equilibrium: Critical Audit Balance Sheet
+
+Following Jacobson (1995, 2016) and Faulkner et al. (2014), the gravitational field equations can be derived from the thermodynamics of quantum entanglement. On any local geodesic causal diamond of radius $R$, the First Law of Entanglement Entropy balances against the Raychaudhuri horizon area deficit:
+$$\delta S_{\text{matter}} = \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}}, \quad \delta S_{\text{UV}} = -\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}}.$$
+
+Imposing the **Entanglement Equilibrium Hypothesis** ($\delta S_{\text{total}} = \delta S_{\text{UV}} + \delta S_{\text{matter}} = 0$) forces:
+$$-\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}} + \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}} = 0 \implies \boxed{G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{\mu\nu}}.$$
+
+To maintain rigorous scientific integrity, we explicitly present the **Critical Audit Balance Sheet** separating what is derived from what is assumed as an empirical input:
+
+| Component | Status | Methodological Role |
+| :--- | :---: | :--- |
+| **Einstein Tensor ($G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu}$)** | **Derived** | Arises uniquely from multilinear contraction across all timelike observer 4-velocities $u^\mu$. |
+| **Linear Stress-Energy Coupling ($T_{\mu\nu}$)** | **Derived** | Dictated by modular Hamiltonian flow generating local boost thermalization. |
+| **Exact Coupling Scaling ($\kappa = 8\pi G / c_{\mathcal{I}}^4$)** | **Derived** | Derived directly from the thermodynamic bit-to-energy conversion factors. |
+| **Conservation Law ($\nabla^\mu T_{\mu\nu} = 0$)** | **Derived** | Follows automatically from the contracted Bianchi identity $\nabla^\mu G_{\mu\nu} \equiv 0$. |
+| **Newton's Constant $G$** | **INPUT (Assumed)** | $G$ is *not* computed from pure information; it enters via the Bekenstein-Hawking coefficient $\eta = c_{\mathcal{I}}^3 / 4G\hbar$. |
+| **Smooth Lorentzian Manifold $(M, g_{\mu\nu})$** | **INPUT (Assumed)** | The derivation assumes a pre-existing 4D smooth continuum with Riemann normal coordinates. |
+| **Entanglement Equilibrium Axiom** | **INPUT (Assumed)** | The stationarity $\delta S_{\text{total}} = 0$ is a variational postulate analogous to the Second Law of Thermodynamics. |
+
 ---
 
 ## 6. Observational & Experimental Signatures

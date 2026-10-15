@@ -54,11 +54,11 @@ graph TD
 * **The Resolution:** Superluminal group velocity is strictly an envelope-reshaping artifact. The physical front velocity (Sommerfeld-Brillouin precursor) carries all new information and strictly propagates at $v_{\text{front}} = c_{\mathcal{I}}$.
 * **Deliverable:** [Figure 1](file:///home/stefan/Projects/SpeedOfInformation/figures/fig1_sommerfeld_brillouin_front.svg) & [`sim1_sommerfeld_brillouin.json`](file:///home/stefan/Projects/SpeedOfInformation/data/sim1_sommerfeld_brillouin.json).
 
-### Pillar 3: Deriving Quantum Probabilities from Information Causality
-* **Why the Born Rule?** Why are quantum probabilities given by $P = |\psi|^2$ (Tsirelson's bound $S = 2\sqrt{2}$) rather than stronger non-local correlations (such as Popescu-Rohrlich PR-boxes with $S = 4$)?
+#### Pillar 3: Information Causality & Tsirelson's Bound
+* **Why the Tsirelson Bound?** Why are quantum non-local correlations bounded strictly at $S = 2\sqrt{2} \approx 2.828$, rather than the classical limit ($S \le 2.0$) or stronger non-local correlations (such as Popescu-Rohrlich PR-boxes with $S = 4.0$)?
 * **The Discovery:** Under the principle of **Information Causality** (Pawłowski et al., *Nature* 2009), if Bob receives $m$ bits of classical information from Alice at speed $v \le c_{\mathcal{I}}$, the mutual information he can recover about Alice's database cannot exceed $m$ bits: $\sum I(a_k : b_k) \le m$.
-* **The Result:** The Born rule is the **unique continuous probability law that exactly saturates the causal information capacity ($1.0\text{ bit}$) without violating $c_{\mathcal{I}}$**.
-* **Resolving Collapse:** In **Relational Quantum Mechanics (RQM)**, measurement is a local physical interaction. State updates propagate strictly within future causal cones at $v \le c_{\mathcal{I}}$, eliminating the unphysical frame-dependent collapse hyperplane.
+* **The Result:** The Tsirelson bound is the **unique boundary that exactly saturates causal information capacity ($1.0\text{ bit}$) without violating $c_{\mathcal{I}}$**. Tracing this causal constraint through Generalized Probabilistic Theories (GPTs) with operational purification axioms (Chiribella et al. 2011) yields the continuous $L^2$-norm Born rule.
+* **Resolving Collapse:** In **Relational Quantum Mechanics (RQM)** and the local Heisenberg picture, measurement is a local physical interaction. State updates propagate strictly within future causal cones at $v \le c_{\mathcal{I}}$, eliminating the unphysical frame-dependent collapse hyperplane.
 * **Deliverable:** [Figure 6](file:///home/stefan/Projects/SpeedOfInformation/figures/fig6_information_causality_derivation.svg), [Figure 8](file:///home/stefan/Projects/SpeedOfInformation/figures/fig8_relational_causal_diamonds.svg), & [`sim_info_causality.json`](file:///home/stefan/Projects/SpeedOfInformation/data/sim_info_causality.json).
 
 ### Pillar 4: General Relativity Derived as an Equation of State
@@ -80,7 +80,7 @@ graph TD
 
 ### Pillar 6: Cosmological Horizons & Holographic Quantum Complexity
 * **Cosmological Event Horizons in de Sitter Space:** Galaxies beyond $R_{\text{dS}} = c_{\mathcal{I}} / H$ recede faster than $c_{\mathcal{I}}$, but local comoving frames preserve $c_{\mathcal{I}}$. $R_{\text{dS}}$ is an inside-out channel reachability horizon.
-* **The Cosmological Constant Problem Re-framed:** Dark energy is inversely proportional to the horizon information capacity: $\Lambda = 3\pi / (\ell_{\text{Pl}}^2 S_{\text{dS}})$. The cosmological constant is $10^{-122} M_{\text{Pl}}^4$ precisely because our universe stores $S_{\text{dS}} \approx 10^{122}\text{ bits}$.
+* **An Informational Horizon Perspective on Dark Energy:** The Gibbons-Hawking relation links $\Lambda$ to horizon information capacity: $\Lambda = 3\pi / (\ell_{\text{Pl}}^2 S_{\text{dS}})$. This reformulates the 122-order-of-magnitude volume fine-tuning of QFT zero-point energy into an infrared boundary information capacity constraint ($S_{\text{dS}} \approx 10^{122}\text{ bits}$).
 * **Complexity = Action Saturates Lloyd's Bound:** While exterior entanglement entropy saturates, the interior wormhole volume grows linearly, compiling quantum computational complexity at the maximal physical rate:
   $$\boxed{\frac{d\mathcal{C}}{dt} = \frac{2 M c_{\mathcal{I}}^2}{\pi \hbar}}.$$
   Black hole interiors are the fastest quantum computers in nature, running at the clock speed of $c_{\mathcal{I}}$.
