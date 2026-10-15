@@ -38,13 +38,15 @@ SpeedOfInformation/
 │   ├── Entanglement_Derivation_Audit_and_Caveats.md      # Critical scientific audit & assumptions checklist
 │   ├── Black_Hole_Information_Theory_and_Horizon_Dynamics.md # In-depth analysis of Black Holes, Scrambling, & Wormholes
 │   ├── Cosmological_Horizons_and_Holographic_Complexity.md # Analysis of de Sitter Horizons, Dark Energy, & Complexity
+│   ├── Polariton_Information_Overhead_and_Slow_Light.md # Slow Light & Stopped Light as Quantum Memory Loading
 │   └── paper_index.html                                  # Interactive HTML reader with MathJax and embedded SVGs
 ├── simulations/
 │   ├── run_simulations.py                                # Suite 1: Optical, Proca, Lieb-Robinson, & MDR
 │   ├── run_quantum_relativity_simulations.py             # Suite 2: Info Causality, Fisher Metric, RQM, Page Curve
 │   ├── run_entanglement_einstein_derivation.py           # Suite 3: Causal Diamonds, Equilibrium Balance, Raychaudhuri
 │   ├── run_black_hole_information_simulations.py         # Suite 4: Scrambling, Hayden-Preskill, Wormholes, Bekenstein
-│   └── run_cosmology_and_complexity_simulations.py       # Suite 5: de Sitter Horizon, Dark Energy Lambda, Complexity = Action
+│   ├── run_cosmology_and_complexity_simulations.py       # Suite 5: de Sitter Horizon, Dark Energy Lambda, Complexity = Action
+│   └── run_polariton_information_simulation.py           # Suite 6: Polariton Mixing, QSL Delay, & Pulse Compression
 ├── figures/
 │   ├── fig1_sommerfeld_brillouin_front.svg               # Front velocity vs superluminal peak in dispersive media
 │   ├── fig2_proca_photon_velocity.svg                    # Massive photon velocity dispersion vs causal metric
@@ -65,7 +67,8 @@ SpeedOfInformation/
 │   ├── fig17_cosmological_event_horizon.svg              # Cosmological event horizon in de Sitter space
 │   ├── fig18_dark_energy_information_scaling.svg         # Dark energy Lambda as inverse horizon entropy density
 │   ├── fig19_holographic_complexity_growth.svg           # Complexity = Action linear growth at Lloyd's bound
-│   └── fig20_complexity_four_epochs.svg                  # The Four Epochs of Quantum Complexity
+│   ├── fig20_complexity_four_epochs.svg                  # The Four Epochs of Quantum Complexity
+│   └── fig21_polariton_information_overhead.svg          # Polariton Information Overhead & Slow Light in Matter
 └── data/
     ├── sim1_sommerfeld_brillouin.json                    # Numerical output from Simulation 1
     ├── sim2_proca_dispersion.json                        # Numerical output from Simulation 2
@@ -83,7 +86,8 @@ SpeedOfInformation/
     ├── sim_cosmological_horizon.json                     # Numerical output from Cosmological Horizon Simulation
     ├── sim_dark_energy_info.json                         # Numerical output from Dark Energy Scaling Simulation
     ├── sim_holographic_complexity.json                   # Numerical output from Complexity Growth Simulation
-    └── sim_complexity_epochs.json                        # Numerical output from Complexity Epochs Simulation
+    ├── sim_complexity_epochs.json                        # Numerical output from Complexity Epochs Simulation
+    └── sim_polariton_information.json                    # Numerical output from Polariton Information Simulation
 ```
 
 ---
@@ -98,9 +102,10 @@ python3 simulations/run_quantum_relativity_simulations.py
 python3 simulations/run_entanglement_einstein_derivation.py
 python3 simulations/run_black_hole_information_simulations.py
 python3 simulations/run_cosmology_and_complexity_simulations.py
+python3 simulations/run_polariton_information_simulation.py
 ```
 
 These scripts evaluate the exact closed-form analytical solutions, map parameter spaces, and generate high-resolution publication-quality vector diagrams (`.svg`) illustrating the mathematical proofs.
 
-To view the interactive scientific paper with rendered formulas, interactive TOC, and all 20 vector figures:
+To view the interactive scientific paper with rendered formulas, interactive TOC, and all 21 vector figures:
 - Open `paper/paper_index.html` in your web browser.

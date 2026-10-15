@@ -1,0 +1,102 @@
+{
+  "simulation": "Polariton Information Overhead and Quantum Slow Light",
+  "author": "Stefan Hertel",
+  "affiliation": "Independent Researcher",
+  "date": "2026-10-15",
+  "physical_constants": {
+    "c_info_m_s": 299792458.0
+  },
+  "benchmarks": {
+    "Vacuum": {
+      "ratio": 0.0,
+      "v_frac": 1.0,
+      "v_phys": 299792458.0
+    },
+    "Air": {
+      "ratio": 0.0003,
+      "v_frac": 0.9997000899730081,
+      "v_phys": 299702547.23582923
+    },
+    "Water": {
+      "ratio": 0.33,
+      "v_frac": 0.7518796992481203,
+      "v_phys": 225407863.15789473
+    },
+    "Dense Glass": {
+      "ratio": 0.9,
+      "v_frac": 0.5263157894736842,
+      "v_phys": 157785504.21052632
+    },
+    "BEC Slow Light (Hau 1999)": {
+      "ratio": 17600000.0,
+      "v_frac": 5.6818181818181815e-08,
+      "v_phys": 17.0
+    },
+    "Stopped Light (EIT Memory)": {
+      "ratio": 1000000000000.0,
+      "v_frac": 1e-12,
+      "v_phys": 0.0
+    }
+  },
+  "sample_points": {
+    "thetas_deg": [
+      0.0,
+      9.0,
+      18.0,
+      27.0,
+      36.0,
+      45.0,
+      54.0,
+      63.0,
+      72.0,
+      81.0,
+      90.0
+    ],
+    "photonic_fractions": [
+      1.0,
+      0.9755282581475768,
+      0.9045084971874736,
+      0.7938926261462367,
+      0.6545084971874737,
+      0.5000000000000001,
+      0.3454915028125263,
+      0.20610737385376346,
+      0.0954915028125263,
+      0.02447174185242323,
+      3.749399456654644e-33
+    ],
+    "atomic_fractions": [
+      0.0,
+      0.024471741852423214,
+      0.09549150281252627,
+      0.2061073738537634,
+      0.3454915028125263,
+      0.4999999999999999,
+      0.6545084971874737,
+      0.7938926261462365,
+      0.9045084971874736,
+      0.9755282581475768,
+      1.0
+    ],
+    "entanglement_entropy_bits": [
+      0.0,
+      0.1658605590970349,
+      0.4545388514715072,
+      0.7339759413257576,
+      0.9299770054431931,
+      1.0,
+      0.9299770054431931,
+      0.733975941325758,
+      0.4545388514715069,
+      0.1658605590970351,
+      0.0
+    ]
+  },
+  "summary_findings": [
+    "Photons slow down in matter because they hybridize into polaritons with non-zero matter memory fraction sin^2(theta).",
+    "The refractive index n_g = 1 + (g^2 N / Omega_c^2) measures the ratio of quantum information loaded into atomic spin memory vs bare field flux.",
+    "Each atomic interaction imposes a finite quantum speed limit dwell time tau_dwell = pi hbar / (2 g).",
+    "In Bose-Einstein condensates (Hau 1999), 99.99999% of the quantum state is stored in atomic spin coherence, compressing a 300-meter vacuum packet into 17 micrometers at 17 m/s.",
+    "Causal velocity c_info remains strictly invariant throughout all dispersive and slow-light media."
+  ]
+}

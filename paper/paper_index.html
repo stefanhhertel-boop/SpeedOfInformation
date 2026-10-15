@@ -310,6 +310,7 @@
             <li><a href="#sec7d">7.7 Information Theory Close to Black Holes: Scrambling, Holography, & Wormholes</a></li>
             <li><a href="#sec7e">7.8 Cosmological Horizons & Dark Energy as Information Capacity</a></li>
             <li><a href="#sec7f">7.9 Holographic Quantum Complexity & Lloyd's Computational Bound</a></li>
+            <li><a href="#sec7g">7.10 Polariton Information Overhead & Slow Light in Matter</a></li>
             <li><a href="#sec8">8. Conclusion & Future Research Directions</a></li>
             <li><a href="#references">References</a></li>
         </ul>
@@ -318,7 +319,7 @@
     <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #93c5fd; border-radius: 8px; padding: 18px 24px; margin: 25px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
         <div>
             <div style="font-weight: 800; font-size: 1.05rem; color: #1e3a8a;">Executive Summary & White Paper Available</div>
-            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 6 research pillars, the 20 vector visualizations and analytical parameter models, and the comparative evaluation matrix.</div>
+            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 7 research pillars, the 21 vector visualizations and analytical parameter models, and the comparative evaluation matrix.</div>
         </div>
         <a href="Executive_Summary_Speed_of_Information.md" style="background: #1d4ed8; color: #ffffff; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Executive Summary &rarr;</a>
     </div>
@@ -801,6 +802,64 @@
         <div class="figure-caption"><strong>Figure 20:</strong> Cosmic lifecycle of black hole quantum complexity from scrambling to exponential saturation.</div>
     </div>
 
+    <h2 id="sec7g">7.10 Polariton Information Overhead &amp; Slow Light in Matter</h2>
+    <p>
+        For over a century, the observation that light travels slower in transparent matter (\(v &lt; c_{\mathcal{I}}\)) has been treated classically via the Ewald-Oseen extinction theorem as secondary dipole wave interference. At the fundamental quantum information level, however, a profound question arises:
+        <em>Why does an optical excitation take longer to traverse matter if local electromagnetic fields strictly propagate at \(c_{\mathcal{I}}\)?</em>
+    </p>
+
+    <h3>1. The Refractive Index as an Information Overhead Factor</h3>
+    <p>
+        Stefan Hertel's insight establishes that <strong>light slows down in matter because it continuously loads, writes, and processes quantum state information into the internal degrees of freedom of the atomic medium</strong>.
+        In vacuum, a photon carries zero information overhead (\(S_{\text{ent}} = 0\)) and propagates unimpeded at the invariant spacetime channel capacity \(c_{\mathcal{I}}\).
+        In matter, the photon couples to atomic transitions to form a hybrid quasiparticle&mdash;a <strong>dark-state polariton</strong>:
+        \[
+        \hat{\Psi}(z, t) = \cos\theta \hat{\mathcal{E}}(z, t) - \sin\theta \sqrt{N} \hat{S}(z, t),
+        \]
+        where \(\hat{\mathcal{E}}\) is the probe field, \(\hat{S}\) is the collective atomic spin coherence operator, and \(\tan\theta = g\sqrt{N}/\Omega_c\) is the polariton mixing angle.
+    </p>
+    <p>
+        The polariton equations of motion yield the group velocity:
+        \[
+        \boxed{v_g = c_{\mathcal{I}} \cos^2\theta = \frac{c_{\mathcal{I}}}{1 + \frac{g^2 N}{\Omega_c^2}} = \frac{c_{\mathcal{I}}}{1 + \frac{\mathcal{I}_{\text{matter}}}{\mathcal{I}_{\text{photon}}}} = \frac{c_{\mathcal{I}}}{n_g}}.
+        \]
+        The refractive group index \(n_g\) is therefore fundamentally an <strong>Information Overhead Factor</strong>: the ratio of quantum information loaded into matter memory registers relative to electromagnetic channel capacity.
+    </p>
+
+    <div class="figure-container">
+        <img src="../figures/fig21_polariton_information_overhead.svg" alt="Polariton Information Overhead and Slow Light">
+        <div class="figure-caption"><strong>Figure 21:</strong> Polariton Information Overhead &amp; Slow Light. <strong>Panel A:</strong> Polariton state partition (\(\cos^2\theta, \sin^2\theta\)) and bipartite entanglement entropy \(S_{\text{ent}}\) peaking at 1.0 bit at equal mixing. <strong>Panel B:</strong> Group velocity deceleration \(v_g / c_{\mathcal{I}}\) across 7 orders of magnitude vs memory ratio. <strong>Panel C:</strong> Cumulative quantum memory delay \(\Delta t_{\text{delay}}\) governed by the Margolus-Levitin QSL dwell time. <strong>Panel D:</strong> Spatial pulse compression from 300 m in vacuum to 17 &mu;m in Hau's slow-light BEC.</div>
+    </div>
+
+    <h3>2. Quantum Speed Limits &amp; Atomic Dwell Time</h3>
+    <p>
+        Why does transferring quantum information into matter take time?
+        By the <strong>Mandelstam-Tamm</strong> and <strong>Margolus-Levitin</strong> Quantum Speed Limit (QSL) theorems, an orthogonal quantum state transition under dipole coupling \(g\) requires a strictly non-zero minimum dwell time:
+        \[
+        \tau_{\text{dwell}} \ge \frac{\pi \hbar}{2g}.
+        \]
+        When a pulse traverses distance \(L\), it encounters \(\Delta N = \rho_{\text{atom}} \sigma_{\text{cross}} L\) atomic memory centers. The macroscopic optical delay is simply the sum of quantum processing dwell times:
+        \[
+        \Delta t_{\text{delay}} = \sum_j \tau_{\text{dwell}, j} = \frac{L (n_g - 1)}{c_{\mathcal{I}}}.
+        \]
+        The refractive index excess \((n - 1)\) is the spatial density of quantum information processing delay imposed by atomic memory registers.
+    </p>
+
+    <h3>3. Hau's Harvard BEC Experiment &amp; Stopped Light</h3>
+    <p>
+        In Lene Hau's landmark 1999 Harvard experiment, light was slowed to \(17\text{ m/s}\) in an ultracold sodium Bose-Einstein Condensate (\(n_g \approx 1.76 \times 10^7\)). Under the polariton information framework, this bicycle-speed propagation is understood directly: the excitation is <strong>99.999994% atomic spin memory</strong> and only <strong>0.000006% bare light</strong>!
+    </p>
+    <p>
+        This massive information loading produces <strong>spatial pulse compression</strong>: a 300-meter-long vacuum pulse (\(\Delta t = 1.0\,\mu\text{s}\)) is compressed to just \(17\,\mu\text{m}\), packing all optical bits into a microscopic BEC cloud smaller than a human hair.
+        When the control laser is adiabatically switched off (\(\Omega_c \to 0\)), the group velocity drops to zero (\(v_g = 0\text{ m/s}\))&mdash;light is completely frozen and stored as pure atomic spin coherence. When the control beam is restored, the information is written back to the field and departs at \(c_{\mathcal{I}}\).
+    </p>
+
+    <h3>4. Spacetime Invariance Preserved</h3>
+    <p>
+        Crucially, throughout slow and stopped light experiments, the invariant metric speed of spacetime \(c_{\mathcal{I}}\) <strong>never changes</strong>. The discontinuous wavefront (the Sommerfeld-Brillouin front) still propagates at \(c_{\mathcal{I}}\) through the BEC before any atom can respond.
+        Light in matter travels slower not because spacetime is modified, but because the excitation is a polariton burdened by the quantum information processing overhead of matter.
+    </p>
+
     <h2 id="sec8">8. Conclusion & Future Research Directions</h2>
     <p>
         As a continuing foundational research agenda, we propose three key research programs:
@@ -820,6 +879,8 @@
         <li>Sommerfeld, A. (1914). "Über die Fortpflanzung des Lichtes in dispergierenden Medien." <em>Annalen der Physik</em>, 349(10), 177–202.</li>
         <li>Brillouin, L. (1914). "Über die Fortpflanzung des Lichtes in dispergierenden Medien." <em>Annalen der Physik</em>, 349(10), 203–240.</li>
         <li>Wang, L. J., Kuzmich, A., & Dogariu, A. (2000). "Gain-assisted superluminal light propagation." <em>Nature</em>, 406(6793), 277–279.</li>
+        <li>Hau, L. V., Harris, S. E., Dutton, Z., & Behroozi, C. H. (1999). "Light speed reduction to 17 metres per second in an ultracold atomic gas." <em>Nature</em>, 397(6720), 594–598.</li>
+        <li>Fleischhauer, M., & Lukin, M. D. (2000). "Dark-State Polaritons in Electromagnetically Induced Transparency." <em>Phys. Rev. Lett.</em>, 84(22), 5094–5097.</li>
         <li>Lieb, E. H., & Robinson, D. W. (1972). "The finite group velocity of quantum spin systems." <em>Commun. Math. Phys.</em>, 28(3), 251–257.</li>
         <li>Maldacena, J. (1998). "The Large N Limit of Superconformal Field Theories." <em>Adv. Theor. Math. Phys.</em>, 2(2), 231–252.</li>
         <li>Ryu, S., & Takayanagi, T. (2006). "Holographic Derivation of Entanglement Entropy." <em>Phys. Rev. Lett.</em>, 96(18), 181602.</li>

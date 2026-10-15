@@ -27,9 +27,9 @@ $$\boxed{\begin{array}{c}
 
 ---
 
-## 2. Executive Synthesis of the Six Core Pillars
+## 2. Executive Synthesis of the Seven Core Pillars
 
-Over the course of this study, we formulated, mathematically derived, and numerically simulated six major pillars demonstrating the supremacy of the **Speed of Information ($c_{\mathcal{I}}$)** framework:
+Over the course of this study, we formulated, mathematically derived, and numerically simulated seven major pillars demonstrating the supremacy of the **Speed of Information ($c_{\mathcal{I}}$)** framework:
 
 ```mermaid
 graph TD
@@ -39,6 +39,7 @@ graph TD
     A --> E["4. Emergence of General Relativity<br>(Entanglement Equilibrium)"]
     A --> F["5. Black Hole Horizon Physics<br>(Fast Scrambling & ER=EPR)"]
     A --> G["6. Cosmology & Complexity<br>(Dark Energy & Lloyd's Bound)"]
+    A --> H["7. Slow Light & Quantum Memory<br>(Polariton Information Overhead)"]
 ```
 
 ### Pillar 1: Spacetime Kinematics Independent of Electromagnetism
@@ -85,6 +86,14 @@ graph TD
   Black hole interiors are the fastest quantum computers in nature, running at the clock speed of $c_{\mathcal{I}}$.
 * **Deliverable:** [Figure 17](file:///home/stefan/Projects/SpeedOfInformation/figures/fig17_cosmological_event_horizon.svg), [Figure 18](file:///home/stefan/Projects/SpeedOfInformation/figures/fig18_dark_energy_information_scaling.svg), [Figure 19](file:///home/stefan/Projects/SpeedOfInformation/figures/fig19_holographic_complexity_growth.svg), [Figure 20](file:///home/stefan/Projects/SpeedOfInformation/figures/fig20_complexity_four_epochs.svg), & [`sim_holographic_complexity.json`](file:///home/stefan/Projects/SpeedOfInformation/data/sim_holographic_complexity.json).
 
+### Pillar 7: Polariton Information Overhead & Slow Light in Matter
+* **The Foundational Puzzle:** For over a century, light slowing down in matter ($v < c$) has been described as classical interference. But why does an electromagnetic excitation take longer to cross matter if local fields always propagate at $c_{\mathcal{I}}$?
+* **The Information-Theoretic Resolution:** Stefan Hertel's insight establishes that light slows down because it **loads, writes, and processes quantum state information into the internal atomic degrees of freedom**. The refractive index $n$ is an **Information Overhead Factor**:
+  $$v_g = c_{\mathcal{I}} \cos^2\theta = \frac{c_{\mathcal{I}}}{1 + \frac{g^2 N}{\Omega_c^2}} = \frac{c_{\mathcal{I}}}{1 + \frac{\mathcal{I}_{\text{matter}}}{\mathcal{I}_{\text{photon}}}} = \frac{c_{\mathcal{I}}}{n_g}.$$
+* **Dark-State Polaritons & Entanglement Loading:** The propagating state is a hybrid quasiparticle $\hat{\Psi} = \cos\theta \hat{\mathcal{E}} - \sin\theta \sqrt{N}\hat{S}$. In vacuum, $\theta = 0$, $S_{\text{ent}} = 0$, and light moves unimpeded at $c_{\mathcal{I}}$. In matter, each atomic interaction imposes a **Mandelstam-Tamm / Margolus-Levitin Quantum Speed Limit (QSL)** dwell time $\tau_{\text{dwell}} \ge \pi\hbar / (2g)$. Refractive delay is the cumulative processing time in atomic memory.
+* **Experimental Proof:** In ultracold sodium BECs (Lene Hau 1999), light slows to $17\text{ m/s}$ because the excitation is $99.999994\%$ atomic spin memory; a 300-meter vacuum pulse compresses to $17\text{ }\mu\text{m}$. Ramping the control field to zero halts light entirely ($v_g = 0\text{ m/s}$), storing 100% of the quantum state in stationary atomic spin coherence. Spacetime's invariant speed $c_{\mathcal{I}}$ never changes.
+* **Deliverable:** [Figure 21](file:///home/stefan/Projects/SpeedOfInformation/figures/fig21_polariton_information_overhead.svg), [`Polariton_Information_Overhead_and_Slow_Light.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Polariton_Information_Overhead_and_Slow_Light.md), & [`sim_polariton_information.json`](file:///home/stefan/Projects/SpeedOfInformation/data/sim_polariton_information.json).
+
 ---
 
 ## 3. The Dual Master Role of the Speed of Information
@@ -119,6 +128,7 @@ Our research uncovers that $c_{\mathcal{I}}$ is the master operational constant 
 | **4. Emergent Gravitational Dynamics** | **Revolutionary Paradigm Shift** | Derives Einstein's field equations and Einstein-Hilbert action as an equation of state of quantum entanglement. Demystifies why quantizing the metric fails. |
 | **5. Black Hole & Horizon Information** | **Revolutionary Paradigm Shift** | Re-defines horizons as informational boundaries. Proves that ER=EPR traversable wormholes are quantum teleportation channels protected by $c_{\mathcal{I}}$. |
 | **6. Cosmology & Quantum Complexity** | **Revolutionary Paradigm Shift** | Re-frames dark energy as inverse cosmological horizon capacity ($10^{-122}$). Proves black hole interiors saturate Lloyd's computational bound ($2Mc_{\mathcal{I}}^2/\pi\hbar$). |
+| **7. Slow Light & Polariton Information** | **Conceptual & Microscopic Synthesis** | Proves that refractive deceleration in matter ($v < c_{\mathcal{I}}$) is an information loading overhead into atomic spin registers bounded by the Margolus-Levitin Quantum Speed Limit. Spacetime speed $c_{\mathcal{I}}$ remains strictly invariant. |
 
 ---
 
@@ -146,6 +156,9 @@ A credible scientific white paper must clearly distinguish between physical inpu
 │                                         │ 4. Conformal/Lorentz symmetry of local QFT   │
 │ 5. Exact saturation of Lloyd's bound    │    (needed for modular Hamiltonian).         │
 │    for black hole complexity (2Mc_I²/πℏ)│                                              │
+│                                         │                                              │
+│ 6. Refractive group index as polariton  │ 5. Three-level atomic dipole coupling g and  │
+│    information overhead n_g = 1 + I_m/I_γ│   control Rabi frequency Ω_c (optics).     │
 └─────────────────────────────────────────┴──────────────────────────────────────────────┘
 ```
 
@@ -162,11 +175,12 @@ All assets have been created, validated, and documented in the workspace:
 4. [`Entanglement_Derivation_Audit_and_Caveats.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Entanglement_Derivation_Audit_and_Caveats.md): Critical scientific audit and assumptions checklist.
 5. [`Black_Hole_Information_Theory_and_Horizon_Dynamics.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Black_Hole_Information_Theory_and_Horizon_Dynamics.md): Horizons as informational boundaries, fast scrambling, Hayden-Preskill mirrors, and ER=EPR traversable wormholes.
 6. [`Cosmological_Horizons_and_Holographic_Complexity.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Cosmological_Horizons_and_Holographic_Complexity.md): de Sitter reachability, dark energy scaling $\Lambda(S_{\text{dS}})$, and Complexity = Action saturation of Lloyd's bound.
-7. [`Executive_Summary_Speed_of_Information.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Executive_Summary_Speed_of_Information.md): This overarching synthesis and executive white paper.
+7. [`Polariton_Information_Overhead_and_Slow_Light.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Polariton_Information_Overhead_and_Slow_Light.md): Formal derivation of slow and stopped light as quantum information loading and Margolus-Levitin dwell time.
+8. [`Executive_Summary_Speed_of_Information.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Executive_Summary_Speed_of_Information.md): Overarching synthesis and executive white paper.
 
 ### 2. Publication Documents
 * [`Speed_of_Information_Paper.tex`](file:///home/stefan/Projects/SpeedOfInformation/paper/Speed_of_Information_Paper.tex): Publication-ready LaTeX source formatted for Physical Review D / Foundations of Physics.
-* [`paper_index.html`](file:///home/stefan/Projects/SpeedOfInformation/paper/paper_index.html): Interactive web edition with embedded MathJax formula rendering, responsive layout, table of contents, and all 20 vector diagrams.
+* [`paper_index.html`](file:///home/stefan/Projects/SpeedOfInformation/paper/paper_index.html): Interactive web edition with embedded MathJax formula rendering, responsive layout, table of contents, and all 21 vector diagrams.
 
 ### 3. Numerical Simulation Engines (Python Standard Library)
 1. [`run_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_simulations.py): Suite 1 (Optical Wavefronts, Proca Dispersion, Lieb-Robinson Cones, Quantum Gravity MDR).
@@ -174,12 +188,13 @@ All assets have been created, validated, and documented in the workspace:
 3. [`run_entanglement_einstein_derivation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_entanglement_einstein_derivation.py): Suite 3 (Causal Diamond Flow, Equilibrium Balance, Raychaudhuri Geodesic Focusing).
 4. [`run_black_hole_information_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_black_hole_information_simulations.py): Suite 4 (Fast Scrambling OTOCs, Hayden-Preskill Decoding, Traversable Wormholes, Bekenstein Saturation).
 5. [`run_cosmology_and_complexity_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_cosmology_and_complexity_simulations.py): Suite 5 (de Sitter Event Horizon, Dark Energy Scaling, Complexity Growth, Four Complexity Epochs).
+6. [`run_polariton_information_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_polariton_information_simulation.py): Suite 6 (Polariton Mixing, Entanglement Entropy, QSL Delay, Spatial Pulse Compression).
 
 ### 4. Vector Figures (`figures/`)
-* 20 publication-quality vector diagrams (`.svg`) illustrating every mathematical concept from optics to spin chains, causal diamonds, wormholes, and complexity growth.
+* 21 publication-quality vector diagrams (`.svg`) illustrating every mathematical concept from optics to spin chains, causal diamonds, wormholes, complexity growth, and polariton information overhead.
 
 ### 5. Numerical Datasets (`data/`)
-* 17 structured JSON datasets documenting simulation results, boundary parameters, and validation statistics.
+* 18 structured JSON datasets documenting simulation results, boundary parameters, and validation statistics.
 
 ---
 

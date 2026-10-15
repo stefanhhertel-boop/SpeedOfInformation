@@ -187,6 +187,30 @@ This mathematical theorem is decisive:
 
 Our numerical simulation (`Simulation 1`, see [Figure 1](file:///home/stefan/Projects/SpeedOfInformation/figures/fig1_sommerfeld_brillouin_front.svg)) verifies this rigorously: even when $v_g = 1.6\,c_{\mathcal{I}}$, the electric field amplitude remains identically zero prior to the causal threshold $t = L / c_{\mathcal{I}}$.
 
+### 3.3 Polariton Information Overhead and Quantum Memory Delay
+
+A reciprocal question to superluminal anomalies is the subluminal regime: **Why does light travel slower in matter ($v < c_{\mathcal{I}}$), and what happens to the invariant speed?**
+
+In classical dielectric optics, deceleration is attributed to the Ewald-Oseen extinction theorem, where secondary dipole radiation interferes destructively with the incident wave. At the quantum informational level, however, a fundamentally deeper mechanism operates: **light slows down in matter because it continuously loads and processes quantum state information into atomic memory registers.**
+
+Consider an optical probe field $\hat{\mathcal{E}}(z, t)$ propagating through an ensemble of $N$ three-level atoms in a $\Lambda$-configuration driven by a classical control field $\Omega_c$ (Electromagnetically Induced Transparency, EIT). The true propagating eigenstate is the **dark-state polariton** (Fleischhauer \& Lukin 2000):
+$$\hat{\Psi}(z, t) = \cos\theta \hat{\mathcal{E}}(z, t) - \sin\theta \sqrt{N} \hat{S}(z, t),$$
+where $\hat{S}(z, t) = \frac{1}{\sqrt{N}} \sum_j |g_j\rangle\langle s_j| \delta(z - z_j)$ is the collective atomic spin coherence operator, and the mixing angle satisfies $\tan\theta = g\sqrt{N}/\Omega_c$.
+
+The polariton equation of motion yields the group velocity:
+$$v_g = c_{\mathcal{I}} \cos^2\theta = \frac{c_{\mathcal{I}}}{1 + \frac{g^2 N}{\Omega_c^2}} = \frac{c_{\mathcal{I}}}{n_g}.$$
+
+Here, the group refractive index $n_g$ is revealed to be an **Information Overhead Factor**:
+$$\boxed{n_g = 1 + \frac{\mathcal{I}_{\text{matter}}}{\mathcal{I}_{\text{photon}}} = 1 + \frac{g^2 N}{\Omega_c^2}}.$$
+
+Every step of propagation through matter involves transferring quantum state degrees of freedom into atomic electron spin states. By the **Mandelstam-Tamm / Margolus-Levitin Quantum Speed Limit (QSL)**, each state transition requires a finite dwell time:
+$$\tau_{\text{dwell}} \ge \frac{\pi \hbar}{2g}.$$
+The cumulative macroscopic delay $\Delta t_{\text{delay}} = L (n_g - 1) / c_{\mathcal{I}}$ is simply the sum of quantum processing dwell times spent inside atomic memory registers.
+
+This explains extreme slow light ($v_g = 17\text{ m/s}$) observed in ultracold sodium Bose-Einstein condensates (Hau et al., *Nature* 1999): the polariton is $99.999994\%$ atomic spin memory and only $0.000006\%$ bare photon, spatially compressing a $300\text{ m}$ vacuum pulse into a $17\text{ }\mu\text{m}$ atomic cloud (see [Figure 21](file:///home/stefan/Projects/SpeedOfInformation/figures/fig21_polariton_information_overhead.svg)). When the control beam is turned off ($\Omega_c \to 0$), the pulse halts entirely ($v_g = 0\text{ m/s}$), storing 100% of its information in atomic spin coherence until released.
+
+Crucially, throughout this deceleration, **the invariant metric speed of spacetime $c_{\mathcal{I}}$ remains completely unchanged**. The discontinuous wavefront (Sommerfeld-Brillouin front) continues to propagate at $c_{\mathcal{I}}$, before any atomic dipole can respond. Slow light is an informational load phenomenon, not an alteration of spacetime kinematics.
+
 ---
 
 ## 4. Microcausality, Quantum Non-Locality, and the No-Signaling Constraint
