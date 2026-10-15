@@ -311,6 +311,7 @@
             <li><a href="#sec7e">7.8 Cosmological Horizons & Dark Energy as Information Capacity</a></li>
             <li><a href="#sec7f">7.9 Holographic Quantum Complexity & Lloyd's Computational Bound</a></li>
             <li><a href="#sec7g">7.10 Polariton Information Overhead & Slow Light in Matter</a></li>
+            <li><a href="#sec7h">7.11 Time Dilation as Conservation of Informational Bandwidth</a></li>
             <li><a href="#sec8">8. Conclusion & Future Research Directions</a></li>
             <li><a href="#references">References</a></li>
         </ul>
@@ -319,7 +320,7 @@
     <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #93c5fd; border-radius: 8px; padding: 18px 24px; margin: 25px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
         <div>
             <div style="font-weight: 800; font-size: 1.05rem; color: #1e3a8a;">Executive Summary & White Paper Available</div>
-            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 7 research pillars, the 21 vector visualizations and analytical parameter models, and the comparative evaluation matrix.</div>
+            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 8 research pillars, the 22 vector visualizations and analytical parameter models, and the comparative evaluation matrix.</div>
         </div>
         <a href="Executive_Summary_Speed_of_Information.md" style="background: #1d4ed8; color: #ffffff; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Executive Summary &rarr;</a>
     </div>
@@ -860,6 +861,49 @@
         Light in matter travels slower not because spacetime is modified, but because the excitation is a polariton burdened by the quantum information processing overhead of matter.
     </p>
 
+    <h2 id="sec7h">7.11 Time Dilation as Conservation of Informational Bandwidth</h2>
+    <p>
+        For over a century, kinematic and gravitational time dilation have been accepted as mathematical properties of Riemannian metrics. But operationally, <em>why does moving through space or descending into a gravitational potential slow down all physical clocks?</em>
+    </p>
+
+    <h3>1. Operational Clock Definition &amp; The Bandwidth Invariance Law</h3>
+    <p>
+        A clock is fundamentally an operational quantum information processor. To advance its reading, a system of energy \(E_0\) must transition between mutually orthogonal states, bounded by the <strong>Mandelstam-Tamm and Margolus-Levitin Quantum Speed Limit (QSL)</strong>: \(\tau_{\text{tick}} \ge \pi\hbar / (2E_0) \equiv 1/\nu_0\).
+    </p>
+    <p>
+        In relational informational spacetime, every physical entity moves through the 4D causal network at strictly the single invariant speed \(c_{\mathcal{I}}\) (\(u^\mu u_\mu = -c_{\mathcal{I}}^2\)).
+        Its total information processing budget is strictly conserved between internal state transitions (proper time \(\tau\)) and external spatial translation (velocity \(v\)):
+        \[
+        \boxed{\left(\frac{d\tau}{dt}\right)^2 + \frac{v^2}{c_{\mathcal{I}}^2} = 1 \iff \frac{d\tau}{dt} = \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}} = \frac{1}{\gamma(v)}}.
+        \]
+        When an object moves through space, <strong>it is diverting informational update bandwidth away from its internal state evolution</strong>. At rest (\(v = 0\)), 100% of bandwidth updates internal states. At \(v = c_{\mathcal{I}}\), 100% of bandwidth is consumed by spatial displacement, leaving zero bandwidth for internal transitions (\(d\tau/dt = 0\))&mdash;time completely stops.
+    </p>
+
+    <div class="figure-container">
+        <img src="../figures/fig22_time_dilation_information_bandwidth.svg" alt="Time Dilation as Informational Bandwidth Allocation">
+        <div class="figure-caption"><strong>Figure 22:</strong> Time Dilation as Conservation of Informational Bandwidth &amp; Causal Loop Geometry. <strong>Panel A:</strong> The quarter-circle bandwidth allocation trade-off \((d\tau/dt)^2 + (v/c_{\mathcal{I}})^2 = 1\). <strong>Panel B:</strong> Elementary causal loop geometry: internal force-mediating signals at invariant speed \(c_{\mathcal{I}}\) traverse a stretched hypotenuse, forcing \(\Delta t = \gamma \Delta \tau\). <strong>Panel C:</strong> Margolus-Levitin clock transition rate and atmospheric cosmic ray muon dilation (\(\gamma = 15.82\), surviving 10.4 km). <strong>Panel D:</strong> Gravitational time dilation as horizon channel capacity \(\mathcal{C}(r) = \mathcal{C}_\infty \sqrt{1 - r_s/r}\) vanishing at \(r = r_s\).</div>
+    </div>
+
+    <h3>2. Internal Causal Loops &amp; Force Mediation Delay</h3>
+    <p>
+        Every stable composite structure (from an atom to a human body) is bound by gauge forces propagating at \(c_{\mathcal{I}}\).
+        When the system moves at velocity \(v\), the internal coordinating signals must travel along a diagonal hypotenuse \(d = \sqrt{L^2 + (v\Delta t/2)^2}\) to catch up with moving components.
+        Because information cannot exceed \(c_{\mathcal{I}}\) along any trajectory, the internal cycle time is physically stretched:
+        \[
+        c_{\mathcal{I}}^2 \left(\frac{\Delta t}{2}\right)^2 = L^2 + v^2 \left(\frac{\Delta t}{2}\right)^2 \implies \Delta t = \frac{2L/c_{\mathcal{I}}}{\sqrt{1 - v^2/c_{\mathcal{I}}^2}} = \gamma \Delta \tau.
+        \]
+        All physical, chemical, and biological rates slow down identically because their internal binding communications take longer to cycle.
+    </p>
+
+    <h3>3. Gravitational Time Dilation as Horizon Channel Capacity</h3>
+    <p>
+        In General Relativity, gravitational time dilation reflects the local causal diamond refresh rate in curved spacetime:
+        \[
+        \frac{d\tau}{dt} = \sqrt{-g_{00}} = \sqrt{1 - \frac{2GM}{r c_{\mathcal{I}}^2}} = \frac{\mathcal{C}(r)}{\mathcal{C}_\infty}.
+        \]
+        At the event horizon (\(r \to r_s = 2GM/c_{\mathcal{I}}^2\)), the outward channel capacity drops to strictly zero (\(\mathcal{C} \to 0\)). Relative to an asymptotic observer, clock ticks freeze completely because no state transition bits can escape outward across the horizon.
+    </p>
+
     <h2 id="sec8">8. Conclusion & Future Research Directions</h2>
     <p>
         As a continuing foundational research agenda, we propose three key research programs:
@@ -887,6 +931,8 @@
         <li>Almheiri, A., et al. (2019). "The entropy of bulk quantum fields and the entanglement wedge." <em>JHEP</em>, 2019(12), 63.</li>
         <li>Roberts, D. A., & Swingle, B. (2016). "Lieb-Robinson Bound and the Butterfly Effect." <em>Phys. Rev. Lett.</em>, 117(9), 091602.</li>
         <li>Fermi LAT & GBM Collaborations (2009). "A limit on the variation of the speed of light." <em>Nature</em>, 462, 331–334.</li>
+        <li>Margolus, N., & Levitin, L. B. (1998). "The maximum speed of dynamical evolution." <em>Physica D: Nonlinear Phenomena</em>, 120(1-2), 188–195.</li>
+        <li>Rossi, B., & Hall, D. B. (1941). "Variation of the Rate of Decay of Mesotrons with Momentum." <em>Physical Review</em>, 59(3), 223–228.</li>
         <li>Steinhauer, J. (2016). "Observation of quantum Hawking radiation in an analogue black hole." <em>Nature Physics</em>, 12, 959–965.</li>
     </ol>
 

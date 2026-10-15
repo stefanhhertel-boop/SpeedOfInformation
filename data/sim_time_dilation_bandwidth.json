@@ -1,0 +1,102 @@
+{
+  "title": "Time Dilation as Conservation of Informational Bandwidth Simulation Suite",
+  "author": "Stefan Hertel",
+  "affiliation": "Independent Researcher",
+  "date": "2026-10-15",
+  "parameters": {
+    "c_info": 299792458.0,
+    "bandwidth_tradeoff_equation": "(dtau/dt)^2 + (v/c_I)^2 = 1",
+    "margolus_levitin_bound": "nu_max = 2E / (pi * hbar)",
+    "lorentz_factor_equation": "gamma = 1 / sqrt(1 - v^2/c_I^2)",
+    "gravitational_dilation_equation": "dtau/dt = sqrt(1 - 2GM / (r * c_I^2))"
+  },
+  "operating_points": [
+    {
+      "label": "At Rest",
+      "v_over_c": 0.0,
+      "dtau_dt": 1.0,
+      "gamma": 1.0,
+      "internal_bandwidth_pct": 100.0
+    },
+    {
+      "label": "GPS Satellite",
+      "v_over_c": 1.3e-05,
+      "dtau_dt": 0.999999999915,
+      "gamma": 1.000000000085,
+      "kinematic_dilation_us_day": -7.2
+    },
+    {
+      "label": "50% Causal Speed",
+      "v_over_c": 0.5,
+      "dtau_dt": 0.866025,
+      "gamma": 1.1547,
+      "internal_bandwidth_pct": 75.0
+    },
+    {
+      "label": "Half Clock Rate",
+      "v_over_c": 0.866025,
+      "dtau_dt": 0.5,
+      "gamma": 2.0,
+      "internal_bandwidth_pct": 25.0
+    },
+    {
+      "label": "Cosmic Ray Muon",
+      "v_over_c": 0.998,
+      "dtau_dt": 0.063214,
+      "gamma": 15.819,
+      "rest_lifetime_us": 2.197,
+      "dilated_lifetime_us": 34.75
+    },
+    {
+      "label": "CERN LHC Proton",
+      "v_over_c": 0.999999991,
+      "dtau_dt": 0.000134,
+      "gamma": 7450.0,
+      "internal_bandwidth_pct": 1.8e-06
+    },
+    {
+      "label": "Photon / Invariant Causal Limit",
+      "v_over_c": 1.0,
+      "dtau_dt": 0.0,
+      "gamma": "infinity",
+      "internal_bandwidth_pct": 0.0
+    }
+  ],
+  "gravitational_channel_capacity": [
+    {
+      "r_over_rs": 1.0,
+      "channel_capacity_ratio": 0.0,
+      "clock_rate_ratio": 0.0
+    },
+    {
+      "r_over_rs": 1.1,
+      "channel_capacity_ratio": 0.3015,
+      "clock_rate_ratio": 0.3015
+    },
+    {
+      "r_over_rs": 1.5,
+      "channel_capacity_ratio": 0.5774,
+      "clock_rate_ratio": 0.5774
+    },
+    {
+      "r_over_rs": 2.0,
+      "channel_capacity_ratio": 0.7071,
+      "clock_rate_ratio": 0.7071
+    },
+    {
+      "r_over_rs": 3.0,
+      "channel_capacity_ratio": 0.8165,
+      "clock_rate_ratio": 0.8165
+    },
+    {
+      "r_over_rs": 5.0,
+      "channel_capacity_ratio": 0.8944,
+      "clock_rate_ratio": 0.8944
+    },
+    {
+      "r_over_rs": "infinity",
+      "channel_capacity_ratio": 1.0,
+      "clock_rate_ratio": 1.0
+    }
+  ]
+}

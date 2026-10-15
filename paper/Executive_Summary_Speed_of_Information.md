@@ -27,9 +27,9 @@ $$\boxed{\begin{array}{c}
 
 ---
 
-## 2. Executive Synthesis of the Seven Core Pillars
+## 2. Executive Synthesis of the Eight Core Pillars
 
-Over the course of this study, we formulated, mathematically derived, and numerically simulated seven major pillars demonstrating the supremacy of the **Speed of Information ($c_{\mathcal{I}}$)** framework:
+Over the course of this study, we formulated, mathematically derived, and numerically simulated eight major pillars demonstrating the supremacy of the **Speed of Information ($c_{\mathcal{I}}$)** framework:
 
 ```mermaid
 graph TD
@@ -40,6 +40,7 @@ graph TD
     A --> F["5. Black Hole Horizon Physics<br>(Fast Scrambling & ER=EPR)"]
     A --> G["6. Cosmology & Complexity<br>(Dark Energy & Lloyd's Bound)"]
     A --> H["7. Slow Light & Quantum Memory<br>(Polariton Information Overhead)"]
+    A --> I["8. Time Dilation & Clocks<br>(Informational Bandwidth Budget)"]
 ```
 
 ### Pillar 1: Spacetime Kinematics Independent of Electromagnetism
@@ -94,6 +95,15 @@ graph TD
 * **Experimental Proof:** In ultracold sodium BECs (Lene Hau 1999), light slows to $17\text{ m/s}$ because the excitation is $99.999994\%$ atomic spin memory; a 300-meter vacuum pulse compresses to $17\text{ }\mu\text{m}$. Ramping the control field to zero halts light entirely ($v_g = 0\text{ m/s}$), storing 100% of the quantum state in stationary atomic spin coherence. Spacetime's invariant speed $c_{\mathcal{I}}$ never changes.
 * **Deliverable:** [Figure 21](file:///home/stefan/Projects/SpeedOfInformation/figures/fig21_polariton_information_overhead.svg), [`Polariton_Information_Overhead_and_Slow_Light.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Polariton_Information_Overhead_and_Slow_Light.md), & [`sim_polariton_information.json`](file:///home/stefan/Projects/SpeedOfInformation/data/sim_polariton_information.json).
 
+### Pillar 8: Time Dilation as Conservation of Informational Bandwidth
+* **The Operational Mystery:** Why does physical motion through space retard internal temporal progression ($\Delta t = \gamma \Delta \tau$), and why do all physical clocks (from muons to cesium atoms and human biology) slow down by the exact same Lorentz factor?
+* **The Informational Resolution:** Stefan Hertel's insight establishes that **time dilation is the direct physical consequence of finite Informational Bandwidth**. Every physical entity moves through the 4D causal network at the invariant speed $c_{\mathcal{I}}$. Its total information processing budget is conserved:
+  $$\boxed{\left(\frac{d\tau}{dt}\right)^2 + \frac{v^2}{c_{\mathcal{I}}^2} = 1 \iff \frac{d\tau}{dt} = \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}} = \frac{1}{\gamma}}.$$
+* **Internal Causal Loops & Force Mediation:** Physical clocks are held together by internal gauge forces propagating at $c_{\mathcal{I}}$. In motion at speed $v$, coordinating signals must travel along a diagonal hypotenuse ($d = \sqrt{L^2 + (v\Delta t/2)^2}$), physically stretching the internal cycle time to $\Delta t = \gamma \Delta \tau$. Spatial motion steals information bandwidth from internal state updates.
+* **Gravitational Channel Capacity:** In curved spacetime, $d\tau/dt = \sqrt{-g_{00}} = \sqrt{1 - 2GM/(r c_{\mathcal{I}}^2)}$. At the Schwarzschild horizon ($r \to r_s$), outward channel capacity vanishes ($\mathcal{C} \to 0$), freezing proper time relative to infinity.
+* **Empirical Validation:** Explains atmospheric cosmic ray muons ($v = 0.998\,c_{\mathcal{I}}$, $\gamma = 15.82$, lifetime dilated from $2.2\,\mu\text{s}$ to $34.8\,\mu\text{s}$, enabling a $10.4\text{ km}$ descent to Earth) and GPS satellite clock drifts ($-7.2\,\mu\text{s/day}$ kinematic, $+45.8\,\mu\text{s/day}$ gravitational).
+* **Deliverable:** [Figure 22](file:///home/stefan/Projects/SpeedOfInformation/figures/fig22_time_dilation_information_bandwidth.svg), [`Time_Dilation_as_Informational_Bandwidth_Allocation.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Time_Dilation_as_Informational_Bandwidth_Allocation.md), & [`sim_time_dilation_bandwidth.json`](file:///home/stefan/Projects/SpeedOfInformation/data/sim_time_dilation_bandwidth.json).
+
 ---
 
 ## 3. The Dual Master Role of the Speed of Information
@@ -129,6 +139,7 @@ Our research uncovers that $c_{\mathcal{I}}$ is the master operational constant 
 | **5. Black Hole & Horizon Information** | **Revolutionary Paradigm Shift** | Re-defines horizons as informational boundaries. Proves that ER=EPR traversable wormholes are quantum teleportation channels protected by $c_{\mathcal{I}}$. |
 | **6. Cosmology & Quantum Complexity** | **Revolutionary Paradigm Shift** | Re-frames dark energy as inverse cosmological horizon capacity ($10^{-122}$). Proves black hole interiors saturate Lloyd's computational bound ($2Mc_{\mathcal{I}}^2/\pi\hbar$). |
 | **7. Slow Light & Polariton Information** | **Conceptual & Microscopic Synthesis** | Proves that refractive deceleration in matter ($v < c_{\mathcal{I}}$) is an information loading overhead into atomic spin registers bounded by the Margolus-Levitin Quantum Speed Limit. Spacetime speed $c_{\mathcal{I}}$ remains strictly invariant. |
+| **8. Time Dilation & Clocks** | **Conceptual & Microscopic Synthesis** | Proves that kinematic time dilation ($\Delta t = \gamma \Delta \tau$) is conservation of informational bandwidth: $(d\tau/dt)^2 + (v/c_{\mathcal{I}})^2 = 1$. Spatial displacement diverts processing capacity from internal state changes. |
 
 ---
 
@@ -156,9 +167,12 @@ A credible scientific white paper must clearly distinguish between physical inpu
 │                                         │ 4. Conformal/Lorentz symmetry of local QFT   │
 │ 5. Exact saturation of Lloyd's bound    │    (needed for modular Hamiltonian).         │
 │    for black hole complexity (2Mc_I²/πℏ)│                                              │
-│                                         │                                              │
-│ 6. Refractive group index as polariton  │ 5. Three-level atomic dipole coupling g and  │
-│    information overhead n_g = 1 + I_m/I_γ│   control Rabi frequency Ω_c (optics).     │
+│                                         │ 5. Three-level atomic dipole coupling g and  │
+│ 6. Refractive group index as polariton  │    control Rabi frequency Ω_c (optics).      │
+│    information overhead n_g = 1 + I_m/I_γ│                                             │
+│                                         │ 6. Quantum state distinguishability metric   │
+│ 7. Time dilation as bandwidth trade-off │    underlying clock transitions.             │
+│    (dτ/dt)² + (v/c_I)² = 1              │                                              │
 └─────────────────────────────────────────┴──────────────────────────────────────────────┘
 ```
 
@@ -176,11 +190,12 @@ All assets have been created, validated, and documented in the workspace:
 5. [`Black_Hole_Information_Theory_and_Horizon_Dynamics.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Black_Hole_Information_Theory_and_Horizon_Dynamics.md): Horizons as informational boundaries, fast scrambling, Hayden-Preskill mirrors, and ER=EPR traversable wormholes.
 6. [`Cosmological_Horizons_and_Holographic_Complexity.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Cosmological_Horizons_and_Holographic_Complexity.md): de Sitter reachability, dark energy scaling $\Lambda(S_{\text{dS}})$, and Complexity = Action saturation of Lloyd's bound.
 7. [`Polariton_Information_Overhead_and_Slow_Light.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Polariton_Information_Overhead_and_Slow_Light.md): Formal derivation of slow and stopped light as quantum information loading and Margolus-Levitin dwell time.
-8. [`Executive_Summary_Speed_of_Information.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Executive_Summary_Speed_of_Information.md): Overarching synthesis and executive white paper.
+8. [`Time_Dilation_as_Informational_Bandwidth_Allocation.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Time_Dilation_as_Informational_Bandwidth_Allocation.md): Derivation of time dilation as conservation of informational processing bandwidth and causal loop geometry.
+9. [`Executive_Summary_Speed_of_Information.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Executive_Summary_Speed_of_Information.md): Overarching synthesis and executive white paper.
 
 ### 2. Publication Documents
 * [`Speed_of_Information_Paper.tex`](file:///home/stefan/Projects/SpeedOfInformation/paper/Speed_of_Information_Paper.tex): Publication-ready LaTeX source formatted for Physical Review D / Foundations of Physics.
-* [`paper_index.html`](file:///home/stefan/Projects/SpeedOfInformation/paper/paper_index.html): Interactive web edition with embedded MathJax formula rendering, responsive layout, table of contents, and all 21 vector diagrams.
+* [`paper_index.html`](file:///home/stefan/Projects/SpeedOfInformation/paper/paper_index.html): Interactive web edition with embedded MathJax formula rendering, responsive layout, table of contents, and all 22 vector diagrams.
 
 ### 3. Numerical Simulation Engines (Python Standard Library)
 1. [`run_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_simulations.py): Suite 1 (Optical Wavefronts, Proca Dispersion, Lieb-Robinson Cones, Quantum Gravity MDR).
@@ -189,12 +204,13 @@ All assets have been created, validated, and documented in the workspace:
 4. [`run_black_hole_information_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_black_hole_information_simulations.py): Suite 4 (Fast Scrambling OTOCs, Hayden-Preskill Decoding, Traversable Wormholes, Bekenstein Saturation).
 5. [`run_cosmology_and_complexity_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_cosmology_and_complexity_simulations.py): Suite 5 (de Sitter Event Horizon, Dark Energy Scaling, Complexity Growth, Four Complexity Epochs).
 6. [`run_polariton_information_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_polariton_information_simulation.py): Suite 6 (Polariton Mixing, Entanglement Entropy, QSL Delay, Spatial Pulse Compression).
+7. [`run_informational_time_dilation_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_informational_time_dilation_simulation.py): Suite 7 (Bandwidth Conservation Circle, Causal Loop Hypotenuse, Muon Dilation, Horizon Channel Capacity).
 
 ### 4. Vector Figures (`figures/`)
-* 21 publication-quality vector diagrams (`.svg`) illustrating every mathematical concept from optics to spin chains, causal diamonds, wormholes, complexity growth, and polariton information overhead.
+* 22 publication-quality vector diagrams (`.svg`) illustrating every mathematical concept from optics to spin chains, causal diamonds, wormholes, complexity growth, polaritons, and informational time dilation.
 
 ### 5. Numerical Datasets (`data/`)
-* 18 structured JSON datasets documenting simulation results, boundary parameters, and validation statistics.
+* 19 structured JSON datasets documenting simulation results, boundary parameters, and validation statistics.
 
 ---
 

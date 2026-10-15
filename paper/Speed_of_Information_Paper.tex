@@ -174,6 +174,22 @@ The group index $n_g$ is revealed to be an \textbf{Information Overhead Factor}:
 \end{equation}
 By the Mandelstam-Tamm and Margolus-Levitin Quantum Speed Limit (QSL), each transition between orthogonal atomic states requires a minimum dwell time $\tau_{\text{dwell}} \ge \pi\hbar / (2g)$. The cumulative macroscopic delay $\Delta t_{\text{delay}} = L (n_g - 1) / c_{\mathcal{I}}$ is simply the sum of quantum processing dwell times inside atomic memory registers. In ultracold Bose-Einstein condensates ($v_g = 17\text{ m/s}$)~\cite{hau1999}, the excitation is $99.999994\%$ atomic spin memory and only $0.000006\%$ bare light, compressing a $300\text{ m}$ vacuum pulse to $17\,\mu\text{m}$. Spacetime's invariant speed $c_{\mathcal{I}}$ remains strictly constant.
 
+\subsection{Time Dilation as Conservation of Informational Bandwidth}
+
+The reciprocal counterpart to slow light in matter is relativistic time dilation: why does physical motion through space retard internal temporal progression?
+
+In relativistic kinematics, the timelike 4-velocity norm is invariant:
+\begin{equation}
+u^\mu u_\mu = g_{\mu\nu} \frac{dx^\mu}{d\tau} \frac{dx^\nu}{d\tau} = -c_{\mathcal{I}}^2 \implies -c_{\mathcal{I}}^2 \left(\frac{d\tau}{dt}\right)^2 + \left(\frac{d\mathbf{x}}{dt}\right)^2 = -c_{\mathcal{I}}^2.
+\end{equation}
+Dividing through by $c_{\mathcal{I}}^2$ yields the fundamental \textbf{Law of Informational Bandwidth Conservation}:
+\begin{equation}
+\boxed{\left(\frac{d\tau}{dt}\right)^2 + \frac{v^2}{c_{\mathcal{I}}^2} = 1 \iff \frac{d\tau}{dt} = \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}} = \frac{1}{\gamma(v)}}.
+\end{equation}
+Operationally, a physical clock is an informational engine whose internal ticks correspond to orthogonal quantum state transitions bounded by the Margolus-Levitin Quantum Speed Limit (QSL)~\cite{margolus1998}: $\tau_{\text{tick}} \ge \pi\hbar / (2E_0)$. Every physical system moves through the 4D causal network at invariant speed $c_{\mathcal{I}}$. When an object accelerates to velocity $v$, \textbf{it diverts informational update bandwidth away from internal state transitions into spatial translation}. At the limit $v \to c_{\mathcal{I}}$, all processing capacity is consumed by spatial displacement, leaving zero bandwidth for internal evolution ($d\tau/dt = 0$)---proper time completely halts.
+
+At the microscopic level, all composite matter is bound by internal gauge forces propagating at $c_{\mathcal{I}}$. In motion at speed $v$, internal coordinating signals must traverse a diagonal hypotenuse $d = \sqrt{L^2 + (v\Delta t/2)^2}$, stretching the internal cycle time to $\Delta t = \gamma \Delta \tau$. This directly accounts for the observed lifetime dilation of atmospheric cosmic ray muons~\cite{rossi1941} ($v = 0.998\,c_{\mathcal{I}}$, $\gamma = 15.82$, dilating lifetime from $2.2\,\mu\text{s}$ to $34.8\,\mu\text{s}$). Gravitational time dilation similarly reflects the local causal diamond channel capacity $\mathcal{C}(r) = \mathcal{C}_\infty \sqrt{1 - 2GM/(r c_{\mathcal{I}}^2)}$, which drops to zero at the event horizon.
+
 \section{Microcausality, Quantum Non-Locality, and the No-Signaling Constraint}
 
 \subsection{Microcausality in Relativistic Quantum Field Theory}
@@ -317,11 +333,12 @@ While cancelling zero-point loop divergences in bulk QFT remains an open ultravi
 
 \section{Numerical Visualizations \& Analytical Parameter Models}
 
-The theoretical insights presented herein are supported by six numerical modeling suites and twenty-one publication-quality vector figures:
+The theoretical insights presented herein are supported by seven numerical modeling suites and twenty-two publication-quality vector figures:
 \begin{enumerate}
     \item \textbf{Sommerfeld-Brillouin Wavefront Dynamics:} Numerical evaluation of Fourier-Laplace contour integrals verifying strict causal front velocity $v_{\text{front}} = c_{\mathcal{I}}$ despite superluminal group delays in gain media.
     \item \textbf{Proca Dispersion Phenomenology:} Evaluation of astrophysical time delays across radio to gamma frequencies, demonstrating invariant $c_{\mathcal{I}}$ amidst dispersive light.
     \item \textbf{Polariton Information Overhead \& Slow Light:} Analytical modeling of dark-state polariton mixing, quantum speed limit dwell time, and spatial pulse compression in matter.
+    \item \textbf{Informational Bandwidth \& Time Dilation:} Quantitative modeling of the bandwidth conservation circle $(d\tau/dt)^2 + (v/c_{\mathcal{I}})^2 = 1$, causal loop hypotenuse path stretching, cosmic muon dilation, and horizon channel capacity.
     \item \textbf{Lieb-Robinson Bound Visualizations:} Mapping causal operator spreading and emergent light cones in quantum many-body lattices.
     \item \textbf{Quantum Gravity MDR Predictions:} Cosmological time-of-flight models for linear ($n=1$) and quadratic ($n=2$) Lorentz-invariance violations.
     \item \textbf{Thermodynamic Horizon Dynamics:} Numerical tracking of causal diamond entropy equilibrium, black hole scrambling, and the Page curve.
@@ -341,6 +358,8 @@ The conceptual transition from the ``speed of light'' ($c$) to the ``speed of in
 \bibitem{wang2000} L. J. Wang, A. Kuzmich, and A. Dogariu, \emph{Nature} \textbf{406}, 277 (2000).
 \bibitem{hau1999} L. V. Hau, S. E. Harris, Z. Dutton, and C. H. Behroozi, \emph{Nature} \textbf{397}, 594 (1999).
 \bibitem{fleischhauer2000} M. Fleischhauer and M. D. Lukin, \emph{Phys. Rev. Lett.} \textbf{84}, 5094 (2000).
+\bibitem{margolus1998} N. Margolus and L. B. Levitin, \emph{Physica D} \textbf{120}, 188 (1998).
+\bibitem{rossi1941} B. Rossi and D. B. Hall, \emph{Phys. Rev.} \textbf{59}, 223 (1941).
 \bibitem{lieb1972} E. H. Lieb and D. W. Robinson, \emph{Commun. Math. Phys.} \textbf{28}, 251 (1972).
 \bibitem{pawlowski2009} M. Paw{\l}owski, T. Paterek, D. Kaszlikowski, V. Scarani, A. Winter, and M. {\.Z}ukowski, \emph{Nature} \textbf{461}, 1101 (2009).
 \bibitem{chiribella2011} G. Chiribella, G. M. D'Ariano, and P. Perinotti, \emph{Phys. Rev. A} \textbf{84}, 012311 (2011).

@@ -211,6 +211,24 @@ This explains extreme slow light ($v_g = 17\text{ m/s}$) observed in ultracold s
 
 Crucially, throughout this deceleration, **the invariant metric speed of spacetime $c_{\mathcal{I}}$ remains completely unchanged**. The discontinuous wavefront (Sommerfeld-Brillouin front) continues to propagate at $c_{\mathcal{I}}$, before any atomic dipole can respond. Slow light is an informational load phenomenon, not an alteration of spacetime kinematics.
 
+### 3.4 Time Dilation as Conservation of Informational Bandwidth
+
+The reciprocal phenomenon to slow light in matter is relativistic time dilation: **Why does physical motion through space retard internal temporal progression?**
+
+In relativistic dynamics, the timelike 4-velocity norm is invariant:
+$$u^\mu u_\mu = g_{\mu\nu} \frac{dx^\mu}{d\tau} \frac{dx^\nu}{d\tau} = -c_{\mathcal{I}}^2 \implies -c_{\mathcal{I}}^2 \left(\frac{d\tau}{dt}\right)^2 + \left(\frac{d\mathbf{x}}{dt}\right)^2 = -c_{\mathcal{I}}^2.$$
+Dividing through by $c_{\mathcal{I}}^2$ establishes the **Law of Informational Bandwidth Conservation**:
+$$\boxed{\left(\frac{d\tau}{dt}\right)^2 + \frac{v^2}{c_{\mathcal{I}}^2} = 1 \iff \frac{d\tau}{dt} = \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}} = \frac{1}{\gamma(v)}}.$$
+
+Operationally, a clock is a quantum information engine whose internal ticks correspond to orthogonal state transitions bounded by the **Margolus-Levitin Quantum Speed Limit (QSL)**: $\tau_{\text{tick}} \ge \pi\hbar / (2E_0)$.
+A physical entity possesses a finite total processing capacity: it moves through the causal metric at invariant speed $c_{\mathcal{I}}$. When an object accelerates to velocity $v$, **it diverts informational update bandwidth away from internal state transitions into spatial coordinate shifts**. At $v \to c_{\mathcal{I}}$, all bandwidth is consumed by spatial translation, leaving zero capacity for internal change ($d\tau/dt = 0$)—proper time completely halts.
+
+At the microscopic level, all physical structures are held together by internal gauge forces propagating at $c_{\mathcal{I}}$. When moving at speed $v$, internal coordinating signals must traverse a diagonal hypotenuse $d = \sqrt{L^2 + (v\Delta t/2)^2}$ to catch up with moving components, stretching the internal cycle time to $\Delta t = \gamma \Delta \tau$ (see [Figure 22](file:///home/stefan/Projects/SpeedOfInformation/figures/fig22_time_dilation_information_bandwidth.svg)). This naturally accounts for the dilated lifetime of atmospheric cosmic ray muons ($v = 0.998\,c_{\mathcal{I}}$, $\gamma = 15.82$, lifetime dilated from $2.2\,\mu\text{s}$ to $34.8\,\mu\text{s}$, surviving a $10.4\text{ km}$ descent to Earth).
+
+Similarly, gravitational time dilation reflects the local causal diamond channel capacity:
+$$\frac{d\tau}{dt} = \sqrt{-g_{00}} = \sqrt{1 - \frac{2GM}{r c_{\mathcal{I}}^2}} = \frac{\mathcal{C}(r)}{\mathcal{C}_\infty},$$
+which drops to strictly zero at the event horizon ($r \to 2GM/c_{\mathcal{I}}^2$).
+
 ---
 
 ## 4. Microcausality, Quantum Non-Locality, and the No-Signaling Constraint
@@ -484,6 +502,15 @@ The theoretical conclusions of this study are validated by our numerical modelin
 4. **Simulation 4: Quantum Gravity Modified Dispersion Relations** ([Figure 5](file:///home/stefan/Projects/SpeedOfInformation/figures/fig5_qg_mdr_delay.svg))
    - Modeled arrival time delays for high-energy gamma-ray photons across cosmological distances.
    - Clarified that Planck-scale Lorentz violations probe matter-geometry coupling against the invariant causal horizon $c_{\mathcal{I}}$.
+
+5. **Simulation 5: Horizon Information Capacity & Holographic Complexity** ([Figures 17–20](file:///home/stefan/Projects/SpeedOfInformation/figures/))
+   - Evaluated de Sitter horizon reachability, dark energy scaling as inverse horizon entropy ($\Lambda \propto 1/S_{\text{dS}}$), and linear complexity growth saturating Lloyd's bound ($2Mc_{\mathcal{I}}^2/\pi\hbar$).
+
+6. **Simulation 6: Polariton Information Overhead & Slow Light** ([Figure 21](file:///home/stefan/Projects/SpeedOfInformation/figures/fig21_polariton_information_overhead.svg))
+   - Modeled dark-state polariton mixing $\hat{\Psi} = \cos\theta \hat{\mathcal{E}} - \sin\theta \sqrt{N}\hat{S}$ and Margolus-Levitin QSL dwell times, explaining slow light ($17\text{ m/s}$) and stopped light as quantum memory loading while $c_{\mathcal{I}}$ remains strictly constant.
+
+7. **Simulation 7: Time Dilation as Informational Bandwidth Conservation** ([Figure 22](file:///home/stefan/Projects/SpeedOfInformation/figures/fig22_time_dilation_information_bandwidth.svg))
+   - Evaluated the bandwidth invariance trade-off $(d\tau/dt)^2 + (v/c_{\mathcal{I}})^2 = 1$, internal causal loop path stretching, cosmic ray muon dilation ($\gamma = 15.82$), and gravitational horizon channel capacity.
 
 ---
 
