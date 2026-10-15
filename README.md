@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1421148245.svg)](https://doi.org/10.5281/zenodo.23402847)
+
 # Scientific Study: Speed of Light vs. Speed of Information in Theoretical Physics
 
 **Author:** Stefan Hertel  
