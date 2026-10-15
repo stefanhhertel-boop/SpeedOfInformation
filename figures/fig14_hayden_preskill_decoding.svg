@@ -1,44 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 520" width="840" height="520" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
-<text x="420.0" y="40.5" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Hayden-Preskill Protocol: Alice's Diary Decoding Fidelity vs Time</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 520" width="840" height="520" style="background-color: #ffffff; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<rect width="100%" height="100%" fill="#ffffff" />
+<text x="420.0" y="40.5" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Hayden-Preskill Protocol: Alice&apos;s Diary Decoding Fidelity vs Time</text>
 <rect x="90" y="65" width="710" height="385" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />
-<line x1="90.0" y1="65" x2="90.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
-<text x="90.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">0.00</text>
-<line x1="90" y1="450.0" x2="800" y2="450.0" stroke="#e2e8f0" stroke-width="1" />
-<text x="78" y="454.0" text-anchor="end" font-size="12" fill="#64748b">-0.05</text>
-<line x1="232.0" y1="65" x2="232.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
-<text x="232.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">2.80</text>
-<line x1="90" y1="373.0" x2="800" y2="373.0" stroke="#e2e8f0" stroke-width="1" />
-<text x="78" y="377.0" text-anchor="end" font-size="12" fill="#64748b">0.17</text>
-<line x1="374.0" y1="65" x2="374.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
-<text x="374.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">5.60</text>
-<line x1="90" y1="296.0" x2="800" y2="296.0" stroke="#e2e8f0" stroke-width="1" />
-<text x="78" y="300.0" text-anchor="end" font-size="12" fill="#64748b">0.39</text>
-<line x1="516.0" y1="65" x2="516.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
-<text x="516.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">8.40</text>
-<line x1="90" y1="218.99999999999997" x2="800" y2="218.99999999999997" stroke="#e2e8f0" stroke-width="1" />
-<text x="78" y="222.99999999999997" text-anchor="end" font-size="12" fill="#64748b">0.61</text>
-<line x1="658.0" y1="65" x2="658.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
-<text x="658.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">11.20</text>
-<line x1="90" y1="142.0" x2="800" y2="142.0" stroke="#e2e8f0" stroke-width="1" />
-<text x="78" y="146.0" text-anchor="end" font-size="12" fill="#64748b">0.83</text>
-<line x1="800.0" y1="65" x2="800.0" y2="450" stroke="#e2e8f0" stroke-width="1" />
-<text x="800.0" y="470" text-anchor="middle" font-size="12" fill="#64748b">14.00</text>
-<line x1="90" y1="65.0" x2="800" y2="65.0" stroke="#e2e8f0" stroke-width="1" />
-<text x="78" y="69.0" text-anchor="end" font-size="12" fill="#64748b">1.05</text>
-<text x="445.0" y="502" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">Time After Diary Infall Delta t (units of t_* / 4)</text>
-<text x="25" y="257.5" text-anchor="middle" font-size="14" font-weight="600" fill="#334155" transform="rotate(-90 25 257.5)">Quantum Decoding Fidelity F(Bob)</text>
+<line x1="90.00" y1="65.00" x2="90.00" y2="450.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="90.00" y="470.00" text-anchor="middle" font-size="12" fill="#64748b">0.00</text>
+<line x1="90.00" y1="450.00" x2="800.00" y2="450.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="78.00" y="454.00" text-anchor="end" font-size="12" fill="#64748b">-0.05</text>
+<line x1="232.00" y1="65.00" x2="232.00" y2="450.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="232.00" y="470.00" text-anchor="middle" font-size="12" fill="#64748b">2.80</text>
+<line x1="90.00" y1="373.00" x2="800.00" y2="373.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="78.00" y="377.00" text-anchor="end" font-size="12" fill="#64748b">0.17</text>
+<line x1="374.00" y1="65.00" x2="374.00" y2="450.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="374.00" y="470.00" text-anchor="middle" font-size="12" fill="#64748b">5.60</text>
+<line x1="90.00" y1="296.00" x2="800.00" y2="296.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="78.00" y="300.00" text-anchor="end" font-size="12" fill="#64748b">0.39</text>
+<line x1="516.00" y1="65.00" x2="516.00" y2="450.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="516.00" y="470.00" text-anchor="middle" font-size="12" fill="#64748b">8.40</text>
+<line x1="90.00" y1="219.00" x2="800.00" y2="219.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="78.00" y="223.00" text-anchor="end" font-size="12" fill="#64748b">0.61</text>
+<line x1="658.00" y1="65.00" x2="658.00" y2="450.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="658.00" y="470.00" text-anchor="middle" font-size="12" fill="#64748b">11.20</text>
+<line x1="90.00" y1="142.00" x2="800.00" y2="142.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="78.00" y="146.00" text-anchor="end" font-size="12" fill="#64748b">0.83</text>
+<line x1="800.00" y1="65.00" x2="800.00" y2="450.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="800.00" y="470.00" text-anchor="middle" font-size="12" fill="#64748b">14.00</text>
+<line x1="90.00" y1="65.00" x2="800.00" y2="65.00" stroke="#e2e8f0" stroke-width="1" />
+<text x="78.00" y="69.00" text-anchor="end" font-size="12" fill="#64748b">1.05</text>
+<text x="445.00" y="502.00" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">Time After Diary Infall Delta t (units of t_* / 4)</text>
+<text x="25" y="257.50" text-anchor="middle" font-size="14" font-weight="600" fill="#334155" transform="rotate(-90 25 257.5)">Quantum Decoding Fidelity F(Bob)</text>
 <polyline points="90.00,432.50 95.11,432.49 100.22,432.49 105.32,432.49 110.43,432.49 115.54,432.48 120.65,432.48 125.76,432.47 130.86,432.46 135.97,432.45 141.08,432.43 146.19,432.41 151.29,432.38 156.40,432.34 161.51,432.29 166.62,432.21 171.73,432.12 176.83,431.99 181.94,431.82 187.05,431.60 192.16,431.30 197.27,430.90 202.37,430.37 207.48,429.67 212.59,428.74 217.70,427.50 222.81,425.87 227.91,423.71 233.02,420.88 238.13,417.17 243.24,412.35 248.35,406.14 253.45,398.21 258.56,388.22 263.67,375.85 268.78,360.82 273.88,343.03 278.99,322.57 284.10,299.81 289.21,275.42 294.32,250.31 299.42,225.49 304.53,201.94 309.64,180.42 314.75,161.46 319.86,145.26 324.96,131.77 330.07,120.80 335.18,112.03 340.29,105.12 345.40,99.74 350.50,95.59 355.61,92.41 360.72,89.99 365.83,88.14 370.94,86.75 376.04,85.70 381.15,84.90 386.26,84.31 391.37,83.86 396.47,83.52 401.58,83.26 406.69,83.07 411.80,82.93 416.91,82.82 422.01,82.74 427.12,82.68 432.23,82.64 437.34,82.60 442.45,82.58 447.55,82.56 452.66,82.54 457.77,82.53 462.88,82.52 467.99,82.52 473.09,82.51 478.20,82.51 483.31,82.51 488.42,82.51 493.53,82.50 498.63,82.50 503.74,82.50 508.85,82.50 513.96,82.50 519.06,82.50 524.17,82.50 529.28,82.50 534.39,82.50 539.50,82.50 544.60,82.50 549.71,82.50 554.82,82.50 559.93,82.50 565.04,82.50 570.14,82.50 575.25,82.50 580.36,82.50 585.47,82.50 590.58,82.50 595.68,82.50 600.79,82.50 605.90,82.50 611.01,82.50 616.12,82.50 621.22,82.50 626.33,82.50 631.44,82.50 636.55,82.50 641.65,82.50 646.76,82.50 651.87,82.50 656.98,82.50 662.09,82.50 667.19,82.50 672.30,82.50 677.41,82.50 682.52,82.50 687.63,82.50 692.73,82.50 697.84,82.50 702.95,82.50 708.06,82.50 713.17,82.50 718.27,82.50 723.38,82.50 728.49,82.50 733.60,82.50 738.71,82.50 743.81,82.50 748.92,82.50 754.03,82.50 759.14,82.50 764.24,82.50 769.35,82.50 774.46,82.50 779.57,82.50 784.68,82.50 789.78,82.50 794.89,82.50 800.00,82.50" fill="none" stroke="#16a34a" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" />
 <polyline points="90.00,432.50 95.11,432.50 100.22,432.50 105.32,432.50 110.43,432.50 115.54,432.50 120.65,432.50 125.76,432.50 130.86,432.50 135.97,432.50 141.08,432.50 146.19,432.50 151.29,432.50 156.40,432.50 161.51,432.50 166.62,432.50 171.73,432.50 176.83,432.50 181.94,432.50 187.05,432.50 192.16,432.50 197.27,432.50 202.37,432.50 207.48,432.50 212.59,432.50 217.70,432.50 222.81,432.50 227.91,432.50 233.02,432.50 238.13,432.50 243.24,432.50 248.35,432.50 253.45,432.50 258.56,432.50 263.67,432.50 268.78,432.50 273.88,432.50 278.99,432.50 284.10,432.50 289.21,432.50 294.32,432.50 299.42,432.50 304.53,432.50 309.64,432.50 314.75,432.50 319.86,432.50 324.96,432.50 330.07,432.50 335.18,432.50 340.29,432.50 345.40,432.50 350.50,432.50 355.61,432.50 360.72,432.50 365.83,432.50 370.94,432.50 376.04,432.50 381.15,432.50 386.26,432.50 391.37,432.49 396.47,432.49 401.58,432.49 406.69,432.49 411.80,432.49 416.91,432.49 422.01,432.48 427.12,432.48 432.23,432.47 437.34,432.47 442.45,432.46 447.55,432.45 452.66,432.44 457.77,432.43 462.88,432.41 467.99,432.39 473.09,432.37 478.20,432.34 483.31,432.30 488.42,432.26 493.53,432.21 498.63,432.14 503.74,432.06 508.85,431.97 513.96,431.85 519.06,431.70 524.17,431.52 529.28,431.30 534.39,431.04 539.50,430.71 544.60,430.32 549.71,429.84 554.82,429.25 559.93,428.53 565.04,427.66 570.14,426.59 575.25,425.30 580.36,423.74 585.47,421.84 590.58,419.55 595.68,416.79 600.79,413.47 605.90,409.50 611.01,404.78 616.12,399.18 621.22,392.59 626.33,384.90 631.44,375.99 636.55,365.79 641.65,354.23 646.76,341.31 651.87,327.09 656.98,311.69 662.09,295.29 667.19,278.18 672.30,260.65 677.41,243.05 682.52,225.75 687.63,209.07 692.73,193.28 697.84,178.62 702.95,165.23 708.06,153.19 713.17,142.50 718.27,133.14 723.38,125.02 728.49,118.05 733.60,112.11 738.71,107.09 743.81,102.86 748.92,99.33 754.03,96.38 759.14,93.93 764.24,91.90 769.35,90.22 774.46,88.84 779.57,87.70 784.68,86.76 789.78,85.99 794.89,85.36 800.00,84.84" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" stroke-linejoin="round" stroke-linecap="round" />
-<line x1="292.85714285714283" y1="65" x2="292.85714285714283" y2="450" stroke="#16a34a" stroke-width="2.0" stroke-dasharray="4 4" />
-<text x="298.85714285714283" y="90" text-anchor="start" font-size="11" font-weight="bold" fill="#16a34a">Scrambling Horizon t_* = (beta/2pi) ln S</text>
-<line x1="90" y1="82.49999999986329" x2="800" y2="82.49999999986329" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 3" />
-<text x="100" y="76.49999999986329" text-anchor="start" font-size="11" font-weight="bold" fill="#64748b">Complete Information Reconstruction (F = 1.0)</text>
-<text x="353.7142857142857" y="275.0000000196926" text-anchor="start" font-size="11" fill="#15803d" font-weight="bold">Information Mirror Effect:
-Old Black Holes Reflect Infalling Bits
-at the Speed of Information c_info!</text>
-<rect x="490" y="80" width="300" height="54" fill="rgba(255,255,255,0.92)" stroke="#cbd5e1" rx="4" ry="4" />
-<line x1="502" y1="94" x2="526" y2="94" stroke="#16a34a" stroke-width="3.0" />
-<text x="534" y="98" font-size="11" fill="#334155">Old Black Hole (t > t_Page): Decodes at Scrambling Time t_*</text>
-<line x1="502" y1="116" x2="526" y2="116" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" />
-<text x="534" y="120" font-size="11" fill="#334155">Young Black Hole (t < t_Page): Information Trapped until Late Evaporation</text>
+<line x1="292.86" y1="65.00" x2="292.86" y2="450.00" stroke="#16a34a" stroke-width="2.0" stroke-dasharray="4 4" />
+<text x="298.86" y="90.00" text-anchor="start" font-size="11" font-weight="bold" fill="#16a34a">Scrambling Horizon t_* = (beta/2pi) ln S</text>
+<line x1="90.00" y1="82.50" x2="800.00" y2="82.50" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 3" />
+<text x="100.00" y="76.50" text-anchor="start" font-size="11" font-weight="bold" fill="#64748b">Complete Information Reconstruction (F = 1.0)</text>
+<text x="353.71" y="275.00" text-anchor="start" font-size="11" fill="#15803d" font-weight="bold">Information Mirror Effect:</text>
+<text x="353.71" y="289.85" text-anchor="start" font-size="11" fill="#15803d" font-weight="bold">Old Black Holes Reflect Infalling Bits</text>
+<text x="353.71" y="304.70" text-anchor="start" font-size="11" fill="#15803d" font-weight="bold">at the Speed of Information c_info!</text>
+<rect x="370.00" y="80.00" width="420.00" height="54.00" fill="rgba(255,255,255,0.94)" stroke="#cbd5e1" rx="4" ry="4" />
+<line x1="382.00" y1="94.00" x2="406.00" y2="94.00" stroke="#16a34a" stroke-width="3.0" />
+<text x="414.00" y="98.00" font-size="11" fill="#334155">Old Black Hole (t &gt; t_Page): Decodes at Scrambling Time t_*</text>
+<line x1="382.00" y1="116.00" x2="406.00" y2="116.00" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5 4" />
+<text x="414.00" y="120.00" font-size="11" fill="#334155">Young Black Hole (t &lt; t_Page): Information Trapped until Late Evaporation</text>
 </svg>

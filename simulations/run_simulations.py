@@ -27,8 +27,21 @@ os.makedirs(DATA_DIR, exist_ok=True)
 
 
 # ==============================================================================
-# Helper: SVG Plotter (pure Python, publication quality)
 # ==============================================================================
+# Helper: XML Escaping and SVG Plotter (pure Python, publication quality)
+# ==============================================================================
+def escape_xml(s):
+    if s is None:
+        return ""
+    if not isinstance(s, str):
+        s = str(s)
+    return (s.replace("&", "&amp;")
+             .replace("<", "&lt;")
+             .replace(">", "&gt;")
+             .replace('"', "&quot;")
+             .replace("'", "&apos;"))
+
+
 class SVGPlotter:
     def __init__(self, width=800, height=500, title="", xlabel="", ylabel="", pad_l=90, pad_r=40, pad_t=60, pad_b=70):
         self.width = width
@@ -67,6 +80,16 @@ class SVGPlotter:
             "stroke_dash": stroke_dash
         })
 
+    def add_horizontal_line(self, y_val, label="", color="#059669", stroke_width=2.0, stroke_dash="4 4"):
+        self.annotations.append({
+            "type": "hline",
+            "y": y_val,
+            "label": label,
+            "color": color,
+            "stroke_width": stroke_width,
+            "stroke_dash": stroke_dash
+        })
+
     def add_text(self, x_data, y_data, text, color="#222", font_size=12, anchor="start"):
         self.annotations.append({
             "type": "text",
@@ -86,22 +109,16 @@ class SVGPlotter:
             all_x.extend(s["x"])
             all_y.extend(s["y"])
 
-        if not all_x:
-            min_x, max_x = 0.0, 1.0
-        else:
-            min_x, max_x = min(all_x), max(all_x)
-        if not all_y:
-            min_y, max_y = 0.0, 1.0
-        else:
-            min_y, max_y = min(all_y), max(all_y)
+        min_x = min(all_x) if all_x else 0.0
+        max_x = max(all_x) if all_x else 1.0
+        min_y = min(all_y) if all_y else 0.0
+        max_y = max(all_y) if all_y else 1.0
 
-        # Handle zero ranges
         if abs(max_x - min_x) < 1e-12:
             max_x += 1.0
         if abs(max_y - min_y) < 1e-12:
             max_y += 1.0
 
-        # Margins
         dx = max_x - min_x
         dy = max_y - min_y
         min_y_plot = min_y - 0.05 * dy
@@ -113,77 +130,86 @@ class SVGPlotter:
         def map_y(y):
             return self.pad_t + self.plot_h - (y - min_y_plot) / (max_y_plot - min_y_plot) * self.plot_h
 
-        svg = []
-        svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.width} {self.height}" width="{self.width}" height="{self.height}" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif;">')
-
-        # Title
-        svg.append(f'<text x="{self.width / 2}" y="{self.pad_t / 2 + 8}" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a202c">{self.title}</text>')
-
-        # Axes Box
         x0, y0 = self.pad_l, self.pad_t
         w, h = self.plot_w, self.plot_h
+
+        svg = []
+        svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.width} {self.height}" width="{self.width}" height="{self.height}" style="background-color: #ffffff; font-family: system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif;">')
+        svg.append('<rect width="100%" height="100%" fill="#ffffff" />')
+
+        # Title
+        svg.append(f'<text x="{self.width / 2}" y="{self.pad_t / 2 + 8}" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">{escape_xml(self.title)}</text>')
+
+        # Axes Box
         svg.append(f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />')
 
-        # Grid lines (5 ticks on each axis)
+        # Grid lines (6 ticks on each axis)
         num_ticks = 6
         for i in range(num_ticks):
             # X grid
             tx = min_x + i * dx / (num_ticks - 1)
             sx = map_x(tx)
-            svg.append(f'<line x1="{sx}" y1="{y0}" x2="{sx}" y2="{y0 + h}" stroke="#e2e8f0" stroke-width="1" />')
-            svg.append(f'<text x="{sx}" y="{y0 + h + 20}" text-anchor="middle" font-size="12" fill="#64748b">{tx:.2f}</text>')
+            svg.append(f'<line x1="{sx:.2f}" y1="{y0:.2f}" x2="{sx:.2f}" y2="{y0 + h:.2f}" stroke="#e2e8f0" stroke-width="1" />')
+            tx_str = f"{tx:.2e}" if (abs(tx) < 0.01 and abs(tx) > 1e-12) or abs(tx) > 999 else f"{tx:.2f}"
+            svg.append(f'<text x="{sx:.2f}" y="{y0 + h + 20:.2f}" text-anchor="middle" font-size="12" fill="#64748b">{escape_xml(tx_str)}</text>')
 
             # Y grid
             ty = min_y_plot + i * (max_y_plot - min_y_plot) / (num_ticks - 1)
             sy = map_y(ty)
-            svg.append(f'<line x1="{x0}" y1="{sy}" x2="{x0 + w}" y2="{sy}" stroke="#e2e8f0" stroke-width="1" />')
-            if abs(ty) < 0.01 and abs(ty) > 1e-12:
-                ty_str = f"{ty:.2e}"
-            elif abs(ty) > 999:
-                ty_str = f"{ty:.2e}"
-            else:
-                ty_str = f"{ty:.2f}"
-            svg.append(f'<text x="{x0 - 12}" y="{sy + 4}" text-anchor="end" font-size="12" fill="#64748b">{ty_str}</text>')
+            svg.append(f'<line x1="{x0:.2f}" y1="{sy:.2f}" x2="{x0 + w:.2f}" y2="{sy:.2f}" stroke="#e2e8f0" stroke-width="1" />')
+            ty_str = f"{ty:.2e}" if (abs(ty) < 0.01 and abs(ty) > 1e-12) or abs(ty) > 999 else f"{ty:.2f}"
+            svg.append(f'<text x="{x0 - 12:.2f}" y="{sy + 4:.2f}" text-anchor="end" font-size="12" fill="#64748b">{escape_xml(ty_str)}</text>')
 
         # Axis labels
-        svg.append(f'<text x="{self.pad_l + self.plot_w / 2}" y="{self.height - 18}" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">{self.xlabel}</text>')
-        svg.append(f'<text x="25" y="{self.pad_t + self.plot_h / 2}" text-anchor="middle" font-size="14" font-weight="600" fill="#334155" transform="rotate(-90 25 {self.pad_t + self.plot_h / 2})">{self.ylabel}</text>')
+        svg.append(f'<text x="{self.pad_l + self.plot_w / 2:.2f}" y="{self.height - 18:.2f}" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">{escape_xml(self.xlabel)}</text>')
+        svg.append(f'<text x="25" y="{self.pad_t + self.plot_h / 2:.2f}" text-anchor="middle" font-size="14" font-weight="600" fill="#334155" transform="rotate(-90 25 {self.pad_t + self.plot_h / 2:.2f})">{escape_xml(self.ylabel)}</text>')
 
         # Series lines
         for s in self.series:
-            pts = []
-            for xi, yi in zip(s["x"], s["y"]):
-                pts.append(f"{map_x(xi):.2f},{map_y(yi):.2f}")
+            pts = [f"{map_x(xi):.2f},{map_y(yi):.2f}" for xi, yi in zip(s["x"], s["y"])]
             polyline_pts = " ".join(pts)
             dash_attr = f' stroke-dasharray="{s["stroke_dash"]}"' if s["stroke_dash"] else ""
             svg.append(f'<polyline points="{polyline_pts}" fill="none" stroke="{s["color"]}" stroke-width="{s["stroke_width"]}"{dash_attr} stroke-linejoin="round" stroke-linecap="round" />')
 
-        # Annotations (vlines)
+        # Annotations (vlines, hlines, text)
         for ann in self.annotations:
             if ann["type"] == "vline":
                 sx = map_x(ann["x"])
                 if x0 <= sx <= x0 + w:
-                    svg.append(f'<line x1="{sx}" y1="{y0}" x2="{sx}" y2="{y0 + h}" stroke="{ann["color"]}" stroke-width="{ann["stroke_width"]}" stroke-dasharray="{ann["stroke_dash"]}" />')
+                    svg.append(f'<line x1="{sx:.2f}" y1="{y0:.2f}" x2="{sx:.2f}" y2="{y0 + h:.2f}" stroke="{ann["color"]}" stroke-width="{ann["stroke_width"]}" stroke-dasharray="{ann["stroke_dash"]}" />')
                     if ann["label"]:
-                        svg.append(f'<text x="{sx + 6}" y="{y0 + 25}" text-anchor="start" font-size="11" font-weight="bold" fill="{ann["color"]}">{ann["label"]}</text>')
+                        svg.append(f'<text x="{sx + 6:.2f}" y="{y0 + 25:.2f}" text-anchor="start" font-size="11" font-weight="bold" fill="{ann["color"]}">{escape_xml(ann["label"])}</text>')
+            elif ann["type"] == "hline":
+                sy = map_y(ann["y"])
+                if y0 <= sy <= y0 + h:
+                    svg.append(f'<line x1="{x0:.2f}" y1="{sy:.2f}" x2="{x0 + w:.2f}" y2="{sy:.2f}" stroke="{ann["color"]}" stroke-width="{ann["stroke_width"]}" stroke-dasharray="{ann["stroke_dash"]}" />')
+                    if ann["label"]:
+                        svg.append(f'<text x="{x0 + 10:.2f}" y="{sy - 6:.2f}" text-anchor="start" font-size="11" font-weight="bold" fill="{ann["color"]}">{escape_xml(ann["label"])}</text>')
             elif ann["type"] == "text":
                 sx = map_x(ann["x"])
                 sy = map_y(ann["y"])
-                svg.append(f'<text x="{sx}" y="{sy}" text-anchor="{ann["anchor"]}" font-size="{ann["font_size"]}" fill="{ann["color"]}" font-weight="bold">{ann["text"]}</text>')
+                sx = max(x0 + 8, min(x0 + w - 8, sx))
+                sy = max(y0 + 18, min(y0 + h - 8, sy))
+                lines = str(ann["text"]).split("\n")
+                line_h = ann["font_size"] * 1.35
+                for idx_l, line_str in enumerate(lines):
+                    line_y = sy + idx_l * line_h
+                    svg.append(f'<text x="{sx:.2f}" y="{line_y:.2f}" text-anchor="{ann["anchor"]}" font-size="{ann["font_size"]}" fill="{ann["color"]}" font-weight="bold">{escape_xml(line_str)}</text>')
 
         # Legend (if labels exist)
         labeled_series = [s for s in self.series if s["label"]]
         if labeled_series:
-            leg_x = self.pad_l + self.plot_w - 230
+            max_label_len = max(len(s["label"]) for s in labeled_series)
+            leg_w = max(220, min(380, max_label_len * 7 + 55))
+            leg_x = self.pad_l + self.plot_w - leg_w - 10
             leg_y = self.pad_t + 15
-            leg_w = 220
             leg_h = len(labeled_series) * 22 + 10
-            svg.append(f'<rect x="{leg_x}" y="{leg_y}" width="{leg_w}" height="{leg_h}" fill="rgba(255,255,255,0.92)" stroke="#cbd5e1" rx="4" ry="4" />')
+            svg.append(f'<rect x="{leg_x:.2f}" y="{leg_y:.2f}" width="{leg_w:.2f}" height="{leg_h:.2f}" fill="rgba(255,255,255,0.94)" stroke="#cbd5e1" rx="4" ry="4" />')
             for idx, s in enumerate(labeled_series):
                 ly = leg_y + 18 + idx * 22
                 dash_attr = f' stroke-dasharray="{s["stroke_dash"]}"' if s["stroke_dash"] else ""
-                svg.append(f'<line x1="{leg_x + 12}" y1="{ly - 4}" x2="{leg_x + 36}" y2="{ly - 4}" stroke="{s["color"]}" stroke-width="{s["stroke_width"]}"{dash_attr} />')
-                svg.append(f'<text x="{leg_x + 44}" y="{ly}" font-size="11" fill="#334155">{s["label"]}</text>')
+                svg.append(f'<line x1="{leg_x + 12:.2f}" y1="{ly - 4:.2f}" x2="{leg_x + 36:.2f}" y2="{ly - 4:.2f}" stroke="{s["color"]}" stroke-width="{s["stroke_width"]}"{dash_attr} />')
+                svg.append(f'<text x="{leg_x + 44:.2f}" y="{ly:.2f}" font-size="11" fill="#334155">{escape_xml(s["label"])}</text>')
 
         svg.append('</svg>')
 
@@ -448,7 +474,7 @@ def run_simulation_lieb_robinson():
             "effective_velocity": r / t_arrival if t_arrival and t_arrival > 0 else None
         }
 
-    plotter_lr.add_text(0.5, 0.8, "Emergent Light Cone:\nInformation Speed v_info <= 2e J", color="#1e293b", font_size=12)
+    plotter_lr.add_text(0.5, 0.45, "Emergent Light Cone:\nInformation Speed v_info <= 2e J", color="#1e293b", font_size=12)
 
     plot_path = os.path.join(FIG_DIR, "fig3_lieb_robinson_cone.svg")
     plotter_lr.save(plot_path)
@@ -469,7 +495,8 @@ def generate_spacetime_cone_svg(filepath, bessel_j, J, t_max):
     plot_h = h - pad_t - pad_b
 
     svg = []
-    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" style="background-color: #ffffff; font-family: sans-serif;">')
+    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" style="background-color: #ffffff; font-family: system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif;">')
+    svg.append('<rect width="100%" height="100%" fill="#ffffff" />')
     svg.append(f'<text x="{w/2}" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Spacetime Information Propagation: Emergence of Causal Light Cones</text>')
 
     # Background
@@ -516,7 +543,7 @@ def generate_spacetime_cone_svg(filepath, bessel_j, J, t_max):
 
     # Labels
     svg.append(f'<text x="{cx + 10}" y="{pad_t + 50}" fill="#f43f5e" font-size="13" font-weight="bold">Emergent Causal Cone (v_info = v_LR)</text>')
-    svg.append(f'<text x="{pad_l + 30}" y="{pad_t + 150}" fill="#94a3b8" font-size="12">Spacelike Separation: Commutator -> 0</text>')
+    svg.append(f'<text x="{pad_l + 30}" y="{pad_t + 150}" fill="#94a3b8" font-size="12">Spacelike Separation: Commutator -&gt; 0</text>')
     svg.append(f'<text x="{cx}" y="{bot_y - 20}" text-anchor="middle" fill="#f8fafc" font-size="12">Source Perturbation (x=0, t=0)</text>')
 
     # Axes

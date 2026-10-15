@@ -24,6 +24,21 @@ os.makedirs(FIG_DIR, exist_ok=True)
 os.makedirs(DATA_DIR, exist_ok=True)
 
 
+# ==============================================================================
+# Helper: XML Escaping and SVG Plotter (pure Python, publication quality)
+# ==============================================================================
+def escape_xml(s):
+    if s is None:
+        return ""
+    if not isinstance(s, str):
+        s = str(s)
+    return (s.replace("&", "&amp;")
+             .replace("<", "&lt;")
+             .replace(">", "&gt;")
+             .replace('"', "&quot;")
+             .replace("'", "&apos;"))
+
+
 class SVGPlotter:
     def __init__(self, width=840, height=520, title="", xlabel="", ylabel="", pad_l=90, pad_r=40, pad_t=65, pad_b=70):
         self.width = width
@@ -109,30 +124,32 @@ class SVGPlotter:
         def map_y(y):
             return self.pad_t + self.plot_h - (y - min_y_plot) / (max_y_plot - min_y_plot) * self.plot_h
 
-        svg = []
-        svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.width} {self.height}" width="{self.width}" height="{self.height}" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif;">')
-        svg.append(f'<text x="{self.width / 2}" y="{self.pad_t / 2 + 8}" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">{self.title}</text>')
-
         x0, y0 = self.pad_l, self.pad_t
         w, h = self.plot_w, self.plot_h
+
+        svg = []
+        svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {self.width} {self.height}" width="{self.width}" height="{self.height}" style="background-color: #ffffff; font-family: system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif;">')
+        svg.append('<rect width="100%" height="100%" fill="#ffffff" />')
+        svg.append(f'<text x="{self.width / 2}" y="{self.pad_t / 2 + 8}" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">{escape_xml(self.title)}</text>')
+
         svg.append(f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" />')
 
         num_ticks = 6
         for i in range(num_ticks):
             tx = min_x + i * dx / (num_ticks - 1)
             sx = map_x(tx)
-            svg.append(f'<line x1="{sx}" y1="{y0}" x2="{sx}" y2="{y0 + h}" stroke="#e2e8f0" stroke-width="1" />')
+            svg.append(f'<line x1="{sx:.2f}" y1="{y0:.2f}" x2="{sx:.2f}" y2="{y0 + h:.2f}" stroke="#e2e8f0" stroke-width="1" />')
             tx_str = f"{tx:.2e}" if (abs(tx) < 0.01 and abs(tx) > 1e-12) or abs(tx) > 999 else f"{tx:.2f}"
-            svg.append(f'<text x="{sx}" y="{y0 + h + 20}" text-anchor="middle" font-size="12" fill="#64748b">{tx_str}</text>')
+            svg.append(f'<text x="{sx:.2f}" y="{y0 + h + 20:.2f}" text-anchor="middle" font-size="12" fill="#64748b">{escape_xml(tx_str)}</text>')
 
             ty = min_y_plot + i * (max_y_plot - min_y_plot) / (num_ticks - 1)
             sy = map_y(ty)
-            svg.append(f'<line x1="{x0}" y1="{sy}" x2="{x0 + w}" y2="{sy}" stroke="#e2e8f0" stroke-width="1" />')
+            svg.append(f'<line x1="{x0:.2f}" y1="{sy:.2f}" x2="{x0 + w:.2f}" y2="{sy:.2f}" stroke="#e2e8f0" stroke-width="1" />')
             ty_str = f"{ty:.2e}" if (abs(ty) < 0.01 and abs(ty) > 1e-12) or abs(ty) > 999 else f"{ty:.2f}"
-            svg.append(f'<text x="{x0 - 12}" y="{sy + 4}" text-anchor="end" font-size="12" fill="#64748b">{ty_str}</text>')
+            svg.append(f'<text x="{x0 - 12:.2f}" y="{sy + 4:.2f}" text-anchor="end" font-size="12" fill="#64748b">{escape_xml(ty_str)}</text>')
 
-        svg.append(f'<text x="{self.pad_l + self.plot_w / 2}" y="{self.height - 18}" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">{self.xlabel}</text>')
-        svg.append(f'<text x="25" y="{self.pad_t + self.plot_h / 2}" text-anchor="middle" font-size="14" font-weight="600" fill="#334155" transform="rotate(-90 25 {self.pad_t + self.plot_h / 2})">{self.ylabel}</text>')
+        svg.append(f'<text x="{self.pad_l + self.plot_w / 2:.2f}" y="{self.height - 18:.2f}" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">{escape_xml(self.xlabel)}</text>')
+        svg.append(f'<text x="25" y="{self.pad_t + self.plot_h / 2:.2f}" text-anchor="middle" font-size="14" font-weight="600" fill="#334155" transform="rotate(-90 25 {self.pad_t + self.plot_h / 2})">{escape_xml(self.ylabel)}</text>')
 
         for s in self.series:
             pts = [f"{map_x(xi):.2f},{map_y(yi):.2f}" for xi, yi in zip(s["x"], s["y"])]
@@ -143,32 +160,39 @@ class SVGPlotter:
             if ann["type"] == "vline":
                 sx = map_x(ann["x"])
                 if x0 <= sx <= x0 + w:
-                    svg.append(f'<line x1="{sx}" y1="{y0}" x2="{sx}" y2="{y0 + h}" stroke="{ann["color"]}" stroke-width="{ann["stroke_width"]}" stroke-dasharray="{ann["stroke_dash"]}" />')
+                    svg.append(f'<line x1="{sx:.2f}" y1="{y0:.2f}" x2="{sx:.2f}" y2="{y0 + h:.2f}" stroke="{ann["color"]}" stroke-width="{ann["stroke_width"]}" stroke-dasharray="{ann["stroke_dash"]}" />')
                     if ann["label"]:
-                        svg.append(f'<text x="{sx + 6}" y="{y0 + 25}" text-anchor="start" font-size="11" font-weight="bold" fill="{ann["color"]}">{ann["label"]}</text>')
+                        svg.append(f'<text x="{sx + 6:.2f}" y="{y0 + 25:.2f}" text-anchor="start" font-size="11" font-weight="bold" fill="{ann["color"]}">{escape_xml(ann["label"])}</text>')
             elif ann["type"] == "hline":
                 sy = map_y(ann["y"])
                 if y0 <= sy <= y0 + h:
-                    svg.append(f'<line x1="{x0}" y1="{sy}" x2="{x0 + w}" y2="{sy}" stroke="{ann["color"]}" stroke-width="{ann["stroke_width"]}" stroke-dasharray="{ann["stroke_dash"]}" />')
+                    svg.append(f'<line x1="{x0:.2f}" y1="{sy:.2f}" x2="{x0 + w:.2f}" y2="{sy:.2f}" stroke="{ann["color"]}" stroke-width="{ann["stroke_width"]}" stroke-dasharray="{ann["stroke_dash"]}" />')
                     if ann["label"]:
-                        svg.append(f'<text x="{x0 + 10}" y="{sy - 6}" text-anchor="start" font-size="11" font-weight="bold" fill="{ann["color"]}">{ann["label"]}</text>')
+                        svg.append(f'<text x="{x0 + 10:.2f}" y="{sy - 6:.2f}" text-anchor="start" font-size="11" font-weight="bold" fill="{ann["color"]}">{escape_xml(ann["label"])}</text>')
             elif ann["type"] == "text":
                 sx = map_x(ann["x"])
                 sy = map_y(ann["y"])
-                svg.append(f'<text x="{sx}" y="{sy}" text-anchor="{ann["anchor"]}" font-size="{ann["font_size"]}" fill="{ann["color"]}" font-weight="bold">{ann["text"]}</text>')
+                sx = max(x0 + 8, min(x0 + w - 8, sx))
+                sy = max(y0 + 18, min(y0 + h - 8, sy))
+                lines = str(ann["text"]).split("\n")
+                line_h = ann["font_size"] * 1.35
+                for idx_l, line_str in enumerate(lines):
+                    line_y = sy + idx_l * line_h
+                    svg.append(f'<text x="{sx:.2f}" y="{line_y:.2f}" text-anchor="{ann["anchor"]}" font-size="{ann["font_size"]}" fill="{ann["color"]}" font-weight="bold">{escape_xml(line_str)}</text>')
 
         labeled_series = [s for s in self.series if s["label"]]
         if labeled_series:
-            leg_x = self.pad_l + self.plot_w - 310
+            max_label_len = max(len(s["label"]) for s in labeled_series)
+            leg_w = max(220, min(420, max_label_len * 7 + 55))
+            leg_x = self.pad_l + self.plot_w - leg_w - 10
             leg_y = self.pad_t + 15
-            leg_w = 300
             leg_h = len(labeled_series) * 22 + 10
-            svg.append(f'<rect x="{leg_x}" y="{leg_y}" width="{leg_w}" height="{leg_h}" fill="rgba(255,255,255,0.92)" stroke="#cbd5e1" rx="4" ry="4" />')
+            svg.append(f'<rect x="{leg_x:.2f}" y="{leg_y:.2f}" width="{leg_w:.2f}" height="{leg_h:.2f}" fill="rgba(255,255,255,0.94)" stroke="#cbd5e1" rx="4" ry="4" />')
             for idx, s in enumerate(labeled_series):
                 ly = leg_y + 18 + idx * 22
                 dash_attr = f' stroke-dasharray="{s["stroke_dash"]}"' if s["stroke_dash"] else ""
-                svg.append(f'<line x1="{leg_x + 12}" y1="{ly - 4}" x2="{leg_x + 36}" y2="{ly - 4}" stroke="{s["color"]}" stroke-width="{s["stroke_width"]}"{dash_attr} />')
-                svg.append(f'<text x="{leg_x + 44}" y="{ly}" font-size="11" fill="#334155">{s["label"]}</text>')
+                svg.append(f'<line x1="{leg_x + 12:.2f}" y1="{ly - 4:.2f}" x2="{leg_x + 36:.2f}" y2="{ly - 4:.2f}" stroke="{s["color"]}" stroke-width="{s["stroke_width"]}"{dash_attr} />')
+                svg.append(f'<text x="{leg_x + 44:.2f}" y="{ly:.2f}" font-size="11" fill="#334155">{escape_xml(s["label"])}</text>')
 
         svg.append('</svg>')
         with open(filepath, "w", encoding="utf-8") as f:
