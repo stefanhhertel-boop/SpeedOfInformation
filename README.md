@@ -51,6 +51,8 @@ SpeedOfInformation/
 │   ├── run_polariton_information_simulation.py           # Suite 6: Polariton Mixing, QSL Delay, & Pulse Compression
 │   ├── run_informational_time_dilation_simulation.py     # Suite 7: Bandwidth Conservation, Muons, & Gravitational Channels
 │   └── run_holographic_qec_simulation.py                 # Suite 8: Entanglement Wedge, HaPPY Code Distance, & Decoding Delay
+├── src/
+│   └── holographic_qec_prototype.py                      # Empirical Benchmark: CPU Bus Time Dilation, Monte-Carlo QECC & RAID
 ├── figures/
 │   ├── fig1_sommerfeld_brillouin_front.svg               # Front velocity vs superluminal peak in dispersive media
 │   ├── fig2_proca_photon_velocity.svg                    # Massive photon velocity dispersion vs causal metric
@@ -74,7 +76,8 @@ SpeedOfInformation/
 │   ├── fig20_complexity_four_epochs.svg                  # The Four Epochs of Quantum Complexity
 │   ├── fig21_polariton_information_overhead.svg          # Polariton Information Overhead & Slow Light in Matter
 │   ├── fig22_time_dilation_information_bandwidth.svg     # Time Dilation as Informational Bandwidth Conservation
-│   └── fig23_holographic_quantum_error_correction.svg    # Holographic Quantum Error Correction & Causal Wedge Delay
+│   ├── fig23_holographic_quantum_error_correction.svg    # Holographic Quantum Error Correction & Causal Wedge Delay
+│   └── fig24_qec_hardware_prototype_benchmark.svg        # Empirical CPU Bus Time Dilation, Monte-Carlo QECC & RAID Benchmark
 └── data/
     ├── sim1_sommerfeld_brillouin.json                    # Numerical output from Simulation 1
     ├── sim2_proca_dispersion.json                        # Numerical output from Simulation 2
@@ -95,14 +98,15 @@ SpeedOfInformation/
     ├── sim_complexity_epochs.json                        # Numerical output from Complexity Epochs Simulation
     ├── sim_polariton_information.json                    # Numerical output from Polariton Information Simulation
     ├── sim_time_dilation_bandwidth.json                  # Numerical output from Time Dilation Simulation
-    └── sim_holographic_qec.json                          # Numerical output from Holographic QECC Simulation
+    ├── sim_holographic_qec.json                          # Numerical output from Holographic QECC Simulation
+    └── prototype_qec_hardware_benchmark.json             # Empirical telemetry from Hardware & Monte-Carlo Benchmark
 ```
 
 ---
 
-## Numerical Visualizations & Analytical Parameter Models
+## Numerical Visualizations, Hardware Prototype & Analytical Models
 
-All analytical modeling and visualization suites use standard library Python (zero external dependencies):
+All analytical modeling suites and the empirical hardware benchmark use standard library Python (zero external dependencies):
 
 ```bash
 python3 simulations/run_simulations.py
@@ -113,9 +117,10 @@ python3 simulations/run_cosmology_and_complexity_simulations.py
 python3 simulations/run_polariton_information_simulation.py
 python3 simulations/run_informational_time_dilation_simulation.py
 python3 simulations/run_holographic_qec_simulation.py
+python3 src/holographic_qec_prototype.py
 ```
 
-These scripts evaluate the exact closed-form analytical solutions, map parameter spaces, and generate high-resolution publication-quality vector diagrams (`.svg`) illustrating the mathematical proofs.
+These scripts evaluate the exact closed-form analytical solutions, execute live hardware and Monte-Carlo fault-injection benchmarks, and generate high-resolution publication-quality vector diagrams (`.svg`) illustrating the mathematical proofs.
 
-To view the interactive scientific paper with rendered formulas, interactive TOC, and all 23 vector figures:
+To view the interactive scientific paper with rendered formulas, interactive TOC, and all 24 vector figures:
 - Open `paper/paper_index.html` in your web browser.

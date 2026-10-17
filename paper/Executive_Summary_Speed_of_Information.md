@@ -200,9 +200,9 @@ All assets have been created, validated, and documented in the workspace:
 
 ### 2. Publication Documents
 * [`Speed_of_Information_Paper.tex`](file:///home/stefan/Projects/SpeedOfInformation/paper/Speed_of_Information_Paper.tex): Publication-ready LaTeX source formatted for Physical Review D / Foundations of Physics.
-* [`paper_index.html`](file:///home/stefan/Projects/SpeedOfInformation/paper/paper_index.html): Interactive web edition with embedded MathJax formula rendering, responsive layout, table of contents, and all 23 vector diagrams.
+* [`paper_index.html`](file:///home/stefan/Projects/SpeedOfInformation/paper/paper_index.html): Interactive web edition with embedded MathJax formula rendering, responsive layout, table of contents, and all 24 vector diagrams.
 
-### 3. Numerical Simulation Engines (Python Standard Library)
+### 3. Numerical Simulation Engines & Hardware Prototype (Python Standard Library)
 1. [`run_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_simulations.py): Suite 1 (Optical Wavefronts, Proca Dispersion, Lieb-Robinson Cones, Quantum Gravity MDR).
 2. [`run_quantum_relativity_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_quantum_relativity_simulations.py): Suite 2 (Information Causality, Quantum Fisher Metric, RQM Diamonds, Black Hole Page Curve).
 3. [`run_entanglement_einstein_derivation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_entanglement_einstein_derivation.py): Suite 3 (Causal Diamond Flow, Equilibrium Balance, Raychaudhuri Geodesic Focusing).
@@ -211,12 +211,13 @@ All assets have been created, validated, and documented in the workspace:
 6. [`run_polariton_information_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_polariton_information_simulation.py): Suite 6 (Polariton Mixing, Entanglement Entropy, QSL Delay, Spatial Pulse Compression).
 7. [`run_informational_time_dilation_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_informational_time_dilation_simulation.py): Suite 7 (Bandwidth Conservation Circle, Causal Loop Hypotenuse, Muon Dilation, Horizon Channel Capacity).
 8. [`run_holographic_qec_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_holographic_qec_simulation.py): Suite 8 (Poincaré Disk Entanglement Wedge, HaPPY Code Distance Growth, Erasure Threshold, Causal Decoding Delay).
+9. [`src/holographic_qec_prototype.py`](file:///home/stefan/Projects/SpeedOfInformation/src/holographic_qec_prototype.py): Empirical Hardware & Monte-Carlo Prototype (Real-time Linux CPU/memory-bus time dilation telemetry, live Monte-Carlo fault-injection decoding on `"c_I=299792458m/s"`, exact $27\times 27$ density-matrix wedge recovery, and 27-node Holographic RAID storage benchmark).
 
 ### 4. Vector Figures (`figures/`)
-* 23 publication-quality vector diagrams (`.svg`) illustrating every mathematical concept from optics to spin chains, causal diamonds, wormholes, complexity growth, polaritons, informational time dilation, and holographic quantum error correction.
+* 24 publication-quality vector diagrams (`.svg`) illustrating every mathematical concept and empirical hardware benchmark from optics to spin chains, causal diamonds, wormholes, complexity growth, polaritons, informational time dilation, holographic quantum error correction, and CPU/RAID telemetry.
 
 ### 5. Numerical Datasets (`data/`)
-* 20 structured JSON datasets documenting simulation results, boundary parameters, and validation statistics.
+* 21 structured JSON datasets documenting simulation results, hardware telemetry, boundary parameters, and validation statistics.
 
 ---
 

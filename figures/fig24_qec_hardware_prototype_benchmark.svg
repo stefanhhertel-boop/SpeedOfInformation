@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 740" width="980" height="740">
+<rect width="980" height="740" fill="#ffffff" stroke="none" />
+<text x="490.0" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#0f172a" text-anchor="middle">Figure 24: Empirical Hardware Benchmark: CPU Bus Time Dilation, Monte-Carlo QECC &amp; Holographic RAID</text>
+<rect x="25" y="55" width="450" height="315" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" rx="6" />
+<text x="250.0" y="77" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">Panel A: Live Linux CPU/Bus Time Dilation (perf_counter_ns)</text>
+<text x="250.0" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Memory Migration Velocity β = v_migration / c_I^bus</text>
+<text x="41" y="212.5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle" transform="rotate(-90, 41, 212.5)">Normalized State Commit Rate R(β) / R(0)</text>
+<line x1="85.0" y1="90" x2="85.0" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="85.0" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">0.0</text>
+<line x1="158.0" y1="90" x2="158.0" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="158.0" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">0.2 c_bus</text>
+<line x1="231.0" y1="90" x2="231.0" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="231.0" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">0.4 c_bus</text>
+<line x1="304.0" y1="90" x2="304.0" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="304.0" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">0.6 c_bus</text>
+<line x1="377.0" y1="90" x2="377.0" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="377.0" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">0.8 c_bus</text>
+<line x1="450.0" y1="90" x2="450.0" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="450.0" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">1.0 c_bus</text>
+<line x1="85" y1="340.0" x2="450" y2="340.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="343.0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">0.0</text>
+<line x1="85" y1="293.7" x2="450" y2="293.7" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="296.7" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">0.2</text>
+<line x1="85" y1="247.4" x2="450" y2="247.4" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="250.4" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">0.4</text>
+<line x1="85" y1="201.1" x2="450" y2="201.1" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="204.1" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">0.6</text>
+<line x1="85" y1="154.8" x2="450" y2="154.8" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="157.8" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">0.8</text>
+<line x1="85" y1="108.5" x2="450" y2="108.5" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="111.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">1.0</text>
+<polygon points="85.0,108.5 86.8,108.5 88.7,108.5 90.5,108.5 92.3,108.6 94.1,108.6 96.0,108.6 97.8,108.7 99.6,108.7 101.4,108.8 103.2,108.8 105.1,108.9 106.9,108.9 108.7,109.0 110.5,109.1 112.4,109.2 114.2,109.3 116.0,109.4 117.8,109.5 119.7,109.6 121.5,109.7 123.3,109.8 125.2,109.9 127.0,110.1 128.8,110.2 130.6,110.3 132.4,110.5 134.3,110.6 136.1,110.8 137.9,111.0 139.8,111.1 141.6,111.3 143.4,111.5 145.2,111.7 147.1,111.9 148.9,112.1 150.7,112.3 152.5,112.5 154.3,112.7 156.2,113.0 158.0,113.2 159.8,113.4 161.6,113.7 163.5,113.9 165.3,114.2 167.1,114.5 168.9,114.7 170.8,115.0 172.6,115.3 174.4,115.6 176.2,115.9 178.1,116.2 179.9,116.5 181.7,116.8 183.6,117.1 185.4,117.4 187.2,117.8 189.0,118.1 190.8,118.5 192.7,118.8 194.5,119.2 196.3,119.5 198.2,119.9 200.0,120.3 201.8,120.7 203.6,121.1 205.4,121.5 207.3,121.9 209.1,122.3 210.9,122.7 212.8,123.2 214.6,123.6 216.4,124.0 218.2,124.5 220.1,124.9 221.9,125.4 223.7,125.9 225.5,126.4 227.3,126.8 229.2,127.3 231.0,127.8 232.8,128.4 234.6,128.9 236.5,129.4 238.3,129.9 240.1,130.5 241.9,131.0 243.8,131.6 245.6,132.1 247.4,132.7 249.2,133.3 251.1,133.9 252.9,134.5 254.7,135.1 256.5,135.7 258.4,136.3 260.2,136.9 262.0,137.6 263.9,138.2 265.7,138.9 267.5,139.5 269.3,140.2 271.1,140.9 273.0,141.6 274.8,142.3 276.6,143.0 278.5,143.7 280.3,144.4 282.1,145.2 283.9,145.9 285.8,146.7 287.6,147.4 289.4,148.2 291.2,149.0 293.0,149.8 294.9,150.6 296.7,151.4 298.5,152.3 300.4,153.1 302.2,154.0 304.0,154.8 305.8,155.7 307.6,156.6 309.5,157.5 311.3,158.4 313.1,159.3 314.9,160.2 316.8,161.2 318.6,162.1 320.4,163.1 322.2,164.1 324.1,165.1 325.9,166.1 327.7,167.1 329.6,168.2 331.4,169.2 333.2,170.3 335.0,171.4 336.9,172.5 338.7,173.6 340.5,174.7 342.3,175.8 344.1,177.0 346.0,178.2 347.8,179.4 349.6,180.6 351.4,181.8 353.3,183.0 355.1,184.3 356.9,185.6 358.8,186.9 360.6,188.2 362.4,189.6 364.2,190.9 366.1,192.3 367.9,193.7 369.7,195.1 371.5,196.6 373.4,198.1 375.2,199.6 377.0,201.1 378.8,202.7 380.7,204.3 382.5,205.9 384.3,207.5 386.1,209.2 387.9,210.9 389.8,212.6 391.6,214.4 393.4,216.2 395.2,218.1 397.1,219.9 398.9,221.9 400.7,223.8 402.6,225.9 404.4,227.9 406.2,230.1 408.0,232.2 409.9,234.5 411.7,236.7 413.5,239.1 415.3,241.5 417.2,244.0 419.0,246.6 420.8,249.3 422.6,252.0 424.5,254.9 426.3,257.9 428.1,261.0 429.9,264.3 431.8,267.7 433.6,271.3 435.4,275.2 437.2,279.3 439.1,283.7 440.9,288.6 442.7,293.9 444.5,300.1 446.4,307.3 448.2,316.9 450.0,340.0 450.0,340.0 85.0,340.0" fill="#3b82f6" fill-opacity="0.14" stroke="none" />
+<polyline points="85.0,108.5 86.8,108.5 88.7,108.5 90.5,108.5 92.3,108.6 94.1,108.6 96.0,108.6 97.8,108.7 99.6,108.7 101.4,108.8 103.2,108.8 105.1,108.9 106.9,108.9 108.7,109.0 110.5,109.1 112.4,109.2 114.2,109.3 116.0,109.4 117.8,109.5 119.7,109.6 121.5,109.7 123.3,109.8 125.2,109.9 127.0,110.1 128.8,110.2 130.6,110.3 132.4,110.5 134.3,110.6 136.1,110.8 137.9,111.0 139.8,111.1 141.6,111.3 143.4,111.5 145.2,111.7 147.1,111.9 148.9,112.1 150.7,112.3 152.5,112.5 154.3,112.7 156.2,113.0 158.0,113.2 159.8,113.4 161.6,113.7 163.5,113.9 165.3,114.2 167.1,114.5 168.9,114.7 170.8,115.0 172.6,115.3 174.4,115.6 176.2,115.9 178.1,116.2 179.9,116.5 181.7,116.8 183.6,117.1 185.4,117.4 187.2,117.8 189.0,118.1 190.8,118.5 192.7,118.8 194.5,119.2 196.3,119.5 198.2,119.9 200.0,120.3 201.8,120.7 203.6,121.1 205.4,121.5 207.3,121.9 209.1,122.3 210.9,122.7 212.8,123.2 214.6,123.6 216.4,124.0 218.2,124.5 220.1,124.9 221.9,125.4 223.7,125.9 225.5,126.4 227.3,126.8 229.2,127.3 231.0,127.8 232.8,128.4 234.6,128.9 236.5,129.4 238.3,129.9 240.1,130.5 241.9,131.0 243.8,131.6 245.6,132.1 247.4,132.7 249.2,133.3 251.1,133.9 252.9,134.5 254.7,135.1 256.5,135.7 258.4,136.3 260.2,136.9 262.0,137.6 263.9,138.2 265.7,138.9 267.5,139.5 269.3,140.2 271.1,140.9 273.0,141.6 274.8,142.3 276.6,143.0 278.5,143.7 280.3,144.4 282.1,145.2 283.9,145.9 285.8,146.7 287.6,147.4 289.4,148.2 291.2,149.0 293.0,149.8 294.9,150.6 296.7,151.4 298.5,152.3 300.4,153.1 302.2,154.0 304.0,154.8 305.8,155.7 307.6,156.6 309.5,157.5 311.3,158.4 313.1,159.3 314.9,160.2 316.8,161.2 318.6,162.1 320.4,163.1 322.2,164.1 324.1,165.1 325.9,166.1 327.7,167.1 329.6,168.2 331.4,169.2 333.2,170.3 335.0,171.4 336.9,172.5 338.7,173.6 340.5,174.7 342.3,175.8 344.1,177.0 346.0,178.2 347.8,179.4 349.6,180.6 351.4,181.8 353.3,183.0 355.1,184.3 356.9,185.6 358.8,186.9 360.6,188.2 362.4,189.6 364.2,190.9 366.1,192.3 367.9,193.7 369.7,195.1 371.5,196.6 373.4,198.1 375.2,199.6 377.0,201.1 378.8,202.7 380.7,204.3 382.5,205.9 384.3,207.5 386.1,209.2 387.9,210.9 389.8,212.6 391.6,214.4 393.4,216.2 395.2,218.1 397.1,219.9 398.9,221.9 400.7,223.8 402.6,225.9 404.4,227.9 406.2,230.1 408.0,232.2 409.9,234.5 411.7,236.7 413.5,239.1 415.3,241.5 417.2,244.0 419.0,246.6 420.8,249.3 422.6,252.0 424.5,254.9 426.3,257.9 428.1,261.0 429.9,264.3 431.8,267.7 433.6,271.3 435.4,275.2 437.2,279.3 439.1,283.7 440.9,288.6 442.7,293.9 444.5,300.1 446.4,307.3 448.2,316.9 450.0,340.0" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="4,3" />
+<polyline points="85.0,108.5 158.0,114.8 231.0,142.1 304.0,154.8 358.8,187.0 401.1,224.4 428.1,261.0 442.7,295.3" fill="none" stroke="#dc2626" stroke-width="2.2" />
+<circle cx="85.0" cy="108.5" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="158.0" cy="114.8" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="231.0" cy="142.1" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="304.0" cy="154.8" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="358.8" cy="187.0" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="401.1" cy="224.4" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<text x="409.1" y="228.4" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="bold" fill="#dc2626" text-anchor="start">Measured=0.50</text>
+<circle cx="428.1" cy="261.0" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="442.7" cy="295.3" r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<rect x="95" y="245" width="255" height="52" fill="#ffffff" fill-opacity="0.92" stroke="#cbd5e1" stroke-width="1" rx="4" />
+<line x1="105" y1="260" x2="130" y2="260" stroke="#dc2626" stroke-width="2.5" />
+<text x="137" y="263.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Measured Linux CPU/RAM Commit Rate</text>
+<line x1="105" y1="280" x2="130" y2="280" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="4,3" />
+<text x="137" y="283.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Exact Lorentz Curve: √(1 - v²/c_bus²)</text>
+<rect x="505" y="55" width="450" height="315" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" rx="6" />
+<text x="730.0" y="77" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">Panel B: Live Monte-Carlo Fault Injection (&apos;c_I=299792458m/s&apos;)</text>
+<text x="730.0" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Injected Boundary Corruption Rate p_corrupt (Erasures + Flips)</text>
+<text x="521" y="212.5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle" transform="rotate(-90, 521, 212.5)">Empirical Trit Recovery Accuracy (1,152 Trits/Pt)</text>
+<line x1="565.0" y1="90" x2="565.0" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="565.0" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">5%</text>
+<line x1="646.1" y1="90" x2="646.1" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="646.1" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">15%</text>
+<line x1="727.2" y1="90" x2="727.2" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="727.2" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">25%</text>
+<line x1="808.3" y1="90" x2="808.3" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="808.3" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">35%</text>
+<line x1="889.4" y1="90" x2="889.4" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="889.4" y="354" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">45%</text>
+<line x1="565" y1="318.8" x2="930" y2="318.8" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="321.8" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">50%</text>
+<line x1="565" y1="276.4" x2="930" y2="276.4" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="279.4" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">60%</text>
+<line x1="565" y1="234.1" x2="930" y2="234.1" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="237.1" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">70%</text>
+<line x1="565" y1="191.7" x2="930" y2="191.7" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="194.7" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">80%</text>
+<line x1="565" y1="149.3" x2="930" y2="149.3" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="152.3" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">90%</text>
+<line x1="565" y1="106.9" x2="930" y2="106.9" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="109.9" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">100%</text>
+<polyline points="565.0,121.3 605.6,137.1 646.1,152.9 686.7,164.0 727.2,173.2 767.8,193.8 808.3,210.3 848.9,225.8 889.4,232.4 930.0,249.3" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-dasharray="2,2" />
+<circle cx="565.0" cy="121.3" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="605.6" cy="137.1" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="646.1" cy="152.9" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="686.7" cy="164.0" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="727.2" cy="173.2" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="767.8" cy="193.8" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="808.3" cy="210.3" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="848.9" cy="225.8" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="889.4" cy="232.4" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="930.0" cy="249.3" r="3.2" fill="#dc2626" stroke="#ffffff" stroke-width="1.5" />
+<polyline points="565.0,108.1 605.6,111.4 646.1,118.7 686.7,122.8 727.2,126.4 767.8,143.7 808.3,153.3 848.9,171.3 889.4,186.0 930.0,200.7" fill="none" stroke="#f59e0b" stroke-width="2.6" stroke-dasharray="4,3" />
+<circle cx="565.0" cy="108.1" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="605.6" cy="111.4" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="646.1" cy="118.7" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="686.7" cy="122.8" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="727.2" cy="126.4" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="767.8" cy="143.7" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="808.3" cy="153.3" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="848.9" cy="171.3" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="889.4" cy="186.0" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="930.0" cy="200.7" r="3.2" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5" />
+<polyline points="565.0,106.9 605.6,106.9 646.1,106.9 686.7,107.7 727.2,111.0 767.8,116.9 808.3,116.9 848.9,129.0 889.4,137.8 930.0,157.0" fill="none" stroke="#0284c7" stroke-width="2.6" stroke-dasharray="6,3" />
+<circle cx="565.0" cy="106.9" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="605.6" cy="106.9" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="646.1" cy="106.9" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="686.7" cy="107.7" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="727.2" cy="111.0" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="767.8" cy="116.9" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="808.3" cy="116.9" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="848.9" cy="129.0" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="889.4" cy="137.8" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="930.0" cy="157.0" r="3.2" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
+<polyline points="565.0,106.9 605.6,106.9 646.1,106.9 686.7,106.9 727.2,106.9 767.8,107.3 808.3,108.1 848.9,109.2 889.4,114.7 930.0,122.8" fill="none" stroke="#7c3aed" stroke-width="2.6" />
+<circle cx="565.0" cy="106.9" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="605.6" cy="106.9" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="646.1" cy="106.9" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="686.7" cy="106.9" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="727.2" cy="106.9" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="767.8" cy="107.3" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="808.3" cy="108.1" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="848.9" cy="109.2" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="889.4" cy="114.7" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="930.0" cy="122.8" r="3.2" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<rect x="575" y="225" width="255" height="92" fill="#ffffff" fill-opacity="0.92" stroke="#cbd5e1" stroke-width="1" rx="4" />
+<line x1="585" y1="240" x2="610" y2="240" stroke="#7c3aed" stroke-width="2.5" />
+<text x="617" y="243.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Deep IR Center (n=3, 27 leaves/trit)</text>
+<line x1="585" y1="260" x2="610" y2="260" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="6,3" />
+<text x="617" y="263.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Mid-Bulk Layer (n=2, 9 leaves/trit)</text>
+<line x1="585" y1="280" x2="610" y2="280" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="4,3" />
+<text x="617" y="283.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Shallow Bulk (n=1, 3 leaves/trit)</text>
+<line x1="585" y1="300" x2="610" y2="300" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="2,2" />
+<text x="617" y="303.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Unencoded UV Boundary (n=0, 1 leaf)</text>
+<rect x="25" y="395" width="450" height="315" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" rx="6" />
+<text x="250.0" y="417" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">Panel C: Holographic RAID Storage Survival (27-Node Cluster)</text>
+<text x="250.0" y="700" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Catastrophic Offline Storage Nodes (Out of 27 Total Nodes)</text>
+<text x="41" y="552.5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle" transform="rotate(-90, 41, 552.5)">Empirical Data Reconstruction Survival (%)</text>
+<line x1="85.0" y1="430" x2="85.0" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="85.0" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">0 Nodes</text>
+<line x1="158.0" y1="430" x2="158.0" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="158.0" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">4 Nodes</text>
+<line x1="231.0" y1="430" x2="231.0" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="231.0" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">8 Nodes</text>
+<line x1="304.0" y1="430" x2="304.0" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="304.0" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">12 Nodes</text>
+<line x1="377.0" y1="430" x2="377.0" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="377.0" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">16 Nodes</text>
+<line x1="450.0" y1="430" x2="450.0" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="450.0" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">20 Nodes</text>
+<line x1="85" y1="680.0" x2="450" y2="680.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="683.0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">0%</text>
+<line x1="85" y1="632.8" x2="450" y2="632.8" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="635.8" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">20%</text>
+<line x1="85" y1="585.7" x2="450" y2="585.7" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="588.7" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">40%</text>
+<line x1="85" y1="538.5" x2="450" y2="538.5" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="541.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">60%</text>
+<line x1="85" y1="491.3" x2="450" y2="491.3" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="494.3" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">80%</text>
+<line x1="85" y1="444.2" x2="450" y2="444.2" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="79" y="447.2" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">100%</text>
+<polygon points="85.0,444.2 121.5,444.2 158.0,444.2 194.5,444.2 231.0,444.2 267.5,444.2 304.0,444.2 340.5,444.2 377.0,444.2 413.5,444.2 450.0,444.2 450.0,680.0 85.0,680.0" fill="#16a34a" fill-opacity="0.14" stroke="none" />
+<polyline points="85.0,444.2 121.5,444.2 158.0,444.2 194.5,444.2 231.0,444.2 267.5,444.2 304.0,444.2 340.5,444.2 377.0,444.2 413.5,444.2 450.0,444.2" fill="none" stroke="#16a34a" stroke-width="3.0" />
+<polyline points="85.0,444.2 121.5,444.2 158.0,444.2 194.5,444.2 231.0,444.2 267.5,444.2 304.0,444.2 340.5,444.2 377.0,444.2 413.5,447.0 450.0,449.8" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="5,3" />
+<polyline points="85.0,444.2 121.5,444.2 158.0,444.2 194.5,444.2 231.0,445.1 267.5,447.0 304.0,453.6 340.5,460.2 377.0,480.0 413.5,495.1 450.0,511.1" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="2,2" />
+<circle cx="85.0" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="121.5" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="158.0" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="194.5" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="231.0" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="267.5" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="304.0" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="340.5" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="377.0" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="413.5" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<circle cx="450.0" cy="444.2" r="3.8" fill="#16a34a" stroke="#ffffff" stroke-width="1.5" />
+<rect x="95" y="575" width="265" height="72" fill="#ffffff" fill-opacity="0.92" stroke="#cbd5e1" stroke-width="1" rx="4" />
+<line x1="105" y1="590" x2="130" y2="590" stroke="#16a34a" stroke-width="2.5" />
+<text x="137" y="593.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Tier 2: Deep IR Root Key (n=3, 27-Node Wedge)</text>
+<line x1="105" y1="610" x2="130" y2="610" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="5,3" />
+<text x="137" y="613.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Tier 1: Mid-Bulk Logs (n=2, 9-Node Wedge)</text>
+<line x1="105" y1="630" x2="130" y2="630" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="2,2" />
+<text x="137" y="633.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Tier 0: UV Hot Cache (n=1, 3-Node Stripe)</text>
+<rect x="505" y="395" width="450" height="315" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" rx="6" />
+<text x="730.0" y="417" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#1e3a8a" text-anchor="middle">Panel D: Measured CPU Decoding Latency vs. Bulk Depth n</text>
+<text x="730.0" y="700" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">Holographic Bulk Encoding Depth Layer n (UV → Deep IR)</text>
+<text x="521" y="552.5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle" transform="rotate(-90, 521, 552.5)">Measured CPU Decoding Latency per Trit (ns)</text>
+<line x1="595.4" y1="430" x2="595.4" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="595.4" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">n=0 (UV, 1 leaf)</text>
+<line x1="696.8" y1="430" x2="696.8" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="696.8" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">n=1 (3 leaves)</text>
+<line x1="798.2" y1="430" x2="798.2" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="798.2" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">n=2 (9 leaves)</text>
+<line x1="899.6" y1="430" x2="899.6" y2="680" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="899.6" y="694" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="middle">n=3 (IR, 27 leaves)</text>
+<line x1="565" y1="680.0" x2="930" y2="680.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="683.0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">0 ns</text>
+<line x1="565" y1="630.0" x2="930" y2="630.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="633.0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">2400 ns</text>
+<line x1="565" y1="580.0" x2="930" y2="580.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="583.0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">4800 ns</text>
+<line x1="565" y1="530.0" x2="930" y2="530.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="533.0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">7200 ns</text>
+<line x1="565" y1="480.0" x2="930" y2="480.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="483.0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">9600 ns</text>
+<line x1="565" y1="430.0" x2="930" y2="430.0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<text x="559" y="433.0" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" fill="#64748b" text-anchor="end">12000 ns</text>
+<polygon points="595.4,671.2 696.8,654.5 798.2,612.7 899.6,550.5 899.6,680.0 595.4,680.0" fill="#7c3aed" fill-opacity="0.16" stroke="none" />
+<polyline points="595.4,671.2 696.8,654.5 798.2,612.7 899.6,550.5" fill="none" stroke="#7c3aed" stroke-width="3.0" />
+<circle cx="595.4" cy="671.2" r="5.0" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<text x="595.4" y="663.2" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="bold" fill="#7c3aed" text-anchor="middle">421 ns</text>
+<circle cx="696.8" cy="654.5" r="5.0" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<text x="696.8" y="646.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="bold" fill="#7c3aed" text-anchor="middle">1224 ns</text>
+<circle cx="798.2" cy="612.7" r="5.0" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<text x="798.2" y="604.7" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="bold" fill="#7c3aed" text-anchor="middle">3229 ns</text>
+<circle cx="899.6" cy="550.5" r="5.0" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5" />
+<text x="891.6" y="554.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="bold" fill="#7c3aed" text-anchor="end">6217 ns</text>
+<rect x="577" y="448" width="260" height="32" fill="#ffffff" fill-opacity="0.92" stroke="#cbd5e1" stroke-width="1" rx="4" />
+<line x1="587" y1="463" x2="612" y2="463" stroke="#7c3aed" stroke-width="2.5" />
+<text x="619" y="466.5" font-family="system-ui, -apple-system, sans-serif" font-size="9.8" fill="#1e293b" font-weight="600">Measured CPU Syndrome Tree Latency (ns)</text>
+</svg>
