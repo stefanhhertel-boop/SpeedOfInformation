@@ -1,0 +1,104 @@
+{
+  "title": "Holographic Quantum Error Correction and Spacetime Fault Tolerance Simulation Suite",
+  "author": "Stefan Hertel",
+  "affiliation": "Independent Researcher",
+  "date": "2026-10-17",
+  "parameters": {
+    "c_info": 299792458.0,
+    "knill_laflamme_condition": "P_code E_a^dagger E_b P_code = C_ab P_code",
+    "happy_growth_rate_lambda": 2.618034,
+    "erasure_threshold_pc": 0.5,
+    "causal_decoding_delay": "Delta_t_decode = ell_min(z) / (2 * c_I) = z / c_I",
+    "quantum_singleton_bound": "N - k >= 2*(d - 1)"
+  },
+  "hyperbolic_code_layers": [
+    {
+      "layer_n": 0,
+      "happy_code_distance_d": 1.0,
+      "mera_code_distance_d": 1,
+      "normalized_radial_depth_z": 0.0
+    },
+    {
+      "layer_n": 1,
+      "happy_code_distance_d": 2.618,
+      "mera_code_distance_d": 2,
+      "normalized_radial_depth_z": 0.3935
+    },
+    {
+      "layer_n": 2,
+      "happy_code_distance_d": 6.854,
+      "mera_code_distance_d": 4,
+      "normalized_radial_depth_z": 0.6321
+    },
+    {
+      "layer_n": 3,
+      "happy_code_distance_d": 17.944,
+      "mera_code_distance_d": 8,
+      "normalized_radial_depth_z": 0.7769
+    },
+    {
+      "layer_n": 4,
+      "happy_code_distance_d": 46.979,
+      "mera_code_distance_d": 16,
+      "normalized_radial_depth_z": 0.8647
+    },
+    {
+      "layer_n": 5,
+      "happy_code_distance_d": 122.992,
+      "mera_code_distance_d": 32,
+      "normalized_radial_depth_z": 0.9179
+    }
+  ],
+  "subregion_duality_3qutrit": [
+    {
+      "boundary_region": "Single Third (A, B, or C)",
+      "fraction": 0.3333,
+      "logical_mutual_info_bits": 0.0,
+      "recovery_fidelity": 0.0
+    },
+    {
+      "boundary_region": "Erasure Threshold (Page Point)",
+      "fraction": 0.5,
+      "logical_mutual_info_bits": 0.5,
+      "recovery_fidelity": 0.5
+    },
+    {
+      "boundary_region": "Two Thirds (AB, BC, or CA)",
+      "fraction": 0.6667,
+      "logical_mutual_info_bits": 1.0,
+      "recovery_fidelity": 1.0
+    },
+    {
+      "boundary_region": "Full Boundary (ABC)",
+      "fraction": 1.0,
+      "logical_mutual_info_bits": 1.0,
+      "recovery_fidelity": 1.0
+    }
+  ],
+  "black_hole_code_saturation": [
+    {
+      "s_bulk_over_s_bh": 0.0,
+      "code_rate_k_over_N": 0.0,
+      "normalized_code_distance": 1.0,
+      "regime": "Pure Vacuum AdS (Max Protection)"
+    },
+    {
+      "s_bulk_over_s_bh": 0.25,
+      "code_rate_k_over_N": 0.25,
+      "normalized_code_distance": 0.75,
+      "regime": "Semi-Classical Bulk Excitations"
+    },
+    {
+      "s_bulk_over_s_bh": 0.5,
+      "code_rate_k_over_N": 0.5,
+      "normalized_code_distance": 0.5,
+      "regime": "Dense Star / Strong Backreaction"
+    },
+    {
+      "s_bulk_over_s_bh": 1.0,
+      "code_rate_k_over_N": 1.0,
+      "normalized_code_distance": 0.0,
+      "regime": "Black Hole Horizon (Code Breakdown d_eff -> 1)"
+    }
+  ]
+}

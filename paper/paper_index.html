@@ -312,6 +312,7 @@
             <li><a href="#sec7f">7.9 Holographic Quantum Complexity & Lloyd's Computational Bound</a></li>
             <li><a href="#sec7g">7.10 Polariton Information Overhead & Slow Light in Matter</a></li>
             <li><a href="#sec7h">7.11 Time Dilation as Conservation of Informational Bandwidth</a></li>
+            <li><a href="#sec7i">7.12 Holographic Quantum Error Correction & Spacetime Fault Tolerance</a></li>
             <li><a href="#sec8">8. Conclusion & Future Research Directions</a></li>
             <li><a href="#references">References</a></li>
         </ul>
@@ -320,7 +321,7 @@
     <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1px solid #93c5fd; border-radius: 8px; padding: 18px 24px; margin: 25px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
         <div>
             <div style="font-weight: 800; font-size: 1.05rem; color: #1e3a8a;">Executive Summary & White Paper Available</div>
-            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 8 research pillars, the 22 vector visualizations and analytical parameter models, and the comparative evaluation matrix.</div>
+            <div style="font-size: 0.92rem; color: #3b82f6;">A high-level synthesis of all 9 research pillars, the 23 vector visualizations and analytical parameter models, and the comparative evaluation matrix.</div>
         </div>
         <a href="Executive_Summary_Speed_of_Information.md" style="background: #1d4ed8; color: #ffffff; padding: 8px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">View Executive Summary &rarr;</a>
     </div>
@@ -904,6 +905,31 @@
         At the event horizon (\(r \to r_s = 2GM/c_{\mathcal{I}}^2\)), the outward channel capacity drops to strictly zero (\(\mathcal{C} \to 0\)). Relative to an asymptotic observer, clock ticks freeze completely because no state transition bits can escape outward across the horizon.
     </p>
 
+    <h2 id="sec7i">7.12 Holographic Quantum Error Correction &amp; Spacetime Fault Tolerance</h2>
+    <p>
+        If spacetime geometry is woven from quantum entanglement, why doesn't the classical gravitational manifold decohere under local ultraviolet perturbations? And how can a single bulk operator \(\phi(x_0)\) be reconstructed from multiple distinct boundary subregions (\(AB, BC,\) or \(CA\)) without violating the Quantum No-Cloning Theorem?
+    </p>
+
+    <h3>1. The Knill-Laflamme Spacetime Code Subspace</h3>
+    <p>
+        Following Almheiri, Dong, and Harlow (2015) and the HaPPY hyperbolic tensor network code (Pastawski et al., 2015), semi-classical bulk spacetime states live inside an isometric <strong>Logical Code Subspace</strong> \(\mathcal{H}_{\text{code}} \subset \mathcal{H}_{\text{phys}}\) satisfying the <strong>Knill-Laflamme Quantum Error Correction Condition</strong>:
+        \[
+        \boxed{P_{\text{code}} \, E_a^\dagger E_b \, P_{\text{code}} = C_{ab} \, P_{\text{code}}},
+        \]
+        where \(P_{\text{code}}\) projects onto the smooth spacetime subspace and \(\{E_a\}\) are erasure errors on boundary subregions. Any single boundary third (\(1/3\)) contains strictly zero mutual information with the central bulk logical state, while any two thirds (\(2/3\)) enclose the bulk point inside their Ryu-Takayanagi surface \(\gamma_{AB}\) and reconstruct \(\phi(x_0)\) with 100% fidelity.
+    </p>
+
+    <div class="figure-container">
+        <img src="../figures/fig23_holographic_quantum_error_correction.svg" alt="Holographic Quantum Error Correction and Spacetime Fault Tolerance">
+        <div class="figure-caption"><strong>Figure 23:</strong> Holographic Quantum Error Correction, Code Distance &amp; Causal Wedge Delay. <strong>Panel A:</strong> Poincaré disk 3-qutrit code: erasing region \(C\) (\(1/3\)) leaves bulk operator \(\phi(x_0)\) inside the entanglement wedge \(\mathcal{W}_E[AB]\) bounded by \(\gamma_{AB}\). <strong>Panel B:</strong> Exponential growth of quantum code distance \(d(n) = \lambda^n\) (\(\lambda \approx 2.618\)) with radial tensor depth \(n\) in the \(\{5,4\}\) HaPPY code. <strong>Panel C:</strong> Quantum erasure threshold phase transition at \(p_c = 1/2\) (complementary recovery). <strong>Panel D:</strong> Causal decoding delay \(\Delta t_{\text{decode}} = z / c_{\mathcal{I}}\) and black hole code distance collapse (\(d_{\text{eff}} \to 1\)) as \(S_{\text{bulk}} \to S_{\text{BH}}\).</div>
+    </div>
+
+    <h3>2. Radial Depth as Code Distance &amp; The Eastin-Knill Bound on \(c_{\mathcal{I}}\)</h3>
+    <p>
+        In the \(c_{\mathcal{I}}\) paradigm, the holographic radial coordinate \(z\) is the physical manifestation of <strong>Quantum Code Distance \(d(z)\)</strong>: operators deeper in the IR interior require erasing a wider boundary interval \(\ell_{\text{erase}} \ge 2z\) to be corrupted.
+        Crucially, the <strong>Eastin-Knill Theorem</strong> proves that no local quantum error-correcting code can implement continuous unitary time evolution using purely transversal (instantaneous, \(c_{\mathcal{I}} \to \infty\)) operations. To preserve fault tolerance (\(d > 1\)) alongside continuous time evolution, error syndromes and entanglement updates must propagate across spatial links at a strictly finite speed \(c_{\mathcal{I}}\), imposing the minimum causal decoding delay \(\Delta t_{\text{decode}}(z) = z / c_{\mathcal{I}}\). When bulk logical entropy saturates the Bekenstein-Hawking bound (\(S_{\text{bulk}} \to A/4\ell_P^2\)), the Quantum Singleton Bound forces \(d_{\text{eff}} \to 1\), collapsing the code subspace into a black hole horizon.
+    </p>
+
     <h2 id="sec8">8. Conclusion & Future Research Directions</h2>
     <p>
         As a continuing foundational research agenda, we propose three key research programs:
@@ -928,6 +954,9 @@
         <li>Lieb, E. H., & Robinson, D. W. (1972). "The finite group velocity of quantum spin systems." <em>Commun. Math. Phys.</em>, 28(3), 251–257.</li>
         <li>Maldacena, J. (1998). "The Large N Limit of Superconformal Field Theories." <em>Adv. Theor. Math. Phys.</em>, 2(2), 231–252.</li>
         <li>Ryu, S., & Takayanagi, T. (2006). "Holographic Derivation of Entanglement Entropy." <em>Phys. Rev. Lett.</em>, 96(18), 181602.</li>
+        <li>Almheiri, A., Dong, X., & Harlow, D. (2015). "Bulk Locality and Quantum Error Correction in AdS/CFT." <em>JHEP</em>, 2015(4), 163.</li>
+        <li>Pastawski, F., Yoshida, B., Harlow, D., & Preskill, J. (2015). "Holographic quantum error-correcting codes: Toy models for the bulk/boundary correspondence." <em>JHEP</em>, 2015(6), 149.</li>
+        <li>Eastin, B., & Knill, E. (2009). "Restrictions on Transversal Encoded Quantum Gate Sets." <em>Phys. Rev. Lett.</em>, 102(11), 110502.</li>
         <li>Almheiri, A., et al. (2019). "The entropy of bulk quantum fields and the entanglement wedge." <em>JHEP</em>, 2019(12), 63.</li>
         <li>Roberts, D. A., & Swingle, B. (2016). "Lieb-Robinson Bound and the Butterfly Effect." <em>Phys. Rev. Lett.</em>, 117(9), 091602.</li>
         <li>Fermi LAT & GBM Collaborations (2009). "A limit on the variation of the speed of light." <em>Nature</em>, 462, 331–334.</li>

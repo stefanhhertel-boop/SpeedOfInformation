@@ -140,6 +140,7 @@ Our research uncovers that $c_{\mathcal{I}}$ is the master operational constant 
 | **6. Cosmology & Quantum Complexity** | **Revolutionary Paradigm Shift** | Re-frames dark energy as inverse cosmological horizon capacity ($10^{-122}$). Proves black hole interiors saturate Lloyd's computational bound ($2Mc_{\mathcal{I}}^2/\pi\hbar$). |
 | **7. Slow Light & Polariton Information** | **Conceptual & Microscopic Synthesis** | Proves that refractive deceleration in matter ($v < c_{\mathcal{I}}$) is an information loading overhead into atomic spin registers bounded by the Margolus-Levitin Quantum Speed Limit. Spacetime speed $c_{\mathcal{I}}$ remains strictly invariant. |
 | **8. Time Dilation & Clocks** | **Conceptual & Microscopic Synthesis** | Proves that kinematic time dilation ($\Delta t = \gamma \Delta \tau$) is conservation of informational bandwidth: $(d\tau/dt)^2 + (v/c_{\mathcal{I}})^2 = 1$. Spatial displacement diverts processing capacity from internal state changes. |
+| **9. Holographic Quantum Error Correction** | **Revolutionary Paradigm Shift** | Identifies radial bulk depth $z$ with Quantum Code Distance $d(z)$, resolves the No-Cloning subregion paradox via Knill-Laflamme code subspaces, and proves via the Eastin-Knill theorem that fault-tolerant spacetime requires a finite speed of information $c_{\mathcal{I}}$. |
 
 ---
 
@@ -173,6 +174,9 @@ A credible scientific white paper must clearly distinguish between physical inpu
 │                                         │ 6. Quantum state distinguishability metric   │
 │ 7. Time dilation as bandwidth trade-off │    underlying clock transitions.             │
 │    (dτ/dt)² + (v/c_I)² = 1              │                                              │
+│                                         │ 7. Isometric tensor encoding V: H_code -> H  │
+│ 8. Bulk light-cone delay Δt = z/c_I as  │    satisfying Knill-Laflamme conditions.     │
+│    QECC syndrome decoding depth         │                                              │
 └─────────────────────────────────────────┴──────────────────────────────────────────────┘
 ```
 
@@ -191,11 +195,12 @@ All assets have been created, validated, and documented in the workspace:
 6. [`Cosmological_Horizons_and_Holographic_Complexity.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Cosmological_Horizons_and_Holographic_Complexity.md): de Sitter reachability, dark energy scaling $\Lambda(S_{\text{dS}})$, and Complexity = Action saturation of Lloyd's bound.
 7. [`Polariton_Information_Overhead_and_Slow_Light.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Polariton_Information_Overhead_and_Slow_Light.md): Formal derivation of slow and stopped light as quantum information loading and Margolus-Levitin dwell time.
 8. [`Time_Dilation_as_Informational_Bandwidth_Allocation.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Time_Dilation_as_Informational_Bandwidth_Allocation.md): Derivation of time dilation as conservation of informational processing bandwidth and causal loop geometry.
-9. [`Executive_Summary_Speed_of_Information.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Executive_Summary_Speed_of_Information.md): Overarching synthesis and executive white paper.
+9. [`Holographic_Quantum_Error_Correction_and_Spacetime_Fault_Tolerance.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Holographic_Quantum_Error_Correction_and_Spacetime_Fault_Tolerance.md): Derivation of emergent bulk locality, radial depth as code distance, Eastin-Knill causality bounds, and black hole code saturation.
+10. [`Executive_Summary_Speed_of_Information.md`](file:///home/stefan/Projects/SpeedOfInformation/paper/Executive_Summary_Speed_of_Information.md): Overarching synthesis and executive white paper.
 
 ### 2. Publication Documents
 * [`Speed_of_Information_Paper.tex`](file:///home/stefan/Projects/SpeedOfInformation/paper/Speed_of_Information_Paper.tex): Publication-ready LaTeX source formatted for Physical Review D / Foundations of Physics.
-* [`paper_index.html`](file:///home/stefan/Projects/SpeedOfInformation/paper/paper_index.html): Interactive web edition with embedded MathJax formula rendering, responsive layout, table of contents, and all 22 vector diagrams.
+* [`paper_index.html`](file:///home/stefan/Projects/SpeedOfInformation/paper/paper_index.html): Interactive web edition with embedded MathJax formula rendering, responsive layout, table of contents, and all 23 vector diagrams.
 
 ### 3. Numerical Simulation Engines (Python Standard Library)
 1. [`run_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_simulations.py): Suite 1 (Optical Wavefronts, Proca Dispersion, Lieb-Robinson Cones, Quantum Gravity MDR).
@@ -205,12 +210,13 @@ All assets have been created, validated, and documented in the workspace:
 5. [`run_cosmology_and_complexity_simulations.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_cosmology_and_complexity_simulations.py): Suite 5 (de Sitter Event Horizon, Dark Energy Scaling, Complexity Growth, Four Complexity Epochs).
 6. [`run_polariton_information_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_polariton_information_simulation.py): Suite 6 (Polariton Mixing, Entanglement Entropy, QSL Delay, Spatial Pulse Compression).
 7. [`run_informational_time_dilation_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_informational_time_dilation_simulation.py): Suite 7 (Bandwidth Conservation Circle, Causal Loop Hypotenuse, Muon Dilation, Horizon Channel Capacity).
+8. [`run_holographic_qec_simulation.py`](file:///home/stefan/Projects/SpeedOfInformation/simulations/run_holographic_qec_simulation.py): Suite 8 (Poincaré Disk Entanglement Wedge, HaPPY Code Distance Growth, Erasure Threshold, Causal Decoding Delay).
 
 ### 4. Vector Figures (`figures/`)
-* 22 publication-quality vector diagrams (`.svg`) illustrating every mathematical concept from optics to spin chains, causal diamonds, wormholes, complexity growth, polaritons, and informational time dilation.
+* 23 publication-quality vector diagrams (`.svg`) illustrating every mathematical concept from optics to spin chains, causal diamonds, wormholes, complexity growth, polaritons, informational time dilation, and holographic quantum error correction.
 
 ### 5. Numerical Datasets (`data/`)
-* 19 structured JSON datasets documenting simulation results, boundary parameters, and validation statistics.
+* 20 structured JSON datasets documenting simulation results, boundary parameters, and validation statistics.
 
 ---
 

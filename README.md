@@ -40,6 +40,7 @@ SpeedOfInformation/
 │   ├── Cosmological_Horizons_and_Holographic_Complexity.md # Analysis of de Sitter Horizons, Dark Energy, & Complexity
 │   ├── Polariton_Information_Overhead_and_Slow_Light.md # Slow Light & Stopped Light as Quantum Memory Loading
 │   ├── Time_Dilation_as_Informational_Bandwidth_Allocation.md # Time Dilation as Conservation of Informational Bandwidth
+│   ├── Holographic_Quantum_Error_Correction_and_Spacetime_Fault_Tolerance.md # Bulk Locality, QECC, & Eastin-Knill Bound
 │   └── paper_index.html                                  # Interactive HTML reader with MathJax and embedded SVGs
 ├── simulations/
 │   ├── run_simulations.py                                # Suite 1: Optical, Proca, Lieb-Robinson, & MDR
@@ -48,7 +49,8 @@ SpeedOfInformation/
 │   ├── run_black_hole_information_simulations.py         # Suite 4: Scrambling, Hayden-Preskill, Wormholes, Bekenstein
 │   ├── run_cosmology_and_complexity_simulations.py       # Suite 5: de Sitter Horizon, Dark Energy Lambda, Complexity = Action
 │   ├── run_polariton_information_simulation.py           # Suite 6: Polariton Mixing, QSL Delay, & Pulse Compression
-│   └── run_informational_time_dilation_simulation.py     # Suite 7: Bandwidth Conservation, Muons, & Gravitational Channels
+│   ├── run_informational_time_dilation_simulation.py     # Suite 7: Bandwidth Conservation, Muons, & Gravitational Channels
+│   └── run_holographic_qec_simulation.py                 # Suite 8: Entanglement Wedge, HaPPY Code Distance, & Decoding Delay
 ├── figures/
 │   ├── fig1_sommerfeld_brillouin_front.svg               # Front velocity vs superluminal peak in dispersive media
 │   ├── fig2_proca_photon_velocity.svg                    # Massive photon velocity dispersion vs causal metric
@@ -71,7 +73,8 @@ SpeedOfInformation/
 │   ├── fig19_holographic_complexity_growth.svg           # Complexity = Action linear growth at Lloyd's bound
 │   ├── fig20_complexity_four_epochs.svg                  # The Four Epochs of Quantum Complexity
 │   ├── fig21_polariton_information_overhead.svg          # Polariton Information Overhead & Slow Light in Matter
-│   └── fig22_time_dilation_information_bandwidth.svg     # Time Dilation as Informational Bandwidth Conservation
+│   ├── fig22_time_dilation_information_bandwidth.svg     # Time Dilation as Informational Bandwidth Conservation
+│   └── fig23_holographic_quantum_error_correction.svg    # Holographic Quantum Error Correction & Causal Wedge Delay
 └── data/
     ├── sim1_sommerfeld_brillouin.json                    # Numerical output from Simulation 1
     ├── sim2_proca_dispersion.json                        # Numerical output from Simulation 2
@@ -91,7 +94,8 @@ SpeedOfInformation/
     ├── sim_holographic_complexity.json                   # Numerical output from Complexity Growth Simulation
     ├── sim_complexity_epochs.json                        # Numerical output from Complexity Epochs Simulation
     ├── sim_polariton_information.json                    # Numerical output from Polariton Information Simulation
-    └── sim_time_dilation_bandwidth.json                  # Numerical output from Time Dilation Simulation
+    ├── sim_time_dilation_bandwidth.json                  # Numerical output from Time Dilation Simulation
+    └── sim_holographic_qec.json                          # Numerical output from Holographic QECC Simulation
 ```
 
 ---
@@ -108,9 +112,10 @@ python3 simulations/run_black_hole_information_simulations.py
 python3 simulations/run_cosmology_and_complexity_simulations.py
 python3 simulations/run_polariton_information_simulation.py
 python3 simulations/run_informational_time_dilation_simulation.py
+python3 simulations/run_holographic_qec_simulation.py
 ```
 
 These scripts evaluate the exact closed-form analytical solutions, map parameter spaces, and generate high-resolution publication-quality vector diagrams (`.svg`) illustrating the mathematical proofs.
 
-To view the interactive scientific paper with rendered formulas, interactive TOC, and all 22 vector figures:
+To view the interactive scientific paper with rendered formulas, interactive TOC, and all 23 vector figures:
 - Open `paper/paper_index.html` in your web browser.

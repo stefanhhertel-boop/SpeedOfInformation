@@ -309,6 +309,14 @@ S_{\text{dS}} = \frac{3\pi c_{\mathcal{I}}^5}{G \hbar \Lambda} \implies \Lambda 
 \end{equation}
 While cancelling zero-point loop divergences in bulk QFT remains an open ultraviolet field-theoretic problem, the information-theoretic framework translates the 122-order-of-magnitude volume fine-tuning into an infrared boundary information capacity constraint ($S_{\text{dS}} \approx 10^{122}\text{ bits}$), illustrating how a bounded speed of information $c_{\mathcal{I}}$ sets an upper bound on cosmological curvature.
 
+\subsection{Holographic Quantum Error Correction and Spacetime Fault Tolerance}
+
+Why does emergent spacetime remain macroscopically smooth against local ultraviolet fluctuations, and how can a bulk operator $\phi(x)$ be reconstructed from distinct boundary subregions without violating the Quantum No-Cloning Theorem? Following Almheiri, Dong, and Harlow~\cite{almheiri2015} and the HaPPY hyperbolic tensor network code~\cite{pastawski2015}, semi-classical bulk states span an isometric logical code subspace $\mathcal{H}_{\text{code}} \subset \mathcal{H}_{\text{phys}}$ satisfying the Knill-Laflamme quantum error correction condition:
+\begin{equation}
+P_{\text{code}} \, E_a^\dagger E_b \, P_{\text{code}} = C_{ab} \, P_{\text{code}}.
+\end{equation}
+Within the $c_{\mathcal{I}}$ framework, the holographic radial depth $z$ directly measures the \textbf{Quantum Code Distance} $d(z)$ (growing exponentially as $d(n) = \lambda^n$ with $\lambda = \frac{3+\sqrt{5}}{2} \approx 2.618$ in $\{5,4\}$ pentagon tilings), shielding bulk operators at depth $z$ against any boundary erasure of size $\ell_{\text{erase}} < 2z$. Crucially, by the \textbf{Eastin-Knill theorem}~\cite{eastin2009}, no local quantum error-correcting code can implement continuous unitary time evolution via purely transversal (instantaneous) gates; fault-tolerant bulk dynamics requires syndrome propagation at a strictly finite causal speed $c_{\mathcal{I}}$, enforcing a minimum causal decoding delay $\Delta t_{\text{decode}}(z) = z / c_{\mathcal{I}}$ that defines the bulk light-cone. Conversely, when bulk logical entropy saturates the Bekenstein-Hawking bound ($S_{\text{bulk}} \to A/4\ell_{\text{Pl}}^2$), the Quantum Singleton Bound ($N - k \ge 2(d-1)$) forces the effective code distance to collapse ($d_{\text{eff}} \to 1$), forming a black hole horizon.
+
 \section{Comparative Assessment: How Informational Causality Enhances Understanding}
 
 \begin{table}[htbp]
@@ -333,7 +341,7 @@ While cancelling zero-point loop divergences in bulk QFT remains an open ultravi
 
 \section{Numerical Visualizations \& Analytical Parameter Models}
 
-The theoretical insights presented herein are supported by seven numerical modeling suites and twenty-two publication-quality vector figures:
+The theoretical insights presented herein are supported by eight numerical modeling suites and twenty-three publication-quality vector figures:
 \begin{enumerate}
     \item \textbf{Sommerfeld-Brillouin Wavefront Dynamics:} Numerical evaluation of Fourier-Laplace contour integrals verifying strict causal front velocity $v_{\text{front}} = c_{\mathcal{I}}$ despite superluminal group delays in gain media.
     \item \textbf{Proca Dispersion Phenomenology:} Evaluation of astrophysical time delays across radio to gamma frequencies, demonstrating invariant $c_{\mathcal{I}}$ amidst dispersive light.
@@ -342,6 +350,7 @@ The theoretical insights presented herein are supported by seven numerical model
     \item \textbf{Lieb-Robinson Bound Visualizations:} Mapping causal operator spreading and emergent light cones in quantum many-body lattices.
     \item \textbf{Quantum Gravity MDR Predictions:} Cosmological time-of-flight models for linear ($n=1$) and quadratic ($n=2$) Lorentz-invariance violations.
     \item \textbf{Thermodynamic Horizon Dynamics:} Numerical tracking of causal diamond entropy equilibrium, black hole scrambling, and the Page curve.
+    \item \textbf{Holographic Quantum Error Correction:} Modeling 3-qutrit entanglement wedge reconstruction, hyperbolic HaPPY code distance growth $d(n) = \lambda^n$, erasure threshold phase transitions ($p_c = 1/2$), and causal decoding delay $\Delta t_{\text{decode}} = z / c_{\mathcal{I}}$.
 \end{enumerate}
 
 \section{Conclusion}
@@ -368,6 +377,9 @@ The conceptual transition from the ``speed of light'' ($c$) to the ``speed of in
 \bibitem{faulkner2014} T. Faulkner, M. Guica, T. Hartman, R. C. Myers, and M. Van Raamsdonk, \emph{J. High Energ. Phys.} \textbf{2014}, 51 (2014).
 \bibitem{maldacena1998} J. Maldacena, \emph{Adv. Theor. Math. Phys.} \textbf{2}, 231 (1998).
 \bibitem{ryu2006} S. Ryu and T. Takayanagi, \emph{Phys. Rev. Lett.} \textbf{96}, 181602 (2006).
+\bibitem{almheiri2015} A. Almheiri, X. Dong, and D. Harlow, \emph{J. High Energ. Phys.} \textbf{2015}, 163 (2015).
+\bibitem{pastawski2015} F. Pastawski, B. Yoshida, D. Harlow, and J. Preskill, \emph{J. High Energ. Phys.} \textbf{2015}, 149 (2015).
+\bibitem{eastin2009} B. Eastin and E. Knill, \emph{Phys. Rev. Lett.} \textbf{102}, 110502 (2009).
 \bibitem{almheiri2019} A. Almheiri, N. Engelhardt, D. Marolf, and H. Maxfield, \emph{J. High Energ. Phys.} \textbf{2019}, 63 (2019).
 \bibitem{page1993} D. N. Page, \emph{Phys. Rev. Lett.} \textbf{71}, 3743 (1993).
 \bibitem{roberts2016} D. A. Roberts and B. Swingle, \emph{Phys. Rev. Lett.} \textbf{117}, 091602 (2016).

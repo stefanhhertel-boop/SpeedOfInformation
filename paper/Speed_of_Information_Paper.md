@@ -396,6 +396,17 @@ To maintain rigorous scientific integrity, we explicitly present the **Critical 
 | **Smooth Lorentzian Manifold $(M, g_{\mu\nu})$** | **INPUT (Assumed)** | The derivation assumes a pre-existing 4D smooth continuum with Riemann normal coordinates. |
 | **Entanglement Equilibrium Axiom** | **INPUT (Assumed)** | The stationarity $\delta S_{\text{total}} = 0$ is a variational postulate analogous to the Second Law of Thermodynamics. |
 
+### 5.4 Holographic Quantum Error Correction and Spacetime Fault Tolerance
+
+Why does emergent spacetime appear macroscopically smooth and stable against local ultraviolet quantum fluctuations, and how can a bulk operator $\phi(x)$ be reconstructed from multiple distinct boundary subregions without violating the Quantum No-Cloning Theorem?
+
+Following Almheiri, Dong, and Harlow (2015) and the HaPPY tensor network formalism (Pastawski et al., 2015), semi-classical bulk states span an isometric **Logical Code Subspace** $\mathcal{H}_{\text{code}} \subset \mathcal{H}_{\text{phys}}$ satisfying the **Knill-Laflamme Quantum Error Correction Condition**:
+$$P_{\text{code}} \, E_a^\dagger E_b \, P_{\text{code}} = C_{ab} \, P_{\text{code}},$$
+where $P_{\text{code}}$ projects onto the protected spacetime subspace and $\{E_a\}$ are boundary erasure operators. Within the **Speed of Information ($c_{\mathcal{I}}$)** framework ([Figure 23](file:///home/stefan/Projects/SpeedOfInformation/figures/fig23_holographic_quantum_error_correction.svg)):
+1. **Radial Depth as Code Distance:** The holographic radial coordinate $z$ measures the **Quantum Code Distance** $d(z)$ (growing exponentially as $d(n) = \lambda^n$ with $\lambda = \frac{3+\sqrt{5}}{2} \approx 2.618$ in $\{5,4\}$ hyperbolic tilings). A bulk operator at depth $z$ is shielded against any boundary erasure of size $\ell_{\text{erase}} < 2z$.
+2. **Why $c_{\mathcal{I}}$ Must Be Finite (Eastin-Knill & BPT Theorems):** By the **Eastin-Knill Theorem**, no local quantum error-correcting code can implement continuous unitary time evolution using purely transversal (instantaneous, zero-depth) operations. Fault-tolerant bulk dynamics requires syndrome propagation across spatial links at a finite causal speed $c_{\mathcal{I}}$, enforcing a minimum causal decoding delay $\Delta t_{\text{decode}}(z) = z / c_{\mathcal{I}}$ that defines the bulk light-cone.
+3. **Black Holes as Code Rate Saturation:** By the Quantum Singleton Bound ($N - k \ge 2(d-1)$), packing logical entropy $S_{\text{bulk}} \to S_{\text{BH}} = A / 4\ell_P^2$ saturates the code rate ($k/N \to 1$) and collapses the effective code distance to $d_{\text{eff}} \to 1$, forming an event horizon until the Page-time erasure threshold ($f_{\text{rad}} > 1/2$) is crossed.
+
 ---
 
 ## 6. Observational & Experimental Signatures
@@ -512,6 +523,9 @@ The theoretical conclusions of this study are validated by our numerical modelin
 7. **Simulation 7: Time Dilation as Informational Bandwidth Conservation** ([Figure 22](file:///home/stefan/Projects/SpeedOfInformation/figures/fig22_time_dilation_information_bandwidth.svg))
    - Evaluated the bandwidth invariance trade-off $(d\tau/dt)^2 + (v/c_{\mathcal{I}})^2 = 1$, internal causal loop path stretching, cosmic ray muon dilation ($\gamma = 15.82$), and gravitational horizon channel capacity.
 
+8. **Simulation 8: Holographic Quantum Error Correction & Spacetime Fault Tolerance** ([Figure 23](file:///home/stefan/Projects/SpeedOfInformation/figures/fig23_holographic_quantum_error_correction.svg))
+   - Modeled 3-qutrit entanglement wedge reconstruction in the Poincaré disk, exponential code distance growth $d(n) = \lambda^n$ in hyperbolic $\{5,4\}$ HaPPY tensor networks, complementary recovery across the $p_c = 1/2$ erasure threshold, and causal syndrome decoding delay $\Delta t_{\text{decode}} = z / c_{\mathcal{I}}$.
+
 ---
 
 ## 9. Conclusion & Future Research Directions
@@ -546,11 +560,15 @@ As a continuing foundational research agenda, we propose three concrete mathemat
 8. Lieb, E. H., & Robinson, D. W. (1972). "The finite group velocity of quantum spin systems." *Communications in Mathematical Physics*, 28(3), 251–257.
 9. Maldacena, J. (1998). "The Large N Limit of Superconformal Field Theories and Supergravity." *Advances in Theoretical and Mathematical Physics*, 2(2), 231–252.
 10. Ryu, S., & Takayanagi, T. (2006). "Holographic Derivation of Entanglement Entropy from the anti–de Sitter Space/Conformal Field Theory Correspondence." *Physical Review Letters*, 96(18), 181602.
-11. Almheiri, A., Engelhardt, N., Marolf, D., & Maxfield, H. (2019). "The entropy of bulk quantum fields and the entanglement wedge of an evaporating black hole." *Journal of High Energy Physics*, 2019(12), 63.
-12. Page, D. N. (1993). "Information in black hole radiation." *Physical Review Letters*, 71(23), 3743.
-13. Roberts, D. A., & Swingle, B. (2016). "Lieb-Robinson Bound and the Butterfly Effect in Quantum Field Theories." *Physical Review Letters*, 117(9), 091602.
-14. Tu, L. C., Luo, J., & Gillies, G. T. (2005). "The mass of the photon." *Reports on Progress in Physics*, 68(1), 77.
-15. Fermi LAT and GBM Collaborations (2009). "A limit on the variation of the speed of light arising from quantum gravity effects." *Nature*, 462(7271), 331–334.
-16. Steinhauer, J. (2016). "Observation of quantum Hawking radiation and its entanglement in an analogue black hole." *Nature Physics*, 12(10), 959–965.
-17. Van Raamsdonk, M. (2010). "Building up spacetime with quantum entanglement." *General Relativity and Gravitation*, 42(10), 2323–2329.
-18. Chiribella, G., D'Ariano, G. M., & Perinotti, P. (2011). "Informational derivation of quantum theory." *Physical Review A*, 84(1), 012311.
+11. Almheiri, A., Dong, X., & Harlow, D. (2015). "Bulk Locality and Quantum Error Correction in AdS/CFT." *Journal of High Energy Physics*, 2015(4), 163.
+12. Pastawski, F., Yoshida, B., Harlow, D., & Preskill, J. (2015). "Holographic quantum error-correcting codes: Toy models for the bulk/boundary correspondence." *Journal of High Energy Physics*, 2015(6), 149.
+13. Eastin, B., & Knill, E. (2009). "Restrictions on Transversal Encoded Quantum Gate Sets." *Physical Review Letters*, 102(11), 110502.
+14. Almheiri, A., Engelhardt, N., Marolf, D., & Maxfield, H. (2019). "The entropy of bulk quantum fields and the entanglement wedge of an evaporating black hole." *Journal of High Energy Physics*, 2019(12), 63.
+15. Page, D. N. (1993). "Information in black hole radiation." *Physical Review Letters*, 71(23), 3743.
+16. Roberts, D. A., & Swingle, B. (2016). "Lieb-Robinson Bound and the Butterfly Effect in Quantum Field Theories." *Physical Review Letters*, 117(9), 091602.
+17. Tu, L. C., Luo, J., & Gillies, G. T. (2005). "The mass of the photon." *Reports on Progress in Physics*, 68(1), 77.
+18. Fermi LAT and GBM Collaborations (2009). "A limit on the variation of the speed of light arising from quantum gravity effects." *Nature*, 462(7271), 331–334.
+19. Steinhauer, J. (2016). "Observation of quantum Hawking radiation and its entanglement in an analogue black hole." *Nature Physics*, 12(10), 959–965.
+20. Van Raamsdonk, M. (2010). "Building up spacetime with quantum entanglement." *General Relativity and Gravitation*, 42(10), 2323–2329.
+21. Chiribella, G., D'Ariano, G. M., & Perinotti, P. (2011). "Informational derivation of quantum theory." *Physical Review A*, 84(1), 012311.
+
