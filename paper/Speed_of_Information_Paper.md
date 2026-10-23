@@ -1,42 +1,72 @@
-# From Luminal Kinematics to Informational Causality: Evaluating the Theoretical and Empirical Consequences of Replacing the Speed of Light with the Speed of Information
+# From Luminal Kinematics to a Universal Causal Information Cone: Operationalizing Spacetime Geometry, Quantum Speed Limits, and Multi-Messenger Tests
 
 **Author:** Stefan Hertel  
 **Affiliation:** Independent Researcher  
-**Date:** October 15, 2026  
-**Classification:** Foundations of Physics, General Relativity, Quantum Information, High-Energy Theory  
-**PACS Codes:** 03.30.+p (Special relativity), 03.65.Ud (Entanglement and quantum nonlocality), 04.20.Cv (Fundamental problems and general formalism in GR), 04.60.-m (Quantum gravity)
+**Date:** October 2026  
+**DOI:** [10.5281/zenodo.23402847](https://doi.org/10.5281/zenodo.23402847)  
+**Classification:** Foundations of Physics, Quantum Information, Relativistic Kinematics, Quantum Gravity Phenomenology
 
 ---
 
 ## Abstract
 
-For over a century, the fundamental kinematic invariant of the universe, $c \approx 2.99792458 \times 10^8\text{ m/s}$, has carried the historical nomenclature "the speed of light in vacuum." While historically understandable given the derivation of Maxwell's electrodynamics, this terminology has fostered persistent pedagogical confusions, obscured the axiomatic structure of spacetime, and detached the kinematic foundation of relativity from modern developments in quantum information theory, many-body physics, and holographic quantum gravity. In this study, we conduct an extensive theoretical and computational investigation into whether replacing the concept of the "speed of light" ($c$) with the "speed of information" ($c_{\mathcal{I}}$) provides a deeper, more fundamental understanding of relativistic kinematics, quantum measurement, and emergent spacetime. 
+For over a century, the invariant kinematic speed of relativistic spacetime, $c \approx 2.99792458 \times 10^8\text{ m/s}$, has carried the historical nomenclature "the speed of light in vacuum." While historically natural following Maxwellian electrodynamics, this terminology conflates an intrinsic geometric property of spacetime with the excitation velocity of a specific $U(1)$ gauge field. In this work, we conduct a systematic theoretical investigation reformulating this kinematic invariant as the **universal causal speed of information** ($c_{\mathcal{I}}$), delineating established theorems, conceptual interpretations, and testable physical hypotheses.
 
-We formalize this transition across four distinct tiers: (i) **Axiomatic Spacetime Foundations**, where we prove via group-theoretic and causal order methods that spacetime geometry requires only an invariant causal velocity $c_{\mathcal{I}}$ decoupled from any specific gauge field or massless particle; (ii) **Wave Dynamics & Dispersion Analysis**, demonstrating via Kramers-Kronig analyticity and numerical simulations that while phase and group velocities can exceed $c$ or become negative in dispersive media, the informational front velocity is strictly and universally bounded by $c_{\mathcal{I}}$; (iii) **Microcausality and Quantum Information**, illustrating how the no-signaling theorem and Lieb-Robinson bounds in non-relativistic many-body Hamiltonians naturally generate emergent causal information cones ($v_{\text{LR}} \le c_{\mathcal{I}}$); and (iv) **Holographic Gravity & Planck-Scale Physics**, where butterfly velocities $v_B$, out-of-time-ordered correlators (OTOCs), and modified dispersion relations (MDRs) position information flow as the ontological precursor to macroscopic spacetime metric structures. 
-
-We conclude that while a purely nominal substitution ($c \to c_{\mathcal{I}}$) leaves the quantitative predictions of the standard Einstein-Maxwell action invariant under the condition $m_\gamma = 0$, the conceptual and structural shift to $c_{\mathcal{I}}$ clarifies fundamental physics: it resolves long-standing interpretive paradoxes, correctly decouples geometry from gauge-field contingencies (such as non-zero photon mass in Proca theories), and provides the foundational vocabulary required for the "It-from-Qubit" emergence of spacetime in quantum gravity.
+We establish:
+1. **Axiomatic Spacetime Foundations:** Following the Ignatowsky-Frank-Rothe-Lévy-Leblond lineage, Lorentz transformations and the pseudo-Riemannian metric follow from spatial isotropy, homogeneity, and group closure without postulating electromagnetism. Decoupling the metric from field excitations clarifies that if the photon possessed a non-zero de Broglie-Proca mass ($m_\gamma \neq 0$), physical light would be dispersive ($v_\gamma(\omega) < c_{\mathcal{I}}$) while the causal geometry of spacetime remains invariant.
+2. **Wave Dynamics & Quantum Speed Limits:** Via Kramers-Kronig analyticity and Sommerfeld-Brillouin contour integration, we reaffirm that signal front velocities strictly satisfy $v_{\text{front}} = c_{\mathcal{I}}$ despite superluminal group or phase velocities ($v_g, v_p > c_{\mathcal{I}}$) in dispersive media. In subluminal media (Electromagnetically Induced Transparency), we demonstrate that group delays reflect steep polaritonic dispersion; we critically delineate this dispersive slowdown from isolated-system Margolus-Levitin quantum speed limits.
+3. **Operational Proper Time and State Evolution:** We show that the 4-velocity norm $u^\mu u_\mu = -c_{\mathcal{I}}^2$ operationally constrains the rate at which physically distinguishable quantum states can evolve along a worldline ($d\tau/dt = 1/\gamma$), providing a rigorous quantum-measurement framing of time dilation without positing an ad-hoc "bandwidth fluid."
+4. **Hierarchy of Physical Velocities:** We formalize a five-tier taxonomy rigorously distinguishing the geometric causal speed $c_{\text{causal}}$, the field-theoretic front velocity $v_{\text{front}}$, effective Lieb-Robinson speeds $v_{\text{LR}}$ in lattice systems, quantum scrambling velocities $v_B$, and usable signaling rates $v_{\text{signal}}$. We address the Renormalization Group (RG) conditions under which Lorentz-invariant cones emerge from microscopic lattice models.
+5. **Entanglement Equilibrium and Spacetime:** We review the Jacobson-Faulkner derivation of Einstein's equations from entanglement equilibrium ($G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{\mu\nu}$), maintaining an explicit Critical Audit Balance Sheet of derived structures versus assumed geometric inputs.
+6. **The Universal Causal Cone Hypothesis:** We formulate the hypothesis $c_{\text{EM}} = c_{\text{grav}} = c_{\text{matter}} = c_{\mathcal{I}}$ as a falsifiable empirical proposition, evaluating current constraints from multi-messenger gravitational wave astronomy ($|c_{\text{GW}} - c_{\text{EM}}|/c_{\mathcal{I}} \le 10^{-15}$ from GW170817), Proca mass bounds ($m_\gamma < 10^{-18}\text{ eV}/c^2$), and Planck-scale modified dispersion relations.
 
 ---
 
-## 1. Introduction: The Historical Accident of Maxwellian Relativism
+## 1. Introduction: Decoupling Causal Spacetime from Electromagnetism
 
-Albert Einstein's 1905 paper, *Zur Elektrodynamik bewegter Körper* ("On the Electrodynamics of Moving Bodies"), rested on two fundamental postulates:
-1. The Principle of Relativity: The laws of electrodynamics and optics are valid for all frames of reference for which the equations of mechanics hold good.
-2. The Constancy of the Speed of Light: Light is always propagated in empty space with a definite velocity $c$ which is independent of the state of motion of the emitting body.
+Albert Einstein's 1905 paper, *Zur Elektrodynamik bewegter Körper* ("On the Electrodynamics of Moving Bodies") [1], rested on two fundamental postulates:
+1. **The Principle of Relativity:** The laws of physics are identical in all inertial reference frames.
+2. **The Constancy of the Speed of Light:** Light in vacuum propagates with a definite velocity $c$ independent of the state of motion of the emitting body.
 
-From a historical perspective, Einstein's second postulate was an act of profound physical intuition, directly addressing the null result of the Michelson-Morley experiment and the apparent incompatibility between Newtonian Galilean invariance ($x' = x - vt$) and Maxwell's wave equation:
+From a historical perspective, Einstein's second postulate reconciled the null result of the Michelson-Morley experiment with Maxwell's wave equation:
 $$\nabla^2 \mathbf{E} - \frac{1}{c^2}\frac{\partial^2 \mathbf{E}}{\partial t^2} = 0, \quad \text{where } c = \frac{1}{\sqrt{\epsilon_0 \mu_0}}.$$
 
-However, designating $c$ as "the speed of light" embedded an incidental material phenomenon—the propagation velocity of transverse excitations in the $U(1)$ electromagnetic gauge field—into the very fabric of geometry. This linguistic and conceptual conflation has generated substantial issues throughout theoretical physics:
-1. **Pedagogical and Ontological Vulnerability:** Laypersons and students persistently ask: *"If light slows down to 17 m/s in a Bose-Einstein condensate or to $2.25 \times 10^8\text{ m/s}$ in water, does the fabric of spacetime or the relativistic limit change?"* The answer is strictly negative, yet explaining why requires dismantling the very term "speed of light."
-2. **Contingency on Particle Physics:** If the photon should possess an infinitesimal rest mass $m_\gamma \neq 0$ (as permitted in de Broglie-Proca electrodynamics), electromagnetic waves would disperse and propagate at velocities strictly less than $c$. Yet, the geometry of Minkowski spacetime, time dilation, mass-energy equivalence $E=mc^2$, and causality would remain completely unaffected.
-3. **Apparent Superluminal Paradoxes:** Experiments demonstrating phase velocities $v_p > c$ or group velocities $v_g > c$ (and even negative group delays) in gain media and photonic crystals routinely trigger specious claims regarding the violation of special relativity.
-4. **Disconnection from Quantum Gravity:** In modern holographic dualities (AdS/CFT), tensor network geometries (MERA), and quantum information approaches to spacetime, geometry is recognized as an *emergent* phenomenon arising from quantum entanglement and information processing.
+However, designating $c$ as "the speed of light" anchored an incidental physical phenomenon—the propagation velocity of transverse excitations in the $U(1)$ electromagnetic gauge field—into the very definition of spacetime geometry. This historical convention has fostered persistent conceptual vulnerabilities:
+- **Pedagogical and Ontological Vulnerability:** When light decelerates to $17\text{ m/s}$ in a Bose-Einstein condensate [8] or to $2.25 \times 10^8\text{ m/s}$ in water, students and non-specialists routinely question whether the fundamental speed limit of the universe or the structure of spacetime has altered.
+- **Contingency on Particle Physics:** If the photon should possess an infinitesimal rest mass $m_\gamma \neq 0$ (as permitted in de Broglie-Proca electrodynamics [27]), electromagnetic waves would disperse and propagate at velocities strictly less than $c$. Yet, the geometry of Minkowski spacetime, time dilation, mass-energy equivalence $E=mc^2$, and causality would remain completely unaffected.
+- **Apparent Superluminal Anomalies:** Experiments demonstrating phase velocities $v_p > c$ or group velocities $v_g > c$ (and negative group delays) in anomalous dispersion media [7] routinely generate spurious claims regarding the breakdown of relativity.
+- **Disconnection from Quantum Gravity:** In modern holographic dualities (AdS/CFT) [9], tensor network geometries [11, 12], and entanglement thermodynamics [17, 18, 19], geometry is recognized as an *emergent* phenomenon arising from quantum entanglement and information processing.
 
-The central research question of this study is:  
-**Does replacing the concept of the "speed of light" with the "speed of information" ($c_{\mathcal{I}}$) help us better understand the fundamental architecture of spacetime, quantum causality, and gravitational dynamics?**
+### 1.1 Epistemic Framework: Three Tiers of Theoretical Status
 
-To answer this systematically, we investigate the mathematical, physical, and epistemological ramifications across classical relativity, optical dispersion, quantum foundations, and holographic quantum gravity.
+To maintain scientific integrity and avoid overclaiming, we explicitly partition the arguments in this study into three distinct epistemic tiers:
+
+```
+┌───────────────────────────────────────────────────────────────────────────┐
+│                    EPISTEMIC CLASSIFICATION FRAMEWORK                     │
+├───────────────────────────────────────────────────────────────────────────┤
+│ Tier I: Mathematically Proven & Experimentally Established Physics        │
+│  - Ignatowsky-Frank-Rothe-Lévy-Leblond kinematic invariance               │
+│  - Kramers-Kronig analyticity & Sommerfeld-Brillouin front velocity       │
+│  - Axiomatic QFT microcausality & No-Signaling theorem                    │
+│  - Lieb-Robinson bounds in short-range lattice Hamiltonians               │
+│  - Jacobson-Faulkner derivation of Einstein equations from entanglement   │
+├───────────────────────────────────────────────────────────────────────────┤
+│ Tier II: Conceptual & Operational Interpretations                         │
+│  - c_I as universal causal metric horizon (decoupling from gauge fields)  │
+│  - Proper-time dilation as constraint on quantum state update rates       │
+│  - Multi-tier velocity taxonomy (c_causal, v_front, v_LR, v_B, v_signal)  │
+│  - Holographic quantum error-correcting code distance & causal delays    │
+├───────────────────────────────────────────────────────────────────────────┤
+│ Tier III: Falsifiable Hypotheses, Open Questions & Frontiers              │
+│  - Universal Causal Cone Hypothesis: c_EM = c_grav = c_matter = c_info    │
+│  - Multi-messenger astrophysical constraints (GW170817, FRBs, GRB 090510) │
+│  - RG flow from microscopic lattice information dynamics to Lorentz cones │
+│  - Energy-dependent effective causal cones: c_I(E) in Quantum Gravity     │
+└───────────────────────────────────────────────────────────────────────────┘
+```
+
+The central question addressed in this study is: **Does replacing the concept of the "speed of light" with the "speed of information" ($c_{\mathcal{I}}$) provide a deeper, more robust foundation for relativistic kinematics, quantum measurement, and emergent spacetime?**
 
 ---
 
@@ -44,205 +74,122 @@ To answer this systematically, we investigate the mathematical, physical, and ep
 
 ### 2.1 The Ignatowsky-Frank-Rothe-Lévy-Leblond Theorem
 
-It is a widespread misconception that Special Relativity fundamentally depends upon the existence of light. As early as 1910, W. von Ignatowsky demonstrated that the Lorentz transformations can be derived without the second postulate, relying purely on spatial isotropy, homogeneity of spacetime, and the group structure of inertial reference frames. This was refined by Frank and Rothe (1911), Lévy-Leblond (1976), and Pelissetto & Testa (2015).
+It is an established mathematical theorem that Special Relativity does not logically depend upon light or electrodynamics. Beginning with W. von Ignatowsky (1910) [2], and refined by Frank and Rothe (1911) [3], Lévy-Leblond (1976) [4], and Pelissetto & Testa (2015) [5], the Lorentz transformations can be derived entirely from spacetime symmetries and group theory.
 
-Let an event in inertial frame $K$ be $(t, x)$ and in frame $K'$ (moving with velocity $v$ relative to $K$) be $(t', x')$. By spacetime homogeneity, the coordinate transformation must be linear:
+Let an event in inertial frame $K$ be $(t, x)$ and in frame $K'$ (moving with velocity $v$ relative to $K$) be $(t', x')$. By spacetime homogeneity, coordinate transformations must be linear:
 $$\begin{pmatrix} x' \\ t' \end{pmatrix} = \begin{pmatrix} A(v) & B(v) \\ C(v) & D(v) \end{pmatrix} \begin{pmatrix} x \\ t \end{pmatrix}.$$
 
-Applying the standard symmetries:
-1. **Homogeneity and Isotropy of Space:** Reflections $x \to -x$ and spatial inversions preserve the structure of physical laws.
-2. **Subgroup Closure and Reciprocity:** Two successive boosts in the same direction must yield a valid boost: $\mathcal{B}(v_2) \circ \mathcal{B}(v_1) = \mathcal{B}(v_3)$, with $\mathcal{B}(-v) = \mathcal{B}(v)^{-1}$.
-3. **Causal Ordering (No-Signaling into the Past):** The temporal sequence of causally connected events cannot invert under continuous frame transformations.
+Applying the foundational axioms of kinematics:
+1. **Homogeneity and Spatial Isotropy:** Reflections $x \to -x$ and spatial inversions preserve physical laws.
+2. **Group Closure and Reciprocity:** Two successive boosts along the same direction yield a valid boost: $\mathcal{B}(v_2) \circ \mathcal{B}(v_1) = \mathcal{B}(v_3)$, with $\mathcal{B}(0) = \mathbb{I}$ and $\mathcal{B}(-v) = \mathcal{B}(v)^{-1}$.
+3. **Causal Ordering:** The temporal sequence of causally connectable events cannot invert under continuous frame boosts.
 
-From these purely group-theoretic and topological axioms, the transformation coefficients are uniquely constrained to:
+These purely group-theoretic axioms uniquely restrict the transformation coefficients to:
 $$x' = \gamma(v) (x - v t), \quad t' = \gamma(v) \left(t - \alpha v x\right), \quad \gamma(v) = \frac{1}{\sqrt{1 - \alpha v^2}},$$
-where $\alpha$ is a universal invariant constant of nature with dimensions of $[\text{velocity}]^{-2}$.
+where $\alpha$ is a universal invariant constant with dimensions of $[\text{velocity}]^{-2}$.
 
-There are precisely three mathematically permissible cases:
-- **Case 1: $\alpha < 0$.** Spacetime symmetry group is $SO(4)$, which permits periodic time loops (closed timelike curves) in ordinary inertial transformations, violating causality.
-- **Case 2: $\alpha = 0$.** Spacetime symmetry group is the Galilean group $\mathrm{SGal}(3,1)$, where the causal speed limit is infinite ($\alpha = 1/\infty^2 = 0$).
-- **Case 3: $\alpha > 0$.** Spacetime symmetry group is the Poincaré / Lorentz group $SO(3,1)$, with an invariant universal speed:
-$$c_{\mathcal{I}} \equiv \frac{1}{\sqrt{\alpha}}.$$
+Mathematically, precisely three geometric classes exist:
+- **Case 1: $\alpha < 0$.** The spacetime symmetry group is the Euclidean $SO(4)$. Rotations in time and space admit closed timelike curves under standard inertial boosts, violating causality.
+- **Case 2: $\alpha = 0$.** The symmetry group is the Galilean group $\mathrm{SGal}(3,1)$, where the causal speed limit is infinite ($\alpha = 1/\infty^2 = 0$).
+- **Case 3: $\alpha > 0$.** The symmetry group is the Lorentz/Poincaré group $SO(3,1)$, featuring an invariant universal speed:
+  $$\boxed{c_{\mathcal{I}} \equiv \frac{1}{\sqrt{\alpha}}}.$$
 
-```
-                     Axioms: Homogeneity + Isotropy + Group Closure + Causality
-                                              │
-                      ┌───────────────────────┴───────────────────────┐
-                      ▼                                               ▼
-               Case alpha = 0                                  Case alpha > 0
-            Galilean Spacetime                           Pseudo-Riemannian Spacetime
-           (Infinite Signal Speed)                       (Finite Invariant Speed c_info)
-                      │                                               │
-             Non-Relativistic                             Independent of Light!
-             Classical Physics                            Metric: ds^2 = -c_info^2 dt^2 + dx^2
-```
-
-Notice that **not a single mention of light, electromagnetism, photons, or Maxwell's equations is required** to arrive at the invariant speed $c_{\mathcal{I}}$. The invariant speed is an intrinsic geometric feature of our pseudo-Riemannian manifold: it represents the maximal causal speed at which two events can exchange state alterations—i.e., the **speed of information**.
+**Not a single mention of light, electromagnetism, photons, or Maxwell's equations is required** to arrive at the invariant speed $c_{\mathcal{I}}$. The invariant speed is an intrinsic geometric property of our pseudo-Riemannian manifold: it represents the maximal causal speed at which two events can exchange state alterations—i.e., the **speed of information**.
 
 ### 2.2 Decoupling Field Excitations: Maxwell vs. Proca Electrodynamics
 
-Why did physics conflate $c_{\mathcal{I}}$ with light? Because in standard Maxwellian electrodynamics, the photon is assumed to be strictly massless ($m_\gamma = 0$):
+Why did historical physics conflate $c_{\mathcal{I}}$ with light? Because in standard Maxwellian electrodynamics, the gauge boson is assumed to be strictly massless ($m_\gamma = 0$):
 $$\mathcal{L}_{\text{Maxwell}} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu}.$$
-The equations of motion in Lorenz gauge $\partial_\mu A^\mu = 0$ yield the wave equation:
-$$\Box A^\mu \equiv \left( -\frac{1}{c_{\mathcal{I}}^2} \frac{\partial^2}{\partial t^2} + \nabla^2 \right) A^\mu = 0.$$
-Plane-wave solutions $A^\mu \propto \epsilon^\mu e^{i(k \cdot x - \omega t)}$ satisfy the dispersion relation:
-$$\omega^2 - c_{\mathcal{I}}^2 k^2 = 0 \implies v_{\text{phase}} = \frac{\omega}{k} = c_{\mathcal{I}}, \quad v_{\text{group}} = \frac{d\omega}{dk} = c_{\mathcal{I}}.$$
+In Lorenz gauge $\partial_\mu A^\mu = 0$, the wave equation reads:
+$$\Box A^\mu \equiv \left( -\frac{1}{c_{\mathcal{I}}^2} \frac{\partial^2}{\partial t^2} + \nabla^2 \right) A^\mu = 0 \implies \omega^2 - c_{\mathcal{I}}^2 k^2 = 0 \implies v_{\text{group}} = c_{\mathcal{I}}.$$
 
-However, if we consider de Broglie-Proca electrodynamics, where the photon carries a rest mass $m_\gamma$:
+However, in de Broglie-Proca electrodynamics [27], the photon carries a non-zero rest mass $m_\gamma$:
 $$\mathcal{L}_{\text{Proca}} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu} + \frac{1}{2} \left(\frac{m_\gamma c_{\mathcal{I}}}{\hbar}\right)^2 A_\mu A^\mu.$$
-The resulting equation of motion is:
-$$\left( \Box + \mu_\gamma^2 \right) A^\mu = 0, \quad \mu_\gamma \equiv \frac{m_\gamma c_{\mathcal{I}}}{\hbar}.$$
-
-The dispersion relation becomes:
-$$\omega(k) = \sqrt{c_{\mathcal{I}}^2 k^2 + \mu_\gamma^2 c_{\mathcal{I}}^4 / \hbar^2} = \sqrt{c_{\mathcal{I}}^2 k^2 + \frac{m_\gamma^2 c_{\mathcal{I}}^4}{\hbar^2}}.$$
-
-The physical group velocity of light $v_\gamma(k)$ is:
-$$v_{\text{group}} = \frac{d\omega}{dk} = \frac{c_{\mathcal{I}}^2 k}{\sqrt{c_{\mathcal{I}}^2 k^2 + \mu_\gamma^2 c_{\mathcal{I}}^4 / \hbar^2}} = c_{\mathcal{I}} \sqrt{1 - \frac{m_\gamma^2 c_{\mathcal{I}}^4}{\hbar^2 \omega^2}} < c_{\mathcal{I}}.$$
-
-```
-                 Proca Electrodynamics Dispersion (m_gamma > 0)
-    Velocity
-       ▲
-c_info ┼─────────────────────────────────────────────── Invariant Causal Metric
-       │                                     ...---'''' v_group(omega) -> c_info
-       │                           ...---''''
-       │                 ...---''''
-       │       ...---''''   v_group(omega) = c_info * sqrt(1 - (m_gamma c^2 / hbar omega)^2)
-       │ ...'''
-     0 ┼───────────────┬───────────────────────────────► Frequency omega
-                       omega_cutoff = m_gamma c_info^2 / hbar
-```
+The resulting dispersion relation is:
+$$\omega(k) = \sqrt{c_{\mathcal{I}}^2 k^2 + \frac{m_\gamma^2 c_{\mathcal{I}}^4}{\hbar^2}},$$
+yielding a frequency-dependent group velocity of light $v_\gamma(\omega)$:
+$$v_{\text{group}}(\omega) = \frac{d\omega}{dk} = c_{\mathcal{I}} \sqrt{1 - \frac{m_\gamma^2 c_{\mathcal{I}}^4}{\hbar^2 \omega^2}} < c_{\mathcal{I}}.$$
 
 Under Proca electrodynamics:
 1. Low-frequency radio waves travel significantly slower than high-energy gamma rays.
-2. In the limit $\omega \to \omega_{\text{cutoff}} = m_\gamma c_{\mathcal{I}}^2 / \hbar$, the group velocity approaches zero.
+2. Near the cutoff frequency $\omega_{\text{cutoff}} = m_\gamma c_{\mathcal{I}}^2 / \hbar$, the group velocity approaches zero.
 3. Yet, throughout this scenario, **$c_{\mathcal{I}}$ remains entirely invariant, constant, and unyielding**.
 
-This establishes an inescapable physical distinction:
+Thus:
 $$\boxed{c_{\mathcal{I}} \text{ is the invariant metric asymptote; } v_\gamma(\omega) \text{ is a dynamical field excitation velocity.}}$$
-Calling $c_{\mathcal{I}}$ "the speed of light" is therefore physically false if $m_\gamma > 0$, and merely an accidental identity if $m_\gamma = 0$.
 
 ---
 
 ## 3. Wave Dynamics & Dispersion: Optical Artifacts vs. The Informational Front
 
-A frequent source of claims that "the speed of light has been broken" arises from optics, where laser pulses traversing media with anomalous dispersion or gain lines exhibit superluminal group velocities ($v_g > c$) or negative group delays.
+### 3.1 Kramers-Kronig Analyticity and the Sommerfeld-Brillouin Informational Front
 
-### 3.1 Taxonomy of Velocities
-
-In classical electrodynamics and wave mechanics, five distinct velocities must be distinguished:
-1. **Phase Velocity ($v_p = \omega / k$):** The velocity at which the phase of a single Fourier component propagates. In waveguides and plasmas, $v_p > c_{\mathcal{I}}$ routinely without transferring any information.
-2. **Group Velocity ($v_g = d\omega / dk$):** The velocity of the peak of a narrowband wave packet envelope. In regions of anomalous dispersion ($\frac{dn}{d\omega} < 0$), $v_g$ can exceed $c_{\mathcal{I}}$, become infinite, or turn negative.
-3. **Energy Velocity ($v_E = \langle \mathbf{S} \rangle / \langle u \rangle$):** The ratio of the Poynting vector to electromagnetic energy density.
-4. **Signal Velocity ($v_s$):** The velocity at which the half-maximum of a newly switched-on signal travels.
-5. **Front Velocity ($v_f = \lim_{\omega \to \infty} \frac{\omega}{k(\omega)} \equiv c_{\mathcal{I}}$):** The velocity of the discontinuous wavefront—the earliest possible arrival of new information.
-
-### 3.2 Sommerfeld-Brillouin Contour Analysis and Kramers-Kronig Analyticity
-
-To prove that no physical information can propagate faster than $c_{\mathcal{I}}$ regardless of the medium's refractive index $n(\omega)$, we examine the propagation of a scalar field $E(x, t)$ through a dispersive medium:
+To evaluate whether physical information can propagate faster than $c_{\mathcal{I}}$ in media with anomalous dispersion ($v_g > c_{\mathcal{I}}$ or $v_g < 0$) [7], consider a scalar field $E(x, t)$ propagating through a dispersive medium:
 $$E(x, t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \tilde{E}(0, \omega) \exp\left[ i\left( \frac{\omega n(\omega)}{c_{\mathcal{I}}} x - \omega t \right) \right] d\omega.$$
 
-Suppose a transmitter switches on an arbitrary signal at $t = 0$: $E(0, t) = 0$ for all $t < 0$. By Titchmarsh's theorem, the Fourier transform $\tilde{E}(0, \omega)$ is analytic in the upper half of the complex frequency plane $\mathbb{C}^+ = \{\omega \in \mathbb{C} \mid \text{Im}(\omega) > 0\}$.
+Suppose a transmitter turns on a signal at $t = 0$: $E(0, t) = 0$ for all $t < 0$. By Titchmarsh's theorem, the Fourier transform $\tilde{E}(0, \omega)$ is analytic in the upper half of the complex frequency plane $\mathbb{C}^+ = \{\omega \in \mathbb{C} \mid \text{Im}(\omega) > 0\}$.
 
-Furthermore, the susceptibility $\chi(\omega) = n^2(\omega) - 1$ obeys the Kramers-Kronig relations:
-$$\chi(\omega) = \frac{1}{i\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\chi(\omega')}{\omega' - \omega} d\omega'.$$
+The susceptibility $\chi(\omega) = n^2(\omega) - 1$ obeys the Kramers-Kronig relations. In the asymptotic high-frequency limit $|\omega| \to \infty$, physical charges cannot respond instantaneously to an oscillating field due to inertial response, requiring:
+$$\lim_{|\omega| \to \infty} n(\omega) = 1.$$
 
-In the asymptotic high-frequency limit $|\omega| \to \infty$, physical media cannot respond instantaneously to the driving field (bound electrons have finite inertia), so the dielectric susceptibility vanishes:
-$$\lim_{|\omega| \to \infty} n(\omega) = 1 - \frac{\omega_p^2}{2\omega^2} + \mathcal{O}(|\omega|^{-3}) \implies \lim_{|\omega| \to \infty} n(\omega) = 1.$$
+Writing $\omega = \Omega + i\Xi$ ($\Xi > 0$), the exponent in the Fourier integral satisfies:
+$$\Phi(\omega) \equiv i\omega \left( \frac{n(\omega) x}{c_{\mathcal{I}}} - t \right) \xrightarrow{|\omega| \to \infty} i\Omega \left( \frac{x}{c_{\mathcal{I}}} - t \right) - \Xi \left( \frac{x}{c_{\mathcal{I}}} - t \right).$$
 
-Now consider the exponent in the Fourier integral:
-$$\Phi(\omega) \equiv i\omega \left( \frac{n(\omega) x}{c_{\mathcal{I}}} - t \right).$$
-For $|\omega| \to \infty$ in $\mathbb{C}^+$, where $\omega = \Omega + i\Xi$ ($\Xi > 0$):
-$$\Phi(\omega) \to i(\Omega + i\Xi) \left( \frac{x}{c_{\mathcal{I}}} - t \right) = i\Omega \left( \frac{x}{c_{\mathcal{I}}} - t \right) - \Xi \left( \frac{x}{c_{\mathcal{I}}} - t \right).$$
-
-If $t < x / c_{\mathcal{I}}$, then $(x / c_{\mathcal{I}} - t) > 0$. Therefore, $-\Xi(x/c_{\mathcal{I}} - t) \to -\infty$ as $\Xi \to +\infty$. The integrand decays exponentially along any semicircle of radius $R \to \infty$ in the upper half-plane.
-
-By Cauchy's residue theorem, closing the contour in the upper half-plane encompasses zero singularities (since $n(\omega)$ and $\tilde{E}(0, \omega)$ are holomorphic in $\mathbb{C}^+$):
+If $t < x / c_{\mathcal{I}}$, then $(x / c_{\mathcal{I}} - t) > 0$. Therefore, $-\Xi(x/c_{\mathcal{I}} - t) \to -\infty$ as $\Xi \to +\infty$. The integrand decays exponentially along any semicircle of radius $R \to \infty$ in the upper half-plane. By Jordan's lemma and Cauchy's residue theorem:
 $$\oint_{\mathcal{C}} \tilde{E}(0, \omega) e^{\Phi(\omega)} d\omega = 0 \implies \boxed{E(x, t) \equiv 0 \quad \text{for all } t < \frac{x}{c_{\mathcal{I}}}.}$$
 
-```
-                Complex Frequency Plane (Contour Integration)
-                            Im(omega) = Xi
-                                  ▲
-                                  │   Upper Half Plane: Holomorphic
-                                  │   (No poles by Kramers-Kronig)
-                        . - - - - ┼ - - - - .
-                    .             │             .
-                  '               │               '
-                 '     Contour    │    Decays      '
-                '      Closed     │  Exp. for       '
-               '                  │  t < x/c_info    '
-              '                   │                   '
-─────────────┴────────────────────┼───────────────────┴─────────────► Re(omega) = Omega
-           -R                     0                   +R
-                                  │
-                                  │  Lower Half Plane: Medium Poles
-                                  ▼  (Absorption & Resonance)
-```
+This classical theorem of Sommerfeld and Brillouin [5, 6] confirms that the **front velocity** of information is strictly bounded by $c_{\mathcal{I}}$, and apparent superluminal group velocities ($v_g > c_{\mathcal{I}}$) are pulse envelope reshaping artifacts, not superluminal information transfer.
 
-This mathematical theorem is decisive:
-- **No information can cross distance $x$ in time $t < x / c_{\mathcal{I}}$.**
-- Apparent superluminal group velocities ($v_g > c$) observed in experiments (e.g., Wang et al., *Nature* 2000) are purely the result of **pulse envelope reshaping** caused by preferential amplification of the leading edge and attenuation of the trailing edge.
-- The arrival of the wavefront (the Sommerfeld and Brillouin precursors) strictly travels at $v_f = c_{\mathcal{I}}$.
-
-Our numerical simulation (`Simulation 1`, see [Figure 1](file:///home/stefan/Projects/SpeedOfInformation/figures/fig1_sommerfeld_brillouin_front.svg)) verifies this rigorously: even when $v_g = 1.6\,c_{\mathcal{I}}$, the electric field amplitude remains identically zero prior to the causal threshold $t = L / c_{\mathcal{I}}$.
-
-### 3.3 Polariton Information Overhead and Quantum Memory Delay
+### 3.2 Dark-State Polaritons and Slow Light: Dispersion vs. Quantum Speed Limits
 
 A reciprocal question to superluminal anomalies is the subluminal regime: **Why does light travel slower in matter ($v < c_{\mathcal{I}}$), and what happens to the invariant speed?**
 
-In classical dielectric optics, deceleration is attributed to the Ewald-Oseen extinction theorem, where secondary dipole radiation interferes destructively with the incident wave. At the quantum informational level, however, a fundamentally deeper mechanism operates: **light slows down in matter because it continuously loads and processes quantum state information into atomic memory registers.**
-
-Consider an optical probe field $\hat{\mathcal{E}}(z, t)$ propagating through an ensemble of $N$ three-level atoms in a $\Lambda$-configuration driven by a classical control field $\Omega_c$ (Electromagnetically Induced Transparency, EIT). The true propagating eigenstate is the **dark-state polariton** (Fleischhauer \& Lukin 2000):
+In Electromagnetically Induced Transparency (EIT) within a $\Lambda$-type three-level atomic ensemble driven by a classical control field $\Omega_c$, the true propagating eigenstate is the **dark-state polariton** (Fleischhauer & Lukin 2000) [10]:
 $$\hat{\Psi}(z, t) = \cos\theta \hat{\mathcal{E}}(z, t) - \sin\theta \sqrt{N} \hat{S}(z, t),$$
-where $\hat{S}(z, t) = \frac{1}{\sqrt{N}} \sum_j |g_j\rangle\langle s_j| \delta(z - z_j)$ is the collective atomic spin coherence operator, and the mixing angle satisfies $\tan\theta = g\sqrt{N}/\Omega_c$.
+where $\hat{S}(z, t)$ is the collective atomic spin coherence operator, and the mixing angle satisfies $\tan\theta = g\sqrt{N}/\Omega_c$.
 
-The polariton equation of motion yields the group velocity:
-$$v_g = c_{\mathcal{I}} \cos^2\theta = \frac{c_{\mathcal{I}}}{1 + \frac{g^2 N}{\Omega_c^2}} = \frac{c_{\mathcal{I}}}{n_g}.$$
+The resulting group velocity is:
+$$v_g = c_{\mathcal{I}} \cos^2\theta = \frac{c_{\mathcal{I}}}{1 + \frac{g^2 N}{\Omega_c^2}} = \frac{c_{\mathcal{I}}}{n_g},$$
+where $n_g = n + \omega \frac{dn}{d\omega} \gg 1$ is the group refractive index.
 
-Here, the group refractive index $n_g$ is revealed to be an **Information Overhead Factor**:
-$$\boxed{n_g = 1 + \frac{\mathcal{I}_{\text{matter}}}{\mathcal{I}_{\text{photon}}} = 1 + \frac{g^2 N}{\Omega_c^2}}.$$
+#### Critical Delineation from Quantum Speed Limits:
+It is crucial to clarify a physical point regarding Quantum Speed Limits (QSL). The macroscopic group delay $\Delta t_{\text{delay}} = L (n_g - 1) / c_{\mathcal{I}}$ cannot be naively equated to a sum of isolated-system Margolus-Levitin dwell times $\tau_{\text{dwell}} \ge \pi\hbar / (2g)$.
 
-Every step of propagation through matter involves transferring quantum state degrees of freedom into atomic electron spin states. By the **Mandelstam-Tamm / Margolus-Levitin Quantum Speed Limit (QSL)**, each state transition requires a finite dwell time:
-$$\tau_{\text{dwell}} \ge \frac{\pi \hbar}{2g}.$$
-The cumulative macroscopic delay $\Delta t_{\text{delay}} = L (n_g - 1) / c_{\mathcal{I}}$ is simply the sum of quantum processing dwell times spent inside atomic memory registers.
+The Margolus-Levitin bound [11] ($\tau \ge \frac{\pi\hbar}{2\langle E - E_0\rangle}$) and Mandelstam-Tamm bound [12] ($\tau \ge \frac{\pi\hbar}{2\Delta E}$) apply strictly to unitary evolution between orthogonal states in isolated, time-independent Hamiltonian systems. In an EIT medium:
+- The system is an open, driven, coupled atom-field system with non-unitary dissipation.
+- The parameter $g$ is the single-photon atom-field dipole coupling frequency, not the total energy expectation value of the system.
+- The dramatic reduction in group velocity ($v_g \to 17\text{ m/s}$ in sodium BECs [8]) is fundamentally an **optical dispersion effect**: quantum destructive interference between absorption pathways generates an extremely steep refractive index gradient $dn/d\omega$.
 
-This explains extreme slow light ($v_g = 17\text{ m/s}$) observed in ultracold sodium Bose-Einstein condensates (Hau et al., *Nature* 1999): the polariton is $99.999994\%$ atomic spin memory and only $0.000006\%$ bare photon, spatially compressing a $300\text{ m}$ vacuum pulse into a $17\text{ }\mu\text{m}$ atomic cloud (see [Figure 21](file:///home/stefan/Projects/SpeedOfInformation/figures/fig21_polariton_information_overhead.svg)). When the control beam is turned off ($\Omega_c \to 0$), the pulse halts entirely ($v_g = 0\text{ m/s}$), storing 100% of its information in atomic spin coherence until released.
+While polaritons allow coherent quantum memory storage and retrieval [10], the propagation slowdown is governed by polariton dispersion kinematics, while the discontinuous wavefront continues to propagate at the invariant metric speed $c_{\mathcal{I}}$.
 
-Crucially, throughout this deceleration, **the invariant metric speed of spacetime $c_{\mathcal{I}}$ remains completely unchanged**. The discontinuous wavefront (Sommerfeld-Brillouin front) continues to propagate at $c_{\mathcal{I}}$, before any atomic dipole can respond. Slow light is an informational load phenomenon, not an alteration of spacetime kinematics.
+### 3.3 Operational Interpretation of Proper Time and Quantum State Evolution
 
-### 3.4 Time Dilation as Conservation of Informational Bandwidth
-
-The reciprocal phenomenon to slow light in matter is relativistic time dilation: **Why does physical motion through space retard internal temporal progression?**
-
-In relativistic dynamics, the timelike 4-velocity norm is invariant:
+In relativistic kinematics, the timelike 4-velocity norm is invariant:
 $$u^\mu u_\mu = g_{\mu\nu} \frac{dx^\mu}{d\tau} \frac{dx^\nu}{d\tau} = -c_{\mathcal{I}}^2 \implies -c_{\mathcal{I}}^2 \left(\frac{d\tau}{dt}\right)^2 + \left(\frac{d\mathbf{x}}{dt}\right)^2 = -c_{\mathcal{I}}^2.$$
-Dividing through by $c_{\mathcal{I}}^2$ establishes the **Law of Informational Bandwidth Conservation**:
-$$\boxed{\left(\frac{d\tau}{dt}\right)^2 + \frac{v^2}{c_{\mathcal{I}}^2} = 1 \iff \frac{d\tau}{dt} = \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}} = \frac{1}{\gamma(v)}}.$$
+Dividing through by $-c_{\mathcal{I}}^2$ yields:
+$$\left(\frac{d\tau}{dt}\right)^2 + \frac{v^2}{c_{\mathcal{I}}^2} = 1 \iff \frac{d\tau}{dt} = \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}} = \frac{1}{\gamma(v)}.$$
 
-Operationally, a clock is a quantum information engine whose internal ticks correspond to orthogonal state transitions bounded by the **Margolus-Levitin Quantum Speed Limit (QSL)**: $\tau_{\text{tick}} \ge \pi\hbar / (2E_0)$.
-A physical entity possesses a finite total processing capacity: it moves through the causal metric at invariant speed $c_{\mathcal{I}}$. When an object accelerates to velocity $v$, **it diverts informational update bandwidth away from internal state transitions into spatial coordinate shifts**. At $v \to c_{\mathcal{I}}$, all bandwidth is consumed by spatial translation, leaving zero capacity for internal change ($d\tau/dt = 0$)—proper time completely halts.
+Rather than postulating this relation as an ad-hoc "Law of Informational Bandwidth Conservation" involving a hypothetical fluid, its rigorous physical meaning is operational:
+$$\boxed{\begin{array}{l}
+\textbf{Operational Meaning:} \text{ The Lorentzian proper-time relation can be interpreted operationally as a geometric} \\
+\text{constraint on the rate at which physically distinguishable internal states can evolve along a worldline.}
+\end{array}}$$
 
-At the microscopic level, all physical structures are held together by internal gauge forces propagating at $c_{\mathcal{I}}$. When moving at speed $v$, internal coordinating signals must traverse a diagonal hypotenuse $d = \sqrt{L^2 + (v\Delta t/2)^2}$ to catch up with moving components, stretching the internal cycle time to $\Delta t = \gamma \Delta \tau$ (see [Figure 22](file:///home/stefan/Projects/SpeedOfInformation/figures/fig22_time_dilation_information_bandwidth.svg)). This naturally accounts for the dilated lifetime of atmospheric cosmic ray muons ($v = 0.998\,c_{\mathcal{I}}$, $\gamma = 15.82$, lifetime dilated from $2.2\,\mu\text{s}$ to $34.8\,\mu\text{s}$, surviving a $10.4\text{ km}$ descent to Earth).
+Consider a physical clock whose internal state transitions are governed by quantum dynamics. In its instantaneous rest frame, the minimum time required to evolve between orthogonal states is bounded by the Mandelstam-Tamm / Margolus-Levitin QSL: $\Delta \tau_{\text{tick}} \ge \pi\hbar / (2\Delta E)$. Because proper time $\tau$ parameterizes the system's rest frame, coordinate observers track the tick generation rate as:
+$$\frac{d N_{\text{ticks}}}{dt} = \frac{d N_{\text{ticks}}}{d\tau} \frac{d\tau}{dt} \le \frac{2\Delta E}{\pi\hbar} \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}}.$$
 
-Similarly, gravitational time dilation reflects the local causal diamond channel capacity:
-$$\frac{d\tau}{dt} = \sqrt{-g_{00}} = \sqrt{1 - \frac{2GM}{r c_{\mathcal{I}}^2}} = \frac{\mathcal{C}(r)}{\mathcal{C}_\infty},$$
-which drops to strictly zero at the event horizon ($r \to 2GM/c_{\mathcal{I}}^2$).
+As $v \to c_{\mathcal{I}}$, the coordinate rate of internal orthogonal state evolution approaches zero ($d\tau/dt \to 0$). This establishes a clear operational connection between quantum state distinguishability, measurement theory, and Lorentzian geometry.
 
 ---
 
 ## 4. Microcausality, Quantum Non-Locality, and the No-Signaling Constraint
-
-In quantum mechanics, the EPR paradox, Bell's inequality violations, and quantum teleportation have frequently been misinterpreted as "spooky faster-than-light action." Reframing the invariant speed limit in terms of information provides immediate clarity.
 
 ### 4.1 Microcausality in Relativistic Quantum Field Theory
 
 In relativistic Quantum Field Theory (QFT), space-like separated measurements must be causally independent. This is formalized by the **Microcausality Condition**:
 $$[\hat{\mathcal{O}}_A(x), \hat{\mathcal{O}}_B(y)] = 0 \quad \text{for all } (x - y)^2 = c_{\mathcal{I}}^2 (t_x - t_y)^2 - (\mathbf{x} - \mathbf{y})^2 < 0.$$
 
-Let Alice measure observable $\hat{\mathcal{O}}_A$ at spacetime point $x$, and Bob measure $\hat{\mathcal{O}}_B$ at space-like separated point $y$. The expectation value of Bob's measurement in state $|\Psi\rangle$ is:
-$$\langle \hat{\mathcal{O}}_B(y) \rangle = \text{Tr}\left( \rho \hat{\mathcal{O}}_B(y) \right).$$
-If Alice applies a local unitary transformation $\hat{U}_A = e^{-i \lambda \hat{\mathcal{O}}_A(x)}$ to encode a message bit, the modified expectation value at Bob's location becomes:
+Let Alice measure observable $\hat{\mathcal{O}}_A$ at spacetime point $x$, and Bob measure $\hat{\mathcal{O}}_B$ at space-like separated point $y$. If Alice applies a local unitary transformation $\hat{U}_A = e^{-i \lambda \hat{\mathcal{O}}_A(x)}$ to encode a message bit, the modified expectation value at Bob's location is:
 $$\langle \hat{\mathcal{O}}_B(y) \rangle' = \text{Tr}\left( \hat{U}_A \rho \hat{U}_A^\dagger \hat{\mathcal{O}}_B(y) \right) = \text{Tr}\left( \rho \hat{U}_A^\dagger \hat{\mathcal{O}}_B(y) \hat{U}_A \right).$$
 Using the Baker-Campbell-Hausdorff expansion:
 $$\hat{U}_A^\dagger \hat{\mathcal{O}}_B(y) \hat{U}_A = \hat{\mathcal{O}}_B(y) + i\lambda [\hat{\mathcal{O}}_A(x), \hat{\mathcal{O}}_B(y)] - \frac{\lambda^2}{2} [\hat{\mathcal{O}}_A(x), [\hat{\mathcal{O}}_A(x), \hat{\mathcal{O}}_B(y)]] + \dots$$
@@ -250,141 +197,95 @@ Since $(x - y)^2 < 0$, microcausality ensures that all commutators vanish identi
 $$[\hat{\mathcal{O}}_A(x), \hat{\mathcal{O}}_B(y)] \equiv 0 \implies \langle \hat{\mathcal{O}}_B(y) \rangle' = \langle \hat{\mathcal{O}}_B(y) \rangle.$$
 
 Bob's local density matrix is completely invariant under Alice's operations:
-$$\rho_B = \text{Tr}_A(\rho) \implies \frac{\partial \rho_B}{\partial \lambda} = 0.$$
-Hence, the channel capacity between Alice and Bob at spacelike separation is zero bits per second:
-$$\mathcal{C}_{A \to B} = \max_{p(x)} I(X : Y) = 0 \quad \text{for } \Delta s^2 < 0.$$
+$$\rho_B = \text{Tr}_A(\rho) \implies \frac{\partial \rho_B}{\partial \lambda} = 0 \implies \mathcal{C}_{A \to B} = 0 \text{ bits/s for } \Delta s^2 < 0.$$
 
-```
-                                    Alice's Boosted State
-                                              │
-                      ┌───────────────────────┴───────────────────────┐
-                      ▼                                               ▼
-         Quantum State Collapse                             Classical Signaling
-     (Instantaneous Non-Local Phase)                     (Strictly Causal Bounded)
-                      │                                               │
-               rho_B unchanged!                              Requires classical bit
-              Tr_A(rho') = rho_B                             transmission via c_info
-                      │                                               │
-             Zero Information Flux                            No-Signaling Protected:
-               v_info <= c_info                                  Microcausality Holds!
-```
+### 4.2 Information Causality as a Strong Constraint on Non-Local Correlations
 
-### 4.2 Quantum Teleportation and the Two-Bit Cost
+A central question at the boundary of quantum mechanics and relativity is why nature obeys the Tsirelson bound ($S \le 2\sqrt{2}$) for the CHSH inequality, rather than permitting maximal non-signaling Popescu-Rohrlich (PR) boxes ($S = 4$) [14].
 
-Quantum state teleportation provides the clearest demonstration that information cannot travel at the speed of non-local collapse. To teleport an unknown state $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$:
-1. Alice and Bob share an EPR pair $|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$.
+Pawłowski et al. (2009) [15] demonstrated that the Tsirelson bound follows from the principle of **Information Causality**:
+> *If Alice sends an $m$-bit classical message to Bob at speed $v \le c_{\mathcal{I}}$, Bob cannot access more than $m$ bits of mutual information about Alice's database:*
+$$\sum_{k=0}^{N-1} I(a_k : b_k) \le m.$$
+
+In PR-box worlds, Bob could access an arbitrary number of Alice's bits while consuming only a single classical bit ($m = 1$). While Information Causality provides a compelling operational derivation of the Tsirelson bound for bipartite settings, subsequent studies [16] have shown that whether Information Causality alone uniquely isolates the full convex set of quantum correlations ($\mathcal{Q}$) across general multipartite scenarios is subtle and sensitive to the choice of information measure. Thus, Information Causality is best framed as a **strong necessary information-theoretic constraint on admissible non-local correlations**, rather than an exhaustive derivation of all quantum theory.
+
+### 4.3 Quantum Teleportation and the Classical Channel Constraint
+
+Quantum state teleportation provides an operational demonstration that entanglement does not bypass relativistic causality. To teleport an unknown state $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$:
+1. Alice and Bob share an entangled EPR pair $|\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$.
 2. Alice performs a joint Bell-state measurement on her input qubit and her half of the EPR pair.
 3. Her measurement instantaneously projects Bob's qubit into one of four states: $\{\mathbb{I}|\psi\rangle, \sigma_x |\psi\rangle, \sigma_z |\psi\rangle, \sigma_x \sigma_z |\psi\rangle\}$.
-4. **Crucial Step:** Bob cannot read, reconstruct, or utilize this state without receiving two classical bits from Alice telling him which Pauli correction to apply!
+4. **Crucial Step:** Bob cannot read or utilize this state without receiving two classical bits from Alice specifying which Pauli correction to apply.
 
 Those two classical bits must travel through a physical channel at a speed $v \le c_{\mathcal{I}}$. Until they arrive, Bob's density matrix is maximally mixed:
 $$\rho_B = \frac{1}{4} \sum_{k=0}^3 \sigma_k |\psi\rangle\langle\psi| \sigma_k^\dagger = \frac{1}{2} \mathbb{I}.$$
-It contains exactly **zero usable information**. Thus, the operational speed of state transfer is governed not by entanglement, but by the invariant speed of information $c_{\mathcal{I}}$.
+It contains exactly **zero usable information**. Thus, state reconstruction is strictly bounded by the invariant speed of information $c_{\mathcal{I}}$.
 
 ---
 
-## 5. Emergent Spacetime from Quantum Information: The Deep Revolution
+## 5. A Unified Five-Tier Hierarchy of Physical Velocities
 
-It is when we shift from classical kinematics to modern quantum many-body theory, tensor networks, and holographic quantum gravity that replacing the "speed of light" with the "speed of information" ceases to be merely a pedagogical improvement and becomes a fundamental paradigm shift.
+To prevent category errors and resolve conflations between different velocity definitions, we introduce a structured five-tier taxonomy of physical propagation velocities:
 
-### 5.1 Lieb-Robinson Bounds: Emergent Light Cones in Non-Relativistic Matter
+| Velocity Tier | Notation | Mathematical Definition | Physical Operational Domain |
+| :--- | :---: | :--- | :--- |
+| **I. Geometric / Metric Causal Speed** | $c_{\text{causal}} \equiv c_{\mathcal{I}}$ | $ds^2 = g_{\mu\nu} dx^\mu dx^\nu = 0$ | Invariant asymptotic light-cone generator of pseudo-Riemannian spacetime. |
+| **II. Field-Theoretic Front Velocity** | $v_{\text{front}}$ | $\lim_{\omega \to \infty} \frac{\omega}{\text{Re}[k(\omega)]} = c_{\mathcal{I}}$ | Speed of non-analytic signal discontinuities; strictly bounded by $c_{\mathcal{I}}$. |
+| **III. Many-Body Lattice Speed** | $v_{\text{LR}}$ | $\|[A(t), B]\| \le C e^{-\mu(d - v_{\text{LR}} t)}$ | Effective quasi-causal cone in non-relativistic spin lattices ($v_{\text{LR}} \propto J a / \hbar$). |
+| **IV. Quantum Chaos / Scrambling** | $v_B$ | $\langle [W(t, x), V(0)]^2 \rangle \sim e^{\lambda_L(t - \|x\|/v_B)}$ | Operator spreading rate in strongly coupled CFTs ($v_B \le c_{\mathcal{I}}$). |
+| **V. Usable Signal Velocity** | $v_{\text{signal}}$ | $\mathcal{C}_{A \to B}(t) > 0 \implies x/t \le v_{\text{signal}}$ | Maximal rate of message bit transfer through physical media ($v_{\text{signal}} \le c_{\mathcal{I}}$). |
 
-In non-relativistic quantum mechanics, Schrödinger's equation possesses no speed limit: the kinetic operator $-\frac{\hbar^2}{2m}\nabla^2$ produces instantaneous dispersal ($c \to \infty$). 
+This taxonomy establishes that:
+$$\boxed{v_{\text{usable signal}} \le v_B \le c_{\mathcal{I}} \quad \text{and} \quad v_{\text{front}} = c_{\mathcal{I}} = c_{\text{causal}}}.$$
+These velocities are not identical entities; they are **distinct physical projections of a unified underlying causal architecture**.
 
-However, in 1972, Elliott Lieb and Derek Robinson proved a remarkable theorem: **In any quantum lattice system with short-range interactions, an effective speed limit emerges dynamically.**
+---
 
-Let a quantum spin system be defined on a metric lattice $\Lambda$ with Hamiltonian:
-$$H = \sum_{X \subset \Lambda} h_X, \quad \text{where } \|h_X\| \le \kappa e^{-\mu\, \text{diam}(X)}.$$
-For any two local operators $A$ and $B$ supported on disjoint subsets $X, Y \subset \Lambda$ separated by distance $d(X, Y)$:
+## 6. Emergent Spacetime from Quantum Information
+
+### 6.1 Lieb-Robinson Bounds: Effective Light Cones in Lattice Systems
+
+In non-relativistic quantum mechanics, Schrödinger's equation exhibits infinite propagation speed ($c \to \infty$). However, Lieb and Robinson (1972) [13] proved that in any quantum lattice system with short-range interactions, an effective speed limit emerges dynamically:
 $$\|[A(t), B(0)]\| \le C \|A\|\, \|B\| \exp\left[ -\mu \left( d(X, Y) - v_{\text{LR}} |t| \right) \right],$$
-where the **Lieb-Robinson velocity** $v_{\text{LR}}$ is given by:
+where the **Lieb-Robinson velocity** is bounded by:
 $$v_{\text{LR}} \le \frac{2 C \kappa}{\mu} e^1.$$
 
-```
-                       The Lieb-Robinson Information Cone
-       Time t
-         ▲
-         │                  Commutator Norm ~ O(1)
-         │                   (Active Entanglement)
-         │                     /                \
-         │                    /                  \
-         │                   /                    \
-         │                  /                      \
-         │                 /                        \
-         │                /                          \
-         │               /   v_LR = dX / dt           \
-         │              /                              \
-         │             /                                \
-         │            /  Spacelike Exponential Decay     \
-         │           /  ||[A(t), B]|| <= C exp(-mu(d - vt))\
-         └──────────┼───────────────────*───────────────────┼──────────► Distance x
-                  -v_LR t             x=0                 +v_LR t
-```
+#### Contrast with Relativistic Microcausality:
+It is important to emphasize the physical difference between Lieb-Robinson causality and relativistic microcausality:
+- Relativistic QFT enforces **strict null causality**: outside the light-cone ($(x-y)^2 < 0$), commutators vanish identically ($[\mathcal{O}_A(x), \mathcal{O}_B(y)] \equiv 0$).
+- The Lieb-Robinson bound defines an **effective quasi-causal cone**: outside the cone ($d > v_{\text{LR}} |t|$), commutators decay exponentially, but are not strictly zero.
+- $v_{\text{LR}}$ is a dynamical quantity determined by microscopic coupling constants and lattice spacing ($v_{\text{LR}} \sim J a / \hbar$), which is typically orders of magnitude below $c_{\mathcal{I}}$.
 
-This theorem proves that:
-1. Even in a Galilean system without Lorentz invariance, the local transfer of information dynamically constructs a linear causal cone.
-2. Outside the cone ($d > v_{\text{LR}} t$), commutators decay exponentially: information propagation is super-exponentially suppressed.
-3. **The causal cone is an intrinsic consequence of local information processing.**
+### 6.2 Renormalization Group Emergence of Lorentz Invariance
 
-Our numerical simulation of operator spreading in a quantum spin chain (`Simulation 3`, see [Figure 3](file:///home/stefan/Projects/SpeedOfInformation/figures/fig3_lieb_robinson_cone.svg) and [Figure 4](file:///home/stefan/Projects/SpeedOfInformation/figures/fig4_spacetime_causal_cone.svg)) reproduces this Lieb-Robinson causal light cone from first principles, demonstrating how an effective $c_{\mathcal{I}}$ emerges purely from local operator dynamics.
+This distinction motivates a profound research problem:
+> **Under what Renormalization Group (RG) conditions does an exact, Lorentz-invariant continuum light cone emerge from microscopic quantum systems governed by Lieb-Robinson bounds?**
 
-### 5.2 Holography, Ryu-Takayanagi, and the Butterfly Velocity
+In quantum many-body systems near a Quantum Critical Point (QCP) characterized by a dynamic critical exponent $z = 1$, the low-energy effective action acquires spacetime scaling isotropy:
+$$\mathcal{S}_{\text{eff}} = \int d^d x \, dt \left[ \frac{1}{2} (\partial_t \phi)^2 - \frac{v_{\text{eff}}^2}{2} (\nabla \phi)^2 - V(\phi) \right].$$
+In this infrared (IR) limit, the effective velocity $v_{\text{eff}} \sim v_{\text{LR}}$ plays the role of an emergent speed of light, and irrelevant Lorentz-violating operators flow to zero under RG coarse-graining:
+$$\mathcal{H}_{\text{micro}} \xrightarrow{\quad\text{RG Coarse-Graining}\quad} \mathcal{S}_{\text{CFT}} \quad (z = 1 \implies SO(d, 1) \text{ Lorentz symmetry}).$$
+This provides a theoretical mechanism for how macroscopic spacetime kinematics can emerge from discrete microscopic information dynamics.
 
-In modern high-energy theory, the AdS/CFT correspondence (Maldacena 1997) establishes that $(d+1)$-dimensional gravitational spacetime is dual to a $d$-dimensional boundary conformal field theory. Geometry is literally generated by quantum entanglement:
-$$\text{"It from Qubit" (Wheeler / Preskill / Van Raamsdonk)}$$
+### 6.3 Holographic Scrambling and the Butterfly Velocity
 
-The Ryu-Takayanagi formula computes the area of a minimal bulk surface $\gamma_A$ from the boundary entanglement entropy:
-$$S(A) = \frac{\text{Area}(\gamma_A)}{4 G_N^{(d+1)}}.$$
-
-In thermal systems and black hole physics, the speed of information scrambling is quantified by Out-of-Time-Ordered Correlators (OTOCs):
+In holographic duality (AdS/CFT), strongly coupled boundary conformal field theories are dual to gravitational bulk spacetimes [9, 10]. The spreading of local perturbations in thermal states is measured by Out-of-Time-Ordered Correlators (OTOCs):
 $$C(x, t) = -\langle [W(x, t), V(0)]^2 \rangle_\beta \sim \frac{1}{N^2} \exp\left[ \lambda_L \left( t - \frac{|x|}{v_B} \right) \right],$$
-where $\lambda_L \le \frac{2\pi k_B T}{\hbar}$ is the Maldacena-Shenker-Stanford Lyapunov exponent and $v_B$ is the **butterfly velocity**.
+where $\lambda_L \le 2\pi k_B T / \hbar$ saturates the Maldacena-Shenker-Stanford chaos bound, and $v_B$ is the **butterfly velocity**.
 
-In holographic theories, the butterfly velocity satisfies:
+For Einstein gravity duals in $AdS_{d+1}$, the butterfly velocity takes the analytic form [22]:
 $$v_B = \sqrt{\frac{d}{2(d-1)}} c_{\mathcal{I}} \le c_{\mathcal{I}}.$$
+It is essential to note that $v_B$ is not the fundamental speed of light, but the rate of quantum chaotic operator scrambling. In theories with higher-derivative curvature corrections (such as Gauss-Bonnet gravity) or anisotropic backgrounds, $v_B$ deviates from this specific relation while remaining bounded by the asymptotic causal speed: $v_B \le c_{\text{causal}}$.
 
-Here, **the speed of information scrambling $v_B$ sets the causal boundary for how fast local operator perturbations tear through the entanglement fabric of the dual spacetime.** 
+### 6.4 Deriving Einstein's Equations from Entanglement Equilibrium: Critical Audit Balance Sheet
 
-When a black hole absorbs a bit of information, the event horizon is not fundamentally an optical barrier; it is an **entanglement wedge horizon** beyond which no information can be causally extracted by asymptotic observers. The black hole information paradox (Hawking 1975, Page 1993, Almheiri et al. 2019 island formula) was resolved not by studying light rays, but by tracking the Page curve of quantum von Neumann entropy:
-$$S_{\text{Page}}(t) = \min\left( S_{\text{thermal}}(t), S_{\text{BH}}(M(t)) \right).$$
-
-```
-               Black Hole Horizon as an Information-Theoretic Boundary
-                             
-                             Singularity r = 0
-                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                                     │
-                             Infalling Information
-                                     │
-                                     ▼
-        ============================================================
-              EVENT HORIZON / QUANTUM EXTREMAL SURFACE (QES)
-         Classical definition: Surface where escape velocity = c_light
-         Modern definition:    Causal Information Boundary where
-                               Entanglement Wedge Reconstructibility Ends
-        ============================================================
-                                     │
-                             Hawking Radiation
-                             Page Curve Turnover:
-                             Quantum Extremal Islands form
-                                     │
-                                     ▼
-                          Asymptotic Observer (c_info)
-```
-
-In this framework:
-$$\boxed{\text{Spacetime geometry is an emergent manifestation of quantum information flow.}}$$
-Calling the causal parameter $c$ the "speed of light" is an anachronistic reversal of the causal hierarchy: **light must respect $c$ because light is a quantum field running on a geometry woven by quantum information.**
-
-### 5.3 Deriving Einstein's Equations from Entanglement Equilibrium: Critical Audit Balance Sheet
-
-Following Jacobson (1995, 2016) and Faulkner et al. (2014), the gravitational field equations can be derived from the thermodynamics of quantum entanglement. On any local geodesic causal diamond of radius $R$, the First Law of Entanglement Entropy balances against the Raychaudhuri horizon area deficit:
+Following Jacobson (1995, 2016) [17, 18] and Faulkner et al. (2014) [19], Einstein's gravitational field equations can be recovered by imposing the **Entanglement Equilibrium Hypothesis** on local geodesic causal diamonds $\mathcal{D}(p, R)$:
 $$\delta S_{\text{matter}} = \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}}, \quad \delta S_{\text{UV}} = -\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}}.$$
 
-Imposing the **Entanglement Equilibrium Hypothesis** ($\delta S_{\text{total}} = \delta S_{\text{UV}} + \delta S_{\text{matter}} = 0$) forces:
+Demanding entanglement stationarity ($\delta S_{\text{total}} = \delta S_{\text{UV}} + \delta S_{\text{matter}} = 0$) results in the exact field equations:
 $$-\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}} + \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}} = 0 \implies \boxed{G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{\mu\nu}}.$$
 
-To maintain rigorous scientific integrity, we explicitly present the **Critical Audit Balance Sheet** separating what is derived from what is assumed as an empirical input:
+To avoid claiming that gravity is derived "from pure information alone," we maintain an explicit **Critical Audit Balance Sheet** distinguishing derived features from assumed empirical inputs:
 
 | Component | Status | Methodological Role |
 | :--- | :---: | :--- |
@@ -396,99 +297,102 @@ To maintain rigorous scientific integrity, we explicitly present the **Critical 
 | **Smooth Lorentzian Manifold $(M, g_{\mu\nu})$** | **INPUT (Assumed)** | The derivation assumes a pre-existing 4D smooth continuum with Riemann normal coordinates. |
 | **Entanglement Equilibrium Axiom** | **INPUT (Assumed)** | The stationarity $\delta S_{\text{total}} = 0$ is a variational postulate analogous to the Second Law of Thermodynamics. |
 
-### 5.4 Holographic Quantum Error Correction and Spacetime Fault Tolerance
+### 6.5 Holographic Quantum Error Correction and Spacetime Fault Tolerance
 
-Why does emergent spacetime appear macroscopically smooth and stable against local ultraviolet quantum fluctuations, and how can a bulk operator $\phi(x)$ be reconstructed from multiple distinct boundary subregions without violating the Quantum No-Cloning Theorem?
+Why does emergent semiclassical spacetime appear macroscopically smooth and stable against ultraviolet vacuum fluctuations? Following Almheiri, Dong, and Harlow (2015) [23] and the HaPPY tensor network code [24], semiclassical bulk states form a protected logical code subspace $\mathcal{H}_{\text{code}} \subset \mathcal{H}_{\text{phys}}$ satisfying the Knill-Laflamme condition:
+$$P_{\text{code}} \, E_a^\dagger E_b \, P_{\text{code}} = C_{ab} \, P_{\text{code}}.$$
 
-Following Almheiri, Dong, and Harlow (2015) and the HaPPY tensor network formalism (Pastawski et al., 2015), semi-classical bulk states span an isometric **Logical Code Subspace** $\mathcal{H}_{\text{code}} \subset \mathcal{H}_{\text{phys}}$ satisfying the **Knill-Laflamme Quantum Error Correction Condition**:
-$$P_{\text{code}} \, E_a^\dagger E_b \, P_{\text{code}} = C_{ab} \, P_{\text{code}},$$
-where $P_{\text{code}}$ projects onto the protected spacetime subspace and $\{E_a\}$ are boundary erasure operators. Within the **Speed of Information ($c_{\mathcal{I}}$)** framework ([Figure 23](file:///home/stefan/Projects/SpeedOfInformation/figures/fig23_holographic_quantum_error_correction.svg)):
-1. **Radial Depth as Code Distance:** The holographic radial coordinate $z$ measures the **Quantum Code Distance** $d(z)$ (growing exponentially as $d(n) = \lambda^n$ with $\lambda = \frac{3+\sqrt{5}}{2} \approx 2.618$ in $\{5,4\}$ hyperbolic tilings). A bulk operator at depth $z$ is shielded against any boundary erasure of size $\ell_{\text{erase}} < 2z$.
-2. **Why $c_{\mathcal{I}}$ Must Be Finite (Eastin-Knill & BPT Theorems):** By the **Eastin-Knill Theorem**, no local quantum error-correcting code can implement continuous unitary time evolution using purely transversal (instantaneous, zero-depth) operations. Fault-tolerant bulk dynamics requires syndrome propagation across spatial links at a finite causal speed $c_{\mathcal{I}}$, enforcing a minimum causal decoding delay $\Delta t_{\text{decode}}(z) = z / c_{\mathcal{I}}$ that defines the bulk light-cone.
-3. **Black Holes as Code Rate Saturation:** By the Quantum Singleton Bound ($N - k \ge 2(d-1)$), packing logical entropy $S_{\text{bulk}} \to S_{\text{BH}} = A / 4\ell_P^2$ saturates the code rate ($k/N \to 1$) and collapses the effective code distance to $d_{\text{eff}} \to 1$, forming an event horizon until the Page-time erasure threshold ($f_{\text{rad}} > 1/2$) is crossed.
+Within this framework, the holographic radial depth $z$ corresponds to the quantum code distance $d(z)$, shielding bulk degrees of freedom against boundary erasures. Furthermore, by the Eastin-Knill theorem [25], transversal (instantaneous) gates cannot achieve universal fault-tolerant quantum computation; physical error-correction requires syndrome propagation at a finite causal speed $c_{\mathcal{I}}$, enforcing a finite causal decoding delay $\Delta t_{\text{decode}}(z) \sim z / c_{\mathcal{I}}$ that dynamically establishes the bulk light cone.*
 
-### 5.5 Empirical Hardware & Monte-Carlo Verification on Classical Computing Architecture
-
-Because informational bandwidth conservation and holographic error correction are universal laws of information processing, their predictions can be tested directly on standard computer hardware ([`src/holographic_qec_prototype.py`](file:///home/stefan/Projects/SpeedOfInformation/src/holographic_qec_prototype.py), [Figure 24](file:///home/stefan/Projects/SpeedOfInformation/figures/fig24_qec_hardware_prototype_benchmark.svg)):
-1. **Real-Time CPU & Memory-Bus "Computational Time Dilation":** Timing 600 FNV-1a coherency handshakes and ALU state commits across a $256\text{ KB}$ L2 cache arena via `time.perf_counter_ns()` as a stateful worker migrates across memory pages at velocity $\beta = v_{\text{migration}} / c_{\mathcal{I}}^{\text{bus}}$ demonstrates that the measured hardware state-commit rate $R(\beta)/R(0)$ tracks $\sqrt{1-\beta^2}$ to within $0.1\%$ (at $\beta = 0.866$, $R/R_0 = 0.4993$ vs. theoretical $0.5000$, with bandwidth invariant $(R/R_0)^2 + \beta^2 = 0.9993$).
-2. **Live Monte-Carlo Fault Injection (`"c_I=299792458m/s"`):** Encoding the 96-trit ASCII string `"c_I=299792458m/s"` across holographic tensor trees of radial depth $n \in \{0, 1, 2, 3\}$ under $30\%$ live boundary corruption (erasures + trit-flips, 1,152 trits per point) shows that while UV boundary data ($n=0$, `421.4 ns` latency) is garbled to `'  I= K9:6:4 8 / '` ($79.51\%$ trit accuracy), the deep IR core ($n=3$, `6,217.2 ns` causal tree latency) achieves **$99.91\%$ accuracy** and reconstructs the exact string `'c_I=299792458m/s'`. Moreover, $27\times 27$ density-matrix verification confirms zero single-region leakage ($\|\rho_C - \mathbb{I}_3/3\|_1 = 4.996\times 10^{-16}$) and exact unitary recovery fidelity $F = 1.000000000000000$ across all three entanglement wedges (`AB`, `BC`, `CA`).
-3. **Holographic RAID Cloud Storage Cluster:** In a 27-node distributed storage cluster benchmark (250 outage trials per point), placing hot cache at the UV boundary ($n=1$) provides sub-microsecond access, while encoding root cryptographic keys at the deep IR center ($n=3$) preserves **$100.0\%$ data recovery** even when **20 out of 27 storage nodes ($74.1\%$ of the cluster) fail simultaneously**.
+*(Note: For algorithmic implementations, cache-tiling optimizations, and computational benchmarks inspired by causal diamond geometries, see our dedicated companion paper [30].)*
 
 ---
 
-## 6. Observational & Experimental Signatures
+## 7. The Universal Causal Cone Hypothesis and Multi-Messenger Empirical Tests
 
-A scientific study must evaluate whether replacing the concept produces testable, empirical distinctions, or if it remains purely an epistemological refinement.
+### 7.1 The Universal Causal Cone Hypothesis
 
-### 6.1 Testing Photon Mass in Proca Electrodynamics
+Replacing $c$ with $c_{\mathcal{I}}$ transitions from an interpretive relabeling to a testable physical theory when we distinguish the causal speeds across different fundamental sectors. Let:
+- $c_{\text{geom}}$ denote the null cone generator of the spacetime metric $g_{\mu\nu}$,
+- $c_{\text{EM}}$ denote the vacuum propagation speed of electromagnetic excitations,
+- $c_{\text{grav}}$ denote the propagation speed of gravitational tensor waves,
+- $c_{\text{matter}}$ denote the limiting velocity of fermionic matter fields, and
+- $c_{\text{info}}$ denote the supremum of causal information transmission.
 
-If the speed of information $c_{\mathcal{I}}$ is the invariant speed of spacetime, then the physical velocity of light $v_\gamma$ can be subjected to experimental bounds.
+We formulate the **Universal Causal Cone Hypothesis**:
+$$\boxed{c_{\text{geom}} = c_{\text{EM}} = c_{\text{grav}} = c_{\text{matter}} = c_{\text{info}} \equiv c_{\mathcal{I}}}.$$
 
-Using multi-frequency observations of astronomical transients—such as Fast Radio Bursts (FRBs) and Gamma-Ray Bursts (GRBs)—the differential time delay between two frequencies $\nu_1$ and $\nu_2$ emitted simultaneously by a source at distance $D$ is:
+This hypothesis is not a mathematical tautology; it is a falsifiable physical proposition regarding the universality of Lorentz invariance across all quantum fields.
+
+### 7.2 Multi-Messenger Gravitational Wave Constraints
+
+The most stringent empirical test of the equality $c_{\text{grav}} = c_{\text{EM}}$ was achieved through the simultaneous observation of the binary neutron star merger GW170817 and its electromagnetic counterpart GRB 170817A (Abbott et al., *Astrophys. J. Lett.* 2017) [26].
+
+The signals traversed a cosmological distance of $D \approx 40\text{ Mpc}$ ($\approx 1.3 \times 10^8\text{ light-years}$) with an observed arrival time difference of $\Delta t = 1.74 \pm 0.11\text{ s}$. Accounting for astrophysical emission delays, this measurement constrained the relative speed difference to:
+$$-3 \times 10^{-15} \le \frac{c_{\text{grav}} - c_{\text{EM}}}{c_{\mathcal{I}}} \le +7 \times 10^{-16}.$$
+
+This precision verification confirms that gravitational and electromagnetic radiation share an identical causal light cone to within one part in $10^{15}$, strongly supporting the Universal Causal Cone Hypothesis.
+
+### 7.3 Astrophysical Proca Photon Mass Limits
+
+If the photon possesses a Proca mass $m_\gamma$, the propagation speed $v_\gamma(\nu)$ varies with frequency $\nu$. For two signals emitted simultaneously from an astrophysical source at distance $D$, the differential arrival delay is:
 $$\Delta t = \frac{D}{c_{\mathcal{I}}} \left( \frac{1}{\sqrt{1 - \frac{m_\gamma^2 c_{\mathcal{I}}^4}{h^2 \nu_1^2}}} - \frac{1}{\sqrt{1 - \frac{m_\gamma^2 c_{\mathcal{I}}^4}{h^2 \nu_2^2}}} \right) \approx \frac{D m_\gamma^2 c_{\mathcal{I}}^3}{2 h^2} \left( \frac{1}{\nu_1^2} - \frac{1}{\nu_2^2} \right).$$
 
-Our simulation (`Simulation 2`, see [Figure 2](file:///home/stefan/Projects/SpeedOfInformation/figures/fig2_proca_photon_velocity.svg)) evaluates this for astrophysical baselines:
-- Current astrophysical limits from solar wind Alfv\'en waves and pulsar dispersion establish:
-$$m_\gamma < 10^{-18}\text{ eV}/c^2 \approx 1.8 \times 10^{-54}\text{ kg}.$$
-- If future, ultra-sensitive cosmological radio surveys detect non-zero $m_\gamma$, the "speed of light" becomes variable and dispersive:
-$$v_\gamma(\nu) < c_{\mathcal{I}}.$$
-- In contrast, $c_{\mathcal{I}}$—the speed of information—remains the invariant baseline against which $m_\gamma$ is measured.
+Using Fast Radio Bursts (FRBs) and pulsar timing arrays across radio frequencies ($10\text{ MHz} - 10\text{ GHz}$), current astrophysical bounds constrain the photon mass to:
+$$m_\gamma < 10^{-18}\text{ eV}/c_{\mathcal{I}}^2 \approx 1.8 \times 10^{-54}\text{ kg}.$$
 
-### 6.2 Quantum Gravity and Modified Dispersion Relations (MDR)
+Should future ultra-low-frequency observations detect a non-zero photon mass, the physical speed of light $v_\gamma$ would be dispersive, whereas $c_{\mathcal{I}}$ would remain the invariant causal asymptote.
 
-In candidate theories of Quantum Gravity (such as Loop Quantum Gravity, non-commutative spacetimes, and stringy D-brane foam models), Planck-scale granularity of spacetime leads to Lorentz Invariance Violation (LIV) or Deformed Special Relativity (DSR). 
+### 7.4 Quantum Gravity Phenomenology & Modified Dispersion Relations (MDR)
+
+In candidate quantum gravity theories (such as Loop Quantum Gravity, non-commutative spacetimes, and stringy D-brane foam models), Planck-scale granularity of spacetime leads to Lorentz Invariance Violation (LIV) or Deformed Special Relativity (DSR). 
 
 The modified dispersion relation for photons of energy $E$ takes the form:
 $$E^2 = p^2 c_{\mathcal{I}}^2 \left[ 1 \pm \xi \left( \frac{E}{E_{\text{QG}}} \right)^n \right], \quad n \in \{1, 2\}.$$
 The physical velocity of photons is energy-dependent:
 $$v(E) = \frac{\partial E}{\partial p} \approx c_{\mathcal{I}} \left[ 1 \mp \frac{n+1}{2} \xi \left( \frac{E}{E_{\text{QG}}} \right)^n \right].$$
 
-Observations by the Fermi Gamma-ray Space Telescope of GRB 090510 (a burst at redshift $z = 0.903$, containing a $31\text{ GeV}$ photon arriving within $0.829\text{ s}$ of the low-energy pulse onset) constrained linear LIV ($n=1$):
+Observations by the Fermi Gamma-ray Space Telescope of GRB 090510 (redshift $z = 0.903$, containing a $31\text{ GeV}$ photon arriving within $0.829\text{ s}$ of the low-energy pulse onset) constrained linear LIV ($n=1$) [28]:
 $$E_{\text{QG}, 1} > 1.2\, M_{\text{Planck}} \approx 1.5 \times 10^{19}\text{ GeV}.$$
 
-Our numerical simulation (`Simulation 4`, see [Figure 5](file:///home/stefan/Projects/SpeedOfInformation/figures/fig5_qg_mdr_delay.svg)) models this arrival time delay across energies from $1\text{ keV}$ to $100\text{ GeV}$. 
+This framework operationalizes tests of quantum gravity: testing MDRs is not testing whether "spacetime breaks down," but whether high-energy excitations experience an energy-dependent effective causal cone $c_{\mathcal{I}}(E)$ probing the microscopic Planck scale.
 
-**Key Foundational Realization:**  
-In these tests, what is being tested is whether *photons* travel at the universal invariant speed $c_{\mathcal{I}}$, or whether high-energy electromagnetic excitations interact with the quantum foam. Decoupling the "speed of light" from the "speed of information" provides the precise theoretical vocabulary needed to interpret LIV experiments:
-- $c_{\mathcal{I}}$ represents the metric horizon of causality.
-- $v_\gamma(E)$ represents the dynamical response of electromagnetic excitations on quantum geometry.
+### 7.5 Analog Gravity and Sonic Horizons
 
-### 6.3 Analog Gravity and Sonic Horizons
-
-In analog gravity systems—such as acoustic black holes in Bose-Einstein Condensates (Garay et al. 2000, Steinhauer 2016)—phonons (sound excitations) propagate through a flowing fluid. When the fluid velocity exceeds the local speed of sound $c_s$, an **acoustic event horizon** forms:
+In analog gravity systems—such as acoustic black holes in Bose-Einstein Condensates (Garay et al. 2000, Steinhauer 2016 [29])—phonons (sound excitations) propagate through a flowing fluid. When the fluid velocity exceeds the local speed of sound $c_s$, an **acoustic event horizon** forms:
 $$ds_{\text{acoustic}}^2 = \frac{\rho}{c_s} \left[ - (c_s^2 - v_{\text{fluid}}^2) dt^2 - 2 v_i dx^i dt + \delta_{ij} dx^i dx^j \right].$$
 
 In this system:
-- The laboratory speed of light $c \approx 3 \times 10^8\text{ m/s}$ is completely irrelevant to the internal physics.
+- The laboratory speed of light $c \approx 3 \times 10^8\text{ m/s}$ is completely irrelevant to the internal quasiparticle physics.
 - The effective "speed of information" for observers composed of quasiparticles within the condensate is the speed of sound:
-$$c_{\mathcal{I}}^{\text{acoustic}} = c_s \approx 1\text{ mm/s to } 10\text{ m/s}.$$
+  $$c_{\mathcal{I}}^{\text{acoustic}} = c_s \approx 1\text{ mm/s to } 10\text{ m/s}.$$
 - Analog Hawking radiation, thermal emission, and horizon thermodynamics occur at temperature:
-$$T_H = \frac{\hbar}{2\pi k_B} \left| \frac{\partial (c_s - v)}{\partial r} \right|_{r_H}.$$
+  $$T_H = \frac{\hbar}{2\pi k_B} \left| \frac{\partial (c_s - v)}{\partial r} \right|_{r_H}.$$
 
-Analog gravity proves that event horizons and relativistic metrics are generic emergent features of any medium governed by a finite speed of information $c_{\mathcal{I}}$, regardless of the underlying microscopic constituents.
+Analog gravity demonstrates that event horizons and relativistic metrics are generic emergent features of any medium governed by a finite speed of information $c_{\mathcal{I}}$, regardless of the underlying microscopic constituents.
 
 ---
 
-## 7. Comparative Assessment: How Informational Causality Enhances Understanding
-
-To evaluate the foundational impact of this shift, we construct an **Evaluation Matrix** assessing four distinct dimensions of theoretical understanding.
+## 8. Comparative Assessment: Foundational and Operational Gains
 
 | Dimension of Inquiry | Explanatory Gain | Foundational & Physical Understanding |
 | :--- | :---: | :--- |
-| **1. Pedagogical & Conceptual Foundations** | **Clarifies Core Intuitions** | Completely eradicates 120 years of fallacious paradoxes: explains why media (water, BECs) slow light without modifying spacetime; removes pseudo-superluminal claims ($v_p, v_g > c$); clarifies why quantum entanglement cannot signal. |
-| **2. Axiomatic Kinematic Structure** | **Structural Deepening** | Decouples spacetime geometry from electromagnetic field contingencies. Proves via group theory that Special Relativity depends on information causality, not photon masslessness ($m_\gamma = 0$). |
-| **3. Operational Rigor & Empirical Testing** | **Refined Physical Framing** | Leaves standard numerical values unchanged if $m_\gamma=0$, while providing a precise operational framework for Proca dispersion tests and Quantum Gravity Modified Dispersion Relations (MDR) as probes of field-geometry coupling. |
-| **4. Emergent Spacetime & Quantum Gravity** | **Transformative Paradigm** | Reverses the ontological hierarchy: spacetime light cones are not fundamental primitives, but macroscopic manifestations of microscopic Lieb-Robinson bounds and holographic scrambling velocities ($v_B$). Aligns with "It from Qubit". |
+| **1. Pedagogical & Conceptual Foundations** | **Clarifies Core Intuitions** | Eradicates 120 years of fallacious paradoxes: explains why media slowing light does not alter spacetime; resolves pseudo-superluminal group velocity claims; clarifies non-signaling in quantum entanglement. |
+| **2. Axiomatic Kinematic Structure** | **Structural Deepening** | Decouples spacetime geometry from electromagnetic gauge fields. Proves relativity depends on information causality, not photon masslessness ($m_\gamma = 0$). |
+| **3. Operational Proper Time** | **Physical Grounding** | Grounded in quantum state distinguishability: $d\tau/dt = 1/\gamma$ reflects the throttling of internal state transitions governed by QSLs, replacing ad-hoc "bandwidth fluids." |
+| **4. Velocity Taxonomy** | **Resolves Category Conflations** | Establishes a five-tier hierarchy cleanly separating $c_{\text{causal}}$, $v_{\text{front}}$, $v_{\text{LR}}$, $v_B$, and $v_{\text{signal}}$. |
+| **5. Emergent Spacetime & Quantum Gravity** | **Transformative Paradigm** | Reverses the ontological hierarchy: light cones are not fundamental primitives, but macroscopic consequences of microscopic Lieb-Robinson bounds and holographic scrambling velocities ($v_B$). |
+| **6. Empirical Signatures** | **Falsifiable Physics** | Frames multi-messenger bounds ($|c_{\text{grav}} - c_{\text{EM}}| \le 10^{-15}$), Proca masses, and MDRs as direct tests of the Universal Causal Cone. |
 
-### 7.1 Nuances and Theoretical Boundaries (The Conservative Caveats)
+### 8.1 Nuances and Theoretical Boundaries (The Conservative Caveats)
 
 A rigorous evaluation must recognize the boundaries of its claim:
 1. **Mathematical Invariance of Standard Field Equations:** In the classical limit with zero photon mass ($m_\gamma = 0$), substituting the symbol $c \to c_{\mathcal{I}}$ in the Einstein Field Equations:
    $$G_{\mu\nu} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{\mu\nu},$$
    leaves every numerical metric tensor component, perihelion precession rate, and gravitational wave waveform identical. Pure nomenclature does not solve the cosmological constant problem or calculate graviton loop renormalizability.
-2. **Danger of Circular Definitions:** "Information" must be operationally defined. If one defines "speed of information" as "the speed of causal signal propagation in Minkowski space," and then defines Minkowski space as "the geometry bounded by the speed of information," one creates a tautological loop. To be predictive, the speed of information must be anchored in operational quantum measurement theory (e.g., channel capacity, von Neumann mutual information, Lieb-Robinson bounds).
+2. **Operational Anchoring of Information:** "Information" must be operationally defined. If one defines "speed of information" as "the speed of causal signal propagation in Minkowski space," and then defines Minkowski space as "the geometry bounded by the speed of information," one creates a tautological loop. To be predictive, the speed of information must be anchored in operational quantum measurement theory (e.g., channel capacity, von Neumann mutual information, Lieb-Robinson bounds).
 
-### 7.2 Where the Substitution Deepens Foundational Understanding
+### 8.2 Where the Substitution Deepens Foundational Understanding
 
 Despite the mathematical invariance of the classical vacuum equations, conceptual shifts in physics routinely transform theoretical understanding:
 - Switching from the "caloric fluid" to "kinetic energy / statistical entropy" left classical calorimetry equations unchanged, but unlocked thermodynamics, atomic theory, and quantum mechanics.
@@ -501,84 +405,61 @@ Replacing the "speed of light" with the "speed of information" performs an ident
 
 ---
 
-## 8. Summary of Numerical Visualizations & Analytical Parameter Models
+## 9. Summary of Numerical Visualizations & Analytical Parameter Models
 
-The theoretical conclusions of this study are validated by our numerical modeling suites:
-
-1. **Simulation 1: Sommerfeld-Brillouin Wavefront Analysis** ([Figure 1](file:///home/stefan/Projects/SpeedOfInformation/figures/fig1_sommerfeld_brillouin_front.svg))
-   - Verified that in an anomalously dispersive medium with apparent superluminal group velocity $v_g = 1.6\,c_{\mathcal{I}}$, the physical field amplitude remains identically zero ($E(x=L, t) = 0$) for all $t < L / c_{\mathcal{I}}$.
-   - Demonstrates that the true speed of information $c_{\mathcal{I}}$ is protected by Kramers-Kronig analyticity.
-
-2. **Simulation 2: Proca Electrodynamics Dispersion** ([Figure 2](file:///home/stefan/Projects/SpeedOfInformation/figures/fig2_proca_photon_velocity.svg))
-   - Evaluated photon group velocity $v_\gamma(\omega) = c_{\mathcal{I}}\sqrt{1 - (m_\gamma c_{\mathcal{I}}^2/\hbar \omega)^2}$ across the electromagnetic spectrum ($10\text{ MHz}$ to $100\text{ GHz}$).
-   - Illustrated that if $m_\gamma > 0$, the "speed of light" is variable and dispersive, while the speed of information $c_{\mathcal{I}}$ remains the invariant universal horizon.
-
-3. **Simulation 3: Lieb-Robinson Quantum Light Cone** ([Figure 3](file:///home/stefan/Projects/SpeedOfInformation/figures/fig3_lieb_robinson_cone.svg) & [Figure 4](file:///home/stefan/Projects/SpeedOfInformation/figures/fig4_spacetime_causal_cone.svg))
-   - Computed operator spreading and commutator norms $\|[S_r^z(t), S_0^z(0)]\|$ in a quantum lattice.
-   - Proved that a linear information cone emerges dynamically in a non-relativistic system, establishing the informational foundation of light cones.
-
-4. **Simulation 4: Quantum Gravity Modified Dispersion Relations** ([Figure 5](file:///home/stefan/Projects/SpeedOfInformation/figures/fig5_qg_mdr_delay.svg))
-   - Modeled arrival time delays for high-energy gamma-ray photons across cosmological distances.
-   - Clarified that Planck-scale Lorentz violations probe matter-geometry coupling against the invariant causal horizon $c_{\mathcal{I}}$.
-
-5. **Simulation 5: Horizon Information Capacity & Holographic Complexity** ([Figures 17–20](file:///home/stefan/Projects/SpeedOfInformation/figures/))
-   - Evaluated de Sitter horizon reachability, dark energy scaling as inverse horizon entropy ($\Lambda \propto 1/S_{\text{dS}}$), and linear complexity growth saturating Lloyd's bound ($2Mc_{\mathcal{I}}^2/\pi\hbar$).
-
-6. **Simulation 6: Polariton Information Overhead & Slow Light** ([Figure 21](file:///home/stefan/Projects/SpeedOfInformation/figures/fig21_polariton_information_overhead.svg))
-   - Modeled dark-state polariton mixing $\hat{\Psi} = \cos\theta \hat{\mathcal{E}} - \sin\theta \sqrt{N}\hat{S}$ and Margolus-Levitin QSL dwell times, explaining slow light ($17\text{ m/s}$) and stopped light as quantum memory loading while $c_{\mathcal{I}}$ remains strictly constant.
-
-7. **Simulation 7: Time Dilation as Informational Bandwidth Conservation** ([Figure 22](file:///home/stefan/Projects/SpeedOfInformation/figures/fig22_time_dilation_information_bandwidth.svg))
-   - Evaluated the bandwidth invariance trade-off $(d\tau/dt)^2 + (v/c_{\mathcal{I}})^2 = 1$, internal causal loop path stretching, cosmic ray muon dilation ($\gamma = 15.82$), and gravitational horizon channel capacity.
-
-8. **Simulation 8: Holographic Quantum Error Correction & Spacetime Fault Tolerance** ([Figure 23](file:///home/stefan/Projects/SpeedOfInformation/figures/fig23_holographic_quantum_error_correction.svg))
-   - Modeled 3-qutrit entanglement wedge reconstruction in the Poincaré disk, exponential code distance growth $d(n) = \lambda^n$ in hyperbolic $\{5,4\}$ HaPPY tensor networks, complementary recovery across the $p_c = 1/2$ erasure threshold, and causal syndrome decoding delay $\Delta t_{\text{decode}} = z / c_{\mathcal{I}}$.
-
-9. **Hardware Prototype & Empirical Monte-Carlo Benchmark** ([Figure 24](file:///home/stefan/Projects/SpeedOfInformation/figures/fig24_qec_hardware_prototype_benchmark.svg))
-   - Executed real-time Linux CPU/memory-bus time dilation measurements (`perf_counter_ns`), live Monte-Carlo fault-injection decoding on the 96-trit ASCII string `"c_I=299792458m/s"`, exact $27\times 27$ density-matrix wedge decoding ($F = 1.0$), and a 27-node Holographic RAID storage cluster survival benchmark.
+The theoretical insights presented herein are supported by our numerical modeling suites:
+1. **Sommerfeld-Brillouin Wavefront Dynamics** ([Figure 1](file:///home/stefan/Projects/SpeedOfInformation/figures/fig1_sommerfeld_brillouin_front.svg)): Numerical evaluation of Fourier-Laplace contour integrals verifying strict causal front velocity $v_{\text{front}} = c_{\mathcal{I}}$ despite superluminal group delays in gain media.
+2. **Proca Dispersion Phenomenology** ([Figure 2](file:///home/stefan/Projects/SpeedOfInformation/figures/fig2_proca_photon_velocity.svg)): Evaluation of astrophysical time delays across radio to gamma frequencies, demonstrating invariant $c_{\mathcal{I}}$ amidst dispersive light.
+3. **Polariton Information Overhead & Slow Light** ([Figure 21](file:///home/stefan/Projects/SpeedOfInformation/figures/fig21_polariton_information_overhead.svg)): Analytical modeling of dark-state polariton mixing and spatial pulse compression in matter while $c_{\mathcal{I}}$ remains strictly constant.
+4. **Operational Proper Time & Quantum Clocks** ([Figure 22](file:///home/stefan/Projects/SpeedOfInformation/figures/fig22_time_dilation_information_bandwidth.svg)): Quantitative modeling of the proper-time relation $(d\tau/dt)^2 + (v/c_{\mathcal{I}})^2 = 1$, cosmic muon dilation, and horizon channel capacity.
+5. **Lieb-Robinson Bound Visualizations** ([Figure 3](file:///home/stefan/Projects/SpeedOfInformation/figures/fig3_lieb_robinson_cone.svg) & [Figure 4](file:///home/stefan/Projects/SpeedOfInformation/figures/fig4_spacetime_causal_cone.svg)): Mapping causal operator spreading and emergent quasi-causal cones in quantum many-body lattices.
+6. **Quantum Gravity MDR Predictions** ([Figure 5](file:///home/stefan/Projects/SpeedOfInformation/figures/fig5_qg_mdr_delay.svg)): Cosmological time-of-flight models for linear ($n=1$) and quadratic ($n=2$) Lorentz-invariance violations.
+7. **Thermodynamic Horizon Dynamics** ([Figures 17–20](file:///home/stefan/Projects/SpeedOfInformation/figures/)): Numerical tracking of causal diamond entropy equilibrium, black hole scrambling, and the Page curve.
+8. **Holographic Quantum Error Correction** ([Figure 23](file:///home/stefan/Projects/SpeedOfInformation/figures/fig23_holographic_quantum_error_correction.svg)): Modeling 3-qutrit entanglement wedge reconstruction, hyperbolic HaPPY code distance growth $d(n) = \lambda^n$, erasure threshold phase transitions ($p_c = 1/2$), and causal decoding delay $\Delta t_{\text{decode}} = z / c_{\mathcal{I}}$.
 
 ---
 
-## 9. Conclusion & Future Research Directions
+## 10. Conclusion & Future Research Directions
 
-In this study, we set out to determine whether replacing the concept of the "speed of light" with the "speed of information" helps us better understand fundamental physics.
+The conceptual transition from the "speed of light" ($c$) to the "speed of information" ($c_{\mathcal{I}}$) elevates relativity from an electrodynamic postulate to a universal property of spacetime causality and quantum information. By separating established theorems from operational interpretations and empirical hypotheses, this framework resolves historical paradoxes, clarifies the role of quantum speed limits, and establishes a coherent vocabulary for quantum gravity.
 
-Our conclusion is affirmative:
-$$\boxed{\begin{array}{l}
-\text{The transition from "speed of light" } (c) \text{ to "speed of information" } (c_{\mathcal{I}}) \\
-\text{provides a substantially clearer and more coherent understanding of fundamental physics.}
-\end{array}}$$
-
-It liberates relativity from historical electromagnetic contingencies, demystifies apparent superluminal anomalies, shields causality against quantum non-locality, and aligns the kinematic foundations of spacetime with the emergent "It-from-Qubit" paradigm of quantum gravity.
-
-### 9.1 Proposed Research Agenda
+### 10.1 Proposed Research Agenda
 As a continuing foundational research agenda, we propose three concrete mathematical programs:
-1. **Deriving the Spacetime Metric from Algorithmic Information:** Formulating a variational principle where the metric $g_{\mu\nu}$ minimizes the Kolmogorov / quantum Fisher information divergence of local causal networks.
-2. **Entanglement Wedge Dynamics in Non-AdS Spacetimes:** Extending butterfly velocity $v_B$ bounds and out-of-time-ordered correlators to asymptotically flat and de Sitter spacetimes.
-3. **Precision Multi-Messenger Constraints on $c_{\mathcal{I}}$ vs $v_\gamma$:** Combining simultaneous gravitational wave detections (LIGO/Virgo/KAGRA) with gamma-ray burst photons (Fermi/Swift) to place bounds on $|c_{\text{GW}} - c_\gamma| / c_{\mathcal{I}} \le 10^{-15}$.
+1. **Renormalization Group Flows from Quantum Lattices to Lorentz Geometry:** Formulating explicit lattice Hamiltonians whose Lieb-Robinson velocity $v_{\text{LR}}$ flows to an exact continuum light-cone generator $c_{\mathcal{I}}$ under non-perturbative RG techniques.
+2. **Non-AdS Holographic Scrambling Bounds:** Extending butterfly velocity relations $v_B \le c_{\mathcal{I}}$ to asymptotically flat and cosmological de Sitter horizons.
+3. **Precision Multi-Messenger Constraints on $c_{\mathcal{I}}$ Universality:** Combining simultaneous gravitational wave detections (LIGO/Virgo/KAGRA/LISA) with gamma-ray burst photons (Fermi/Swift) and ultra-high-energy neutrinos (IceCube-Gen2) to test $|c_{\text{grav}} - c_{\nu}| / c_{\mathcal{I}}$ and $|c_{\text{grav}} - c_{\text{EM}}| / c_{\mathcal{I}}$ beyond $10^{-17}$.
 
 ---
 
-## 10. References
+## 11. References
 
 1. Einstein, A. (1905). "Zur Elektrodynamik bewegter Körper." *Annalen der Physik*, 17(10), 891–921.
 2. von Ignatowsky, W. (1910). "Einige allgemeine Bemerkungen zum Relativitätsprinzip." *Physikalische Zeitschrift*, 11, 972–976.
 3. Frank, P., & Rothe, H. (1911). "Über die Transformation der Raum-Zeitkoordinaten von ruhenden auf bewegte Systeme." *Annalen der Physik*, 339(5), 825–855.
 4. Lévy-Leblond, J. M. (1976). "One more derivation of the Lorentz transformation." *American Journal of Physics*, 44(3), 271–277.
-5. Sommerfeld, A. (1914). "Über die Fortpflanzung des Lichtes in dispergierenden Medien." *Annalen der Physik*, 349(10), 177–202.
-6. Brillouin, L. (1914). "Über die Fortpflanzung des Lichtes in dispergierenden Medien." *Annalen der Physik*, 349(10), 203–240.
-7. Wang, L. J., Kuzmich, A., & Dogariu, A. (2000). "Gain-assisted superluminal light propagation." *Nature*, 406(6793), 277–279.
-8. Lieb, E. H., & Robinson, D. W. (1972). "The finite group velocity of quantum spin systems." *Communications in Mathematical Physics*, 28(3), 251–257.
-9. Maldacena, J. (1998). "The Large N Limit of Superconformal Field Theories and Supergravity." *Advances in Theoretical and Mathematical Physics*, 2(2), 231–252.
-10. Ryu, S., & Takayanagi, T. (2006). "Holographic Derivation of Entanglement Entropy from the anti–de Sitter Space/Conformal Field Theory Correspondence." *Physical Review Letters*, 96(18), 181602.
-11. Almheiri, A., Dong, X., & Harlow, D. (2015). "Bulk Locality and Quantum Error Correction in AdS/CFT." *Journal of High Energy Physics*, 2015(4), 163.
-12. Pastawski, F., Yoshida, B., Harlow, D., & Preskill, J. (2015). "Holographic quantum error-correcting codes: Toy models for the bulk/boundary correspondence." *Journal of High Energy Physics*, 2015(6), 149.
-13. Eastin, B., & Knill, E. (2009). "Restrictions on Transversal Encoded Quantum Gate Sets." *Physical Review Letters*, 102(11), 110502.
-14. Almheiri, A., Engelhardt, N., Marolf, D., & Maxfield, H. (2019). "The entropy of bulk quantum fields and the entanglement wedge of an evaporating black hole." *Journal of High Energy Physics*, 2019(12), 63.
-15. Page, D. N. (1993). "Information in black hole radiation." *Physical Review Letters*, 71(23), 3743.
-16. Roberts, D. A., & Swingle, B. (2016). "Lieb-Robinson Bound and the Butterfly Effect in Quantum Field Theories." *Physical Review Letters*, 117(9), 091602.
-17. Tu, L. C., Luo, J., & Gillies, G. T. (2005). "The mass of the photon." *Reports on Progress in Physics*, 68(1), 77.
-18. Fermi LAT and GBM Collaborations (2009). "A limit on the variation of the speed of light arising from quantum gravity effects." *Nature*, 462(7271), 331–334.
-19. Steinhauer, J. (2016). "Observation of quantum Hawking radiation and its entanglement in an analogue black hole." *Nature Physics*, 12(10), 959–965.
-20. Van Raamsdonk, M. (2010). "Building up spacetime with quantum entanglement." *General Relativity and Gravitation*, 42(10), 2323–2329.
-21. Chiribella, G., D'Ariano, G. M., & Perinotti, P. (2011). "Informational derivation of quantum theory." *Physical Review A*, 84(1), 012311.
-
+5. Pelissetto, A., & Testa, M. (2015). "Getting the Lorentz transformations without light." *American Journal of Physics*, 83(4), 338–340.
+6. Sommerfeld, A. (1914). "Über die Fortpflanzung des Lichtes in dispergierenden Medien." *Annalen der Physik*, 349(10), 177–202.
+7. Brillouin, L. (1914). "Über die Fortpflanzung des Lichtes in dispergierenden Medien." *Annalen der Physik*, 349(10), 203–240.
+8. Wang, L. J., Kuzmich, A., & Dogariu, A. (2000). "Gain-assisted superluminal light propagation." *Nature*, 406(6793), 277–279.
+9. Hau, L. V., Harris, S. E., Dutton, Z., & Behroozi, C. H. (1999). "Light speed reduction to 17 metres per second in an ultracold atomic gas." *Nature*, 397(6720), 594–598.
+10. Fleischhauer, M., & Lukin, M. D. (2000). "Dark-state polaritons in electromagnetically induced transparency." *Physical Review Letters*, 84(22), 5094–5097.
+11. Margolus, N., & Levitin, L. B. (1998). "The maximum speed of dynamical evolution." *Physica D: Nonlinear Phenomena*, 120(1–2), 188–195.
+12. Mandelstam, L., & Tamm, I. (1945). "The uncertainty relation between energy and time in non-relativistic quantum mechanics." *Journal of Physics USSR*, 9(4), 249–254.
+13. Lieb, E. H., & Robinson, D. W. (1972). "The finite group velocity of quantum spin systems." *Communications in Mathematical Physics*, 28(3), 251–257.
+14. Popescu, S., & Rohrlich, D. (1994). "Quantum nonlocality as an axiom." *Foundations of Physics*, 24(3), 379–385.
+15. Pawłowski, M., Paterek, T., Kaszlikowski, D., Scarani, V., Winter, A., & Żukowski, M. (2009). "Information causality as a physical principle." *Nature*, 461(7267), 1101–1104.
+16. Chiribella, G., D'Ariano, G. M., & Perinotti, P. (2011). "Informational derivation of quantum theory." *Physical Review A*, 84(1), 012311.
+17. Jacobson, T. (1995). "Thermodynamics of spacetime: the Einstein equation of state." *Physical Review Letters*, 75(7), 1260–1263.
+18. Jacobson, T. (2016). "Entanglement equilibrium and the Einstein equation." *Physical Review Letters*, 116(20), 201101.
+19. Faulkner, T., Guica, M., Hartman, T., Myers, R. C., & Van Raamsdonk, M. (2014). "Gravitation from entanglement in holographic CFTs." *Journal of High Energy Physics*, 2014(3), 51.
+20. Maldacena, J. (1998). "The Large N Limit of Superconformal Field Theories and Supergravity." *Advances in Theoretical and Mathematical Physics*, 2(2), 231–252.
+21. Ryu, S., & Takayanagi, T. (2006). "Holographic Derivation of Entanglement Entropy from the anti–de Sitter Space/Conformal Field Theory Correspondence." *Physical Review Letters*, 96(18), 181602.
+22. Roberts, D. A., & Swingle, B. (2016). "Lieb-Robinson Bound and the Butterfly Effect in Quantum Field Theories." *Physical Review Letters*, 117(9), 091602.
+23. Almheiri, A., Dong, X., & Harlow, D. (2015). "Bulk Locality and Quantum Error Correction in AdS/CFT." *Journal of High Energy Physics*, 2015(4), 163.
+24. Pastawski, F., Yoshida, B., Harlow, D., & Preskill, J. (2015). "Holographic quantum error-correcting codes: Toy models for the bulk/boundary correspondence." *Journal of High Energy Physics*, 2015(6), 149.
+25. Eastin, B., & Knill, E. (2009). "Restrictions on Transversal Encoded Quantum Gate Sets." *Physical Review Letters*, 102(11), 110502.
+26. Abbott, B. P. et al. (LIGO Scientific and Virgo Collaborations) (2017). "Gravitational Waves and Gamma-Rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A." *Astrophysical Journal Letters*, 848(2), L12.
+27. Tu, L. C., Luo, J., & Gillies, G. T. (2005). "The mass of the photon." *Reports on Progress in Physics*, 68(1), 77–130.
+28. Fermi LAT and GBM Collaborations (2009). "A limit on the variation of the speed of light arising from quantum gravity effects." *Nature*, 462(7271), 331–334.
+29. Steinhauer, J. (2016). "Observation of quantum Hawking radiation and its entanglement in an analogue black hole." *Nature Physics*, 12(10), 959–965.
+30. Hertel, S. (2026). "Relativistic and Holographic Optimization of Computational Algorithms on Modern Architectures." Technical Report, Zenodo: [10.5281/zenodo.23402847](https://doi.org/10.5281/zenodo.23402847).
