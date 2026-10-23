@@ -89,7 +89,7 @@ $$x' = \gamma(v) (x - v t), \quad t' = \gamma(v) \left(t - \alpha v x\right), \q
 where $\alpha$ is a universal invariant constant with dimensions of $[\text{velocity}]^{-2}$.
 
 Mathematically, precisely three geometric classes exist:
-- **Case 1: $\alpha < 0$.** The spacetime symmetry group is the Euclidean $SO(4)$. Rotations in time and space admit closed timelike curves under standard inertial boosts, violating causality.
+- **Case 1: $\alpha < 0$.** The spacetime symmetry group is the 4-dimensional Euclidean rotation group $SO(4)$. Spacetime possesses a positive-definite Riemannian metric signature $(+,+,+,+)$ lacking a hyperbolic light-cone structure; coordinate time behaves as a fourth spatial dimension without invariant causal ordering, which is ruled out empirically.
 - **Case 2: $\alpha = 0$.** The symmetry group is the Galilean group $\mathrm{SGal}(3,1)$, where the causal speed limit is infinite ($\alpha = 1/\infty^2 = 0$).
 - **Case 3: $\alpha > 0$.** The symmetry group is the Lorentz/Poincaré group $SO(3,1)$, featuring an invariant universal speed:
   $$\boxed{c_{\mathcal{I}} \equiv \frac{1}{\sqrt{\alpha}}}.$$
@@ -169,16 +169,17 @@ $$u^\mu u_\mu = g_{\mu\nu} \frac{dx^\mu}{d\tau} \frac{dx^\nu}{d\tau} = -c_{\math
 Dividing through by $-c_{\mathcal{I}}^2$ yields:
 $$\left(\frac{d\tau}{dt}\right)^2 + \frac{v^2}{c_{\mathcal{I}}^2} = 1 \iff \frac{d\tau}{dt} = \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}} = \frac{1}{\gamma(v)}.$$
 
-Rather than postulating this relation as an ad-hoc "Law of Informational Bandwidth Conservation" involving a hypothetical fluid, its rigorous physical meaning is operational:
-$$\boxed{\begin{array}{l}
-\textbf{Operational Meaning:} \text{ The Lorentzian proper-time relation can be interpreted operationally as a geometric} \\
-\text{constraint on the rate at which physically distinguishable internal states can evolve along a worldline.}
-\end{array}}$$
+Rather than postulating this kinematic relation as an ontological "conservation of informational bandwidth fluid," its rigorous operational meaning connects spacetime geometry directly to quantum state distinguishability.
 
-Consider a physical clock whose internal state transitions are governed by quantum dynamics. In its instantaneous rest frame, the minimum time required to evolve between orthogonal states is bounded by the Mandelstam-Tamm / Margolus-Levitin QSL: $\Delta \tau_{\text{tick}} \ge \pi\hbar / (2\Delta E)$. Because proper time $\tau$ parameterizes the system's rest frame, coordinate observers track the tick generation rate as:
-$$\frac{d N_{\text{ticks}}}{dt} = \frac{d N_{\text{ticks}}}{d\tau} \frac{d\tau}{dt} \le \frac{2\Delta E}{\pi\hbar} \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}}.$$
+Consider a quantum clock characterized by an internal state $|\psi(\tau)\rangle$ evolving unitarily according to $i\hbar \frac{d}{d\tau}|\psi(\tau)\rangle = \hat{H}|\psi(\tau)\rangle$ in its comoving rest frame. The statistical distinguishability metric on projective Hilbert space is defined by the Fubini-Study / Bures line element $ds_{\text{FS}}^2 = 4(1 - |\langle \psi(\tau)|\psi(\tau + d\tau)\rangle|^2) = \frac{4\Delta E^2}{\hbar^2} d\tau^2$, where $\Delta E^2 = \langle \hat{H}^2 \rangle - \langle \hat{H} \rangle^2$ represents the energy variance, directly proportional to the Quantum Fisher Information $\mathcal{F}_Q(\tau) = 4\Delta E^2 / \hbar^2$.
 
-As $v \to c_{\mathcal{I}}$, the coordinate rate of internal orthogonal state evolution approaches zero ($d\tau/dt \to 0$). This establishes a clear operational connection between quantum state distinguishability, measurement theory, and Lorentzian geometry.
+With respect to coordinate time $t$, the rate at which the clock traverses distinguishable quantum states along its worldline is constrained by:
+$$\frac{ds_{\text{FS}}}{dt} = \frac{ds_{\text{FS}}}{d\tau} \frac{d\tau}{dt} = \frac{2\Delta E}{\hbar} \sqrt{1 - \frac{v^2}{c_{\mathcal{I}}^2}} = \frac{2\Delta E}{\hbar \gamma(v)}.$$
+
+Equivalently, applying the Mandelstam-Tamm [12] and Margolus-Levitin [11] Quantum Speed Limits (QSL), the rate of generating mutually orthogonal (fully distinguishable) states is bounded by:
+$$\frac{d N_\perp}{dt} = \frac{d N_\perp}{d\tau} \frac{d\tau}{dt} \le \min\left( \frac{2\Delta E}{\pi\hbar}, \frac{2\langle E - E_0\rangle}{\pi\hbar} \right) \frac{1}{\gamma(v)}.$$
+
+As the coordinate velocity approaches the causal limit ($v \to c_{\mathcal{I}}$), the rate of dynamical state distinguishability with respect to external coordinate time vanishes identically ($\lim_{v \to c_{\mathcal{I}}} ds_{\text{FS}}/dt = 0$). This establishes proper time dilation not as a metaphysical redistribution of an unphysical "information fluid," but as a precise geometric constraint on the physical rate of quantum state distinguishability and information processing along worldlines.
 
 ---
 
@@ -235,9 +236,19 @@ To prevent category errors and resolve conflations between different velocity de
 | **IV. Quantum Chaos / Scrambling** | $v_B$ | $\langle [W(t, x), V(0)]^2 \rangle \sim e^{\lambda_L(t - \|x\|/v_B)}$ | Operator spreading rate in strongly coupled CFTs ($v_B \le c_{\mathcal{I}}$). |
 | **V. Usable Signal Velocity** | $v_{\text{signal}}$ | $\mathcal{C}_{A \to B}(t) > 0 \implies x/t \le v_{\text{signal}}$ | Maximal rate of message bit transfer through physical media ($v_{\text{signal}} \le c_{\mathcal{I}}$). |
 
-This taxonomy establishes that:
-$$\boxed{v_{\text{usable signal}} \le v_B \le c_{\mathcal{I}} \quad \text{and} \quad v_{\text{front}} = c_{\mathcal{I}} = c_{\text{causal}}}.$$
-These velocities are not identical entities; they are **distinct physical projections of a unified underlying causal architecture**.
+This taxonomy clarifies that $v_{\text{front}}$, $v_{\text{signal}}$, $v_{\text{LR}}$, and $v_B$ are not ontologically identical to $c_{\mathcal{I}}$; rather, they represent **distinct physical manifestations and operational projections of a single underlying geometric causal cone** under specific dynamical, material, and thermodynamic constraints:
+
+$$\boxed{
+c_{\text{geom}} \equiv c_{\mathcal{I}} \quad \xrightarrow{\quad\text{Operational Projections}\quad} \quad
+\begin{cases}
+v_{\text{front}} \le c_{\mathcal{I}} & \text{(Sommerfeld-Brillouin front; high-frequency analyticity)} \\
+v_{\text{signal}} \le c_{\mathcal{I}} & \text{(Non-zero Shannon capacity message transfer in media)} \\
+v_{\text{LR}} & \text{(Effective quasi-cone in non-relativistic spin lattices)} \\
+v_B \le c_{\mathcal{I}} & \text{(Thermal operator spreading and scrambling rate)}
+\end{cases}
+}$$
+
+By organizing physical velocities according to this projection hierarchy, apparent paradoxes—such as anomalous superluminal group delays ($v_g > c_{\mathcal{I}}$) or subluminal polaritonic slowdowns ($v_g \ll c_{\mathcal{I}}$)—are systematically recognized as effective dynamical phenomena that leave the invariant geometric causal cone $c_{\mathcal{I}}$ intact.
 
 ---
 
@@ -265,7 +276,7 @@ In quantum many-body systems near a Quantum Critical Point (QCP) characterized b
 $$\mathcal{S}_{\text{eff}} = \int d^d x \, dt \left[ \frac{1}{2} (\partial_t \phi)^2 - \frac{v_{\text{eff}}^2}{2} (\nabla \phi)^2 - V(\phi) \right].$$
 In this infrared (IR) limit, the effective velocity $v_{\text{eff}} \sim v_{\text{LR}}$ plays the role of an emergent speed of light, and irrelevant Lorentz-violating operators flow to zero under RG coarse-graining:
 $$\mathcal{H}_{\text{micro}} \xrightarrow{\quad\text{RG Coarse-Graining}\quad} \mathcal{S}_{\text{CFT}} \quad (z = 1 \implies SO(d, 1) \text{ Lorentz symmetry}).$$
-This provides a theoretical mechanism for how macroscopic spacetime kinematics can emerge from discrete microscopic information dynamics.
+This provides a concrete theoretical mechanism by which a Lorentz-invariant causal structure can emerge in suitable microscopic systems at a $z = 1$ quantum critical point. We emphasize, however, that this represents a specific dynamical scenario rather than a universal emergence theorem; rigorously identifying the necessary and sufficient conditions under which generic non-relativistic lattice information networks flow to continuous pseudo-Riemannian geometries remains an active open research program.
 
 ### 6.3 Holographic Scrambling and the Butterfly Velocity
 
@@ -275,25 +286,39 @@ where $\lambda_L \le 2\pi k_B T / \hbar$ saturates the Maldacena-Shenker-Stanfor
 
 For Einstein gravity duals in $AdS_{d+1}$, the butterfly velocity takes the analytic form [22]:
 $$v_B = \sqrt{\frac{d}{2(d-1)}} c_{\mathcal{I}} \le c_{\mathcal{I}}.$$
-It is essential to note that $v_B$ is not the fundamental speed of light, but the rate of quantum chaotic operator scrambling. In theories with higher-derivative curvature corrections (such as Gauss-Bonnet gravity) or anisotropic backgrounds, $v_B$ deviates from this specific relation while remaining bounded by the asymptotic causal speed: $v_B \le c_{\text{causal}}$.
+It is essential to note that $v_B$ is not the fundamental speed of light, but the rate of quantum chaotic operator scrambling. In theories with higher-derivative curvature corrections (such as Gauss-Bonnet gravity) or anisotropic backgrounds, $v_B$ deviates from this specific relation while remaining bounded by the geometric causal speed ($v_B \le c_{\mathcal{I}}$) under the relativistic causal assumptions considered here.
 
-### 6.4 Deriving Einstein's Equations from Entanglement Equilibrium: Critical Audit Balance Sheet
+### 6.4 Conditional Derivation of Einstein's Equations from Entanglement Equilibrium
 
-Following Jacobson (1995, 2016) [17, 18] and Faulkner et al. (2014) [19], Einstein's gravitational field equations can be recovered by imposing the **Entanglement Equilibrium Hypothesis** on local geodesic causal diamonds $\mathcal{D}(p, R)$:
-$$\delta S_{\text{matter}} = \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}}, \quad \delta S_{\text{UV}} = -\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}}.$$
+Following Jacobson (1995, 2016) [17, 18] and Faulkner et al. (2014) [19], Einstein's gravitational field equations can be recovered conditionally by imposing the **Entanglement Equilibrium Hypothesis** on small geodesic causal diamonds $\mathcal{D}(p, R)$ in a $D=4$ pseudo-Riemannian manifold.
 
-Demanding entanglement stationarity ($\delta S_{\text{total}} = \delta S_{\text{UV}} + \delta S_{\text{matter}} = 0$) results in the exact field equations:
-$$-\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}} + \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}} = 0 \implies \boxed{G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{\mu\nu}}.$$
+Let $p$ be an arbitrary spacetime point and $u^\mu$ an arbitrary unit timelike vector ($u^\mu u_\mu = -c_{\mathcal{I}}^2$). In Riemann normal coordinates with $x^0 = c_{\mathcal{I}} t$, consider a spatial ball $\Sigma_0$ of radius $R$ on a local maximal slice. The conformal Killing vector field inside the diamond generates modular flow with conformal factor $\xi^t(r) = \frac{R^2 - r^2}{2 R c_{\mathcal{I}}}$.
 
-To avoid claiming that gravity is derived "from pure information alone," we maintain an explicit **Critical Audit Balance Sheet** distinguishing derived features from assumed empirical inputs:
+For a conformal field theory or the short-distance vacuum limit of general quantum fields, the modular Hamiltonian associated with the vacuum reduced density matrix $\rho_0$ takes the form:
+$$\hat{K} = \frac{2\pi}{\hbar} \int_{\Sigma_0} \xi^t(r) \hat{T}_{00} d^3x,$$
+where $\hat{T}_{00}$ is the physical energy density operator ($[\hat{T}_{00}] = \text{J}/\text{m}^3$). Under a matter perturbation, the first law of entanglement entropy $\delta S_{\text{matter}} = \delta \langle \hat{K} \rangle$ gives:
+$$\delta S_{\text{matter}} = \frac{2\pi}{\hbar} T_{00}^{\text{phys}} \int_0^R \frac{R^2 - r^2}{2 R c_{\mathcal{I}}} (4\pi r^2 dr) = \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}}.$$
+
+Simultaneously, spacetime curvature induces a geometric area deficit of the geodesic boundary sphere $\partial \Sigma_0$. At fixed spatial 3-volume ($\delta V = 0$), the area deficit evaluated from the Raychaudhuri equation is:
+$$\delta A = -\frac{4\pi R^4}{15} G_{00}^{\text{geom}},$$
+where $[G_{00}^{\text{geom}}] = 1/\text{m}^2$. Postulating that the unperturbed UV vacuum entanglement entropy is proportional to the horizon area with Bekenstein-Hawking coefficient $\eta = \frac{c_{\mathcal{I}}^3}{4 G \hbar}$ ($[\eta] = 1/\text{m}^2$), the geometric entanglement change is:
+$$\delta S_{\text{UV}} = \eta \delta A = -\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}}.$$
+
+Imposing the Entanglement Equilibrium Hypothesis ($\delta S_{\text{total}} = \delta S_{\text{UV}} + \delta S_{\text{matter}} = 0$ for all local diamonds at fixed volume) yields:
+$$-\frac{\pi c_{\mathcal{I}}^3 R^4}{15 G \hbar} G_{00}^{\text{geom}} + \frac{8\pi^2 R^4}{15 \hbar c_{\mathcal{I}}} T_{00}^{\text{phys}} = 0 \implies G_{00}^{\text{geom}} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{00}^{\text{phys}}.$$
+
+Because this scalar projection holds for all unit timelike vectors $u^\mu$, tensor multilinearity and local conservation $\nabla^\mu T_{\mu\nu} = 0$ together with the contracted Bianchi identity $\nabla^\mu G_{\mu\nu} = 0$ require the inclusion of a constant of integration $\Lambda g_{\mu\nu}$ associated with the volume constraint:
+$$\boxed{G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c_{\mathcal{I}}^4} T_{\mu\nu}}.$$
+
+To avoid claiming that gravity is derived "from pure information alone," we maintain an explicit **Critical Audit Balance Sheet** distinguishing conditionally derived features from assumed empirical inputs:
 
 | Component | Status | Methodological Role |
 | :--- | :---: | :--- |
-| **Einstein Tensor ($G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu}$)** | **Derived** | Arises uniquely from multilinear contraction across all timelike observer 4-velocities $u^\mu$. |
-| **Linear Stress-Energy Coupling ($T_{\mu\nu}$)** | **Derived** | Dictated by modular Hamiltonian flow generating local boost thermalization. |
-| **Exact Coupling Scaling ($\kappa = 8\pi G / c_{\mathcal{I}}^4$)** | **Derived** | Derived directly from the thermodynamic bit-to-energy conversion factors. |
-| **Conservation Law ($\nabla^\mu T_{\mu\nu} = 0$)** | **Derived** | Follows automatically from the contracted Bianchi identity $\nabla^\mu G_{\mu\nu} \equiv 0$. |
-| **Newton's Constant $G$** | **INPUT (Assumed)** | $G$ is *not* computed from pure information; it enters via the Bekenstein-Hawking coefficient $\eta = c_{\mathcal{I}}^3 / 4G\hbar$. |
+| **Einstein Tensor ($G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu}$)** | **Conditionally Derived** | Arises uniquely from multilinear contraction across all timelike observer 4-velocities $u^\mu$. |
+| **Linear Stress-Energy Coupling ($T_{\mu\nu}$)** | **Conditionally Derived** | Dictated by modular Hamiltonian flow generating local boost thermalization. |
+| **Exact Coupling Scaling ($\kappa = 8\pi G / c_{\mathcal{I}}^4$)** | **Conditionally Derived** | Emerges from thermodynamic area-to-matter entropy balance ($\eta / c_{\mathcal{I}}$). |
+| **Conservation Law ($\nabla^\mu T_{\mu\nu} = 0$)** | **Conditionally Derived** | Follows automatically from the contracted Bianchi identity $\nabla^\mu G_{\mu\nu} \equiv 0$. |
+| **Newton's Constant $G$** | **INPUT (Assumed)** | $G$ is *not* computed from pure information; it enters via the empirical Bekenstein-Hawking coefficient $\eta = c_{\mathcal{I}}^3 / 4G\hbar$. |
 | **Smooth Lorentzian Manifold $(M, g_{\mu\nu})$** | **INPUT (Assumed)** | The derivation assumes a pre-existing 4D smooth continuum with Riemann normal coordinates. |
 | **Entanglement Equilibrium Axiom** | **INPUT (Assumed)** | The stationarity $\delta S_{\text{total}} = 0$ is a variational postulate analogous to the Second Law of Thermodynamics. |
 
@@ -302,9 +327,9 @@ To avoid claiming that gravity is derived "from pure information alone," we main
 Why does emergent semiclassical spacetime appear macroscopically smooth and stable against ultraviolet vacuum fluctuations? Following Almheiri, Dong, and Harlow (2015) [23] and the HaPPY tensor network code [24], semiclassical bulk states form a protected logical code subspace $\mathcal{H}_{\text{code}} \subset \mathcal{H}_{\text{phys}}$ satisfying the Knill-Laflamme condition:
 $$P_{\text{code}} \, E_a^\dagger E_b \, P_{\text{code}} = C_{ab} \, P_{\text{code}}.$$
 
-Within this framework, the holographic radial depth $z$ corresponds to the quantum code distance $d(z)$, shielding bulk degrees of freedom against boundary erasures. Furthermore, by the Eastin-Knill theorem [25], transversal (instantaneous) gates cannot achieve universal fault-tolerant quantum computation; physical error-correction requires syndrome propagation at a finite causal speed $c_{\mathcal{I}}$, enforcing a finite causal decoding delay $\Delta t_{\text{decode}}(z) \sim z / c_{\mathcal{I}}$ that dynamically establishes the bulk light cone.*
+Within this framework, the holographic radial depth $z$ corresponds to the quantum code distance $d(z)$, shielding bulk degrees of freedom against boundary erasures. 
 
-*(Note: For algorithmic implementations, cache-tiling optimizations, and computational benchmarks inspired by causal diamond geometries, see our dedicated companion paper [30].)*
+Furthermore, the Eastin-Knill theorem [25] proves that no quantum error-correcting code can implement a continuous universal set of logical gates purely through transversal (spatially local and instantaneous) operations. In any physically realistic, spatially distributed implementation governed by local Hamiltonian interactions, syndrome extraction, measurement, and active feedback operations are necessarily subject to the causal propagation constraints of the underlying hardware or field theory. While the Eastin-Knill theorem does not itself derive relativistic light cones, it reinforces the operational principle that active fault-tolerant stabilization across macroscopic scales cannot be executed instantaneously, but requires physical causal channels bounded by $c_{\mathcal{I}}$.
 
 ---
 
@@ -322,7 +347,7 @@ Replacing $c$ with $c_{\mathcal{I}}$ transitions from an interpretive relabeling
 We formulate the **Universal Causal Cone Hypothesis**:
 $$\boxed{c_{\text{geom}} = c_{\text{EM}} = c_{\text{grav}} = c_{\text{matter}} = c_{\text{info}} \equiv c_{\mathcal{I}}}.$$
 
-This hypothesis is not a mathematical tautology; it is a falsifiable physical proposition regarding the universality of Lorentz invariance across all quantum fields.
+This hypothesis is not a mathematical tautology; it is a falsifiable physical proposition regarding the universality of Lorentz invariance across all quantum fields. In standard General Relativity coupled to the Standard Model, the equality of light and gravitational wave velocities is empirically incorporated via global and local Lorentz symmetry. Positing the Universal Causal Cone Hypothesis elevates this empirical coincidence to an axiomatic principle across all sectors: geometry, gauge fields, fermions, and information. If any sector possessed a distinct propagation speed ($\Delta c_i = c_i - c_{\mathcal{I}} \neq 0$), Lorentz symmetry would be broken or deformed, yielding distinct physical light cones for different field excitations.
 
 ### 7.2 Multi-Messenger Gravitational Wave Constraints
 
@@ -331,7 +356,7 @@ The most stringent empirical test of the equality $c_{\text{grav}} = c_{\text{EM
 The signals traversed a cosmological distance of $D \approx 40\text{ Mpc}$ ($\approx 1.3 \times 10^8\text{ light-years}$) with an observed arrival time difference of $\Delta t = 1.74 \pm 0.11\text{ s}$. Accounting for astrophysical emission delays, this measurement constrained the relative speed difference to:
 $$-3 \times 10^{-15} \le \frac{c_{\text{grav}} - c_{\text{EM}}}{c_{\mathcal{I}}} \le +7 \times 10^{-16}.$$
 
-This precision verification confirms that gravitational and electromagnetic radiation share an identical causal light cone to within one part in $10^{15}$, strongly supporting the Universal Causal Cone Hypothesis.
+This precision measurement demonstrates that gravitational and electromagnetic radiation share an identical propagation speed to within one part in $10^{15}$, strongly constraining any sector-dependent deviations from the Universal Causal Cone Hypothesis.
 
 ### 7.3 Astrophysical Proca Photon Mass Limits
 
@@ -349,13 +374,16 @@ In candidate quantum gravity theories (such as Loop Quantum Gravity, non-commuta
 
 The modified dispersion relation for photons of energy $E$ takes the form:
 $$E^2 = p^2 c_{\mathcal{I}}^2 \left[ 1 \pm \xi \left( \frac{E}{E_{\text{QG}}} \right)^n \right], \quad n \in \{1, 2\}.$$
-The physical velocity of photons is energy-dependent:
-$$v(E) = \frac{\partial E}{\partial p} \approx c_{\mathcal{I}} \left[ 1 \mp \frac{n+1}{2} \xi \left( \frac{E}{E_{\text{QG}}} \right)^n \right].$$
+The physical group velocity of photons is energy-dependent:
+$$v_g(E) = \frac{\partial E}{\partial p} \approx c_{\mathcal{I}} \left[ 1 \mp \frac{n+1}{2} \xi \left( \frac{E}{E_{\text{QG}}} \right)^n \right].$$
+
+#### Critical Delineation: Group Velocity Delay vs. Metric Causal Cone:
+It is crucial to distinguish between an energy-dependent group velocity $v_g(E)$ and an energy-dependent deformation of the spacetime metric causal cone $c_{\text{geom}}$. In effective field theories with higher-spatial-derivative operators, particle wavepackets experience energy-dependent dispersive delays ($v_g(E) \neq c_{\mathcal{I}}$), yet the Sommerfeld-Brillouin front velocity $v_{\text{front}}$ and the underlying metric null cone remain strictly invariant at $c_{\mathcal{I}}$. Only if Planck-scale physics alters the asymptotic high-frequency limit $\lim_{\omega \to \infty} \omega / k$ or introduces non-local spacetime granularity (such as in Doubly Special Relativity or rainbow gravity) does the fundamental causal cone become energy-dependent ($c_{\mathcal{I}}(E)$).
 
 Observations by the Fermi Gamma-ray Space Telescope of GRB 090510 (redshift $z = 0.903$, containing a $31\text{ GeV}$ photon arriving within $0.829\text{ s}$ of the low-energy pulse onset) constrained linear LIV ($n=1$) [28]:
 $$E_{\text{QG}, 1} > 1.2\, M_{\text{Planck}} \approx 1.5 \times 10^{19}\text{ GeV}.$$
 
-This framework operationalizes tests of quantum gravity: testing MDRs is not testing whether "spacetime breaks down," but whether high-energy excitations experience an energy-dependent effective causal cone $c_{\mathcal{I}}(E)$ probing the microscopic Planck scale.
+This measurement places stringent empirical bounds on dispersive particle delays, confirming the energy-independence of luminal propagation up to the Planck scale and strongly constraining candidate deformations of the Universal Causal Cone.
 
 ### 7.5 Analog Gravity and Sonic Horizons
 

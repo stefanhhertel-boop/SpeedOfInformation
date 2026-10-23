@@ -13,7 +13,7 @@
 
 > **Central Hypothesis:** Does replacing the concept of the "speed of light" ($c$) with the "speed of information" ($c_{\mathcal{I}}$) provide a deeper, more fundamental understanding of spacetime kinematics, quantum causality, and gravitational dynamics?
 
-This repository contains the complete theoretical physics research investigation, peer-review revised manuscripts, comprehensive 55-page research monograph, and numerical simulation suites.
+This repository contains the complete theoretical physics research investigation, peer-review revised manuscripts, comprehensive 67-page research monograph, and numerical simulation suites.
 
 The work is organized into **three distinct epistemic tiers**:
 1. **Tier I (Mathematically Proven & Established Physics):** 
@@ -24,14 +24,14 @@ The work is organized into **three distinct epistemic tiers**:
    - Jacobson-Faulkner thermodynamic derivation of Einstein's field equations from local entanglement equilibrium.
 2. **Tier II (Conceptual & Operational Interpretations):** 
    - $c_{\mathcal{I}}$ as an intrinsic geometric property of spacetime decoupled from gauge-field contingencies.
-   - Operational interpretation of the 4-velocity invariant $u^\mu u_\mu = -c_{\mathcal{I}}^2$: proper-time dilation $d\tau/dt = \sqrt{1 - v^2/c_{\mathcal{I}}^2} = 1/\gamma$ constrains the rate of physically distinguishable quantum state transitions along a worldline.
+   - Operational interpretation of the 4-velocity invariant $u^\mu u_\mu = -c_{\mathcal{I}}^2$: proper-time dilation $d\tau/dt = \sqrt{1 - v^2/c_{\mathcal{I}}^2} = 1/\gamma$ constrains the rate of physically distinguishable quantum state transitions along a worldline via the Fubini-Study / Bures metric ($ds_{\text{FS}}/dt = 2\Delta E / (\hbar \gamma)$) and Quantum Speed Limits.
    - Unified Five-Tier Hierarchy of Physical Velocities cleanly separating metric causal speed $c_{\text{causal}}$, front velocity $v_{\text{front}}$, lattice speed $v_{\text{LR}}$, quantum scrambling speed $v_B$, and signaling throughput $v_{\text{signal}}$.
    - Electromagnetically Induced Transparency (EIT) slow light as open-system polaritonic dispersion ($dn/d\omega$) and quantum memory loading.
 3. **Tier III (Falsifiable Hypotheses & Frontiers):** 
-   - **The Universal Causal Cone Hypothesis:** $c_{\text{EM}} = c_{\text{grav}} = c_{\text{matter}} = c_{\text{info}} \equiv c_{\mathcal{I}}$, experimentally confirmed to $10^{-15}$ precision via multi-messenger gravitational wave astronomy (GW170817 / GRB 170817A).
+   - **The Universal Causal Cone Hypothesis:** $c_{\text{geom}} = c_{\text{EM}} = c_{\text{grav}} = c_{\text{matter}} = c_{\text{info}} \equiv c_{\mathcal{I}}$, experimentally constrained to within $10^{-15}$ precision via multi-messenger gravitational wave astronomy (GW170817 / GRB 170817A).
    - Renormalization Group (RG) conditions for the emergence of continuous Lorentz-invariant light cones from discrete microscopic information dynamics ($z = 1$ quantum critical points).
    - Proca photon mass astrophysical limits ($m_\gamma < 10^{-18}\text{ eV}/c_{\mathcal{I}}^2$).
-   - Quantum Gravity Modified Dispersion Relations (MDR) and energy-dependent causal cones $c_{\mathcal{I}}(E)$ bounded by Fermi GRB 090510 ($E_{\text{QG}} > 1.2\,M_{\text{Planck}}$).
+   - Quantum Gravity Modified Dispersion Relations (MDR) and energy-dependent causal cones $c_{\mathcal{I}}(E)$ bounded by Fermi GRB 090510 ($E_{\text{QG}} > 1.2\,M_{\text{Planck}}$), critically delineating particle group delays from metric causal cones.
    - Cosmological dark energy as vacuum informational equilibrium and horizon surface tension resolving the 122-order-of-magnitude fine-tuning.
 
 ---
@@ -42,10 +42,11 @@ The work is organized into **three distinct epistemic tiers**:
 SpeedOfInformation/
 ├── README.md                                             # Project overview and research framework
 ├── paper/
-│   ├── Speed_of_Information_Paper.tex                    # Formal academic publication LaTeX manuscript
+│   ├── Speed_of_Information_Paper.tex                    # Formal academic publication LaTeX manuscript (15 pages)
 │   ├── Speed_of_Information_Paper.md                     # Comprehensive academic publication manuscript (Markdown)
+│   ├── Speed_of_Information_Paper.pdf                    # 15-page peer-reviewed academic publication paper (PDF)
+│   ├── Speed_of_Information_Monograph.pdf                # 67-page comprehensive publication research monograph (PDF)
 │   ├── paper_index.html                                  # Master interactive reader with MathJax and embedded SVGs
-│   ├── Speed_of_Information_Monograph.pdf                # 55-page comprehensive publication research monograph (PDF)
 │   ├── Executive_Summary_Speed_of_Information.md         # High-level executive white paper & research synthesis
 │   ├── Polariton_Information_Overhead_and_Slow_Light.md # Optical dispersion & dark-state polariton treatise
 │   ├── Time_Dilation_as_Informational_Bandwidth_Allocation.md # Operational proper time and state evolution treatise
